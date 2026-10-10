@@ -1,3 +1,4 @@
+import datetime
 # v3: document registry. Classifies every cited URL, titles it, and records local copies.
 import json, re, os, urllib.parse, datetime, hashlib
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -134,6 +135,8 @@ def load():
 def not_copied():
     return {d['source_url'] for d in json.load(open(MANIFEST)).get('not_copied', [])} if os.path.exists(MANIFEST) else set()
 
+VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'videodata.json'))) if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'videodata.json')) else {}
+
 def registry(urls, link_text):
     """Return {url: entry}. Every entry has id, kind (pdf|word|missing|embed|ext), title, board, type, year, src."""
     man = {d['source_url']: d for d in load()}
@@ -166,6 +169,11 @@ def registry(urls, link_text):
                 if host == 'townhallstreams.com': title = txt if len(txt) > 8 else 'Meeting video (Town Hall Streams)'
                 e.update(title=title, board=org, type=typ, year=_year(u, u), date=None)
                 e['kind'] = 'missing' if missing else ('embed' if host in EMBED_HOSTS else 'ext')
+                v = VIDEOS.get(u)
+                if v:  # Town Hall Streams blocks framing; its public HLS stream (CORS *) plays in our own player
+                    dt = datetime.date.fromisoformat(v['date'])
+                    e.update(kind='video', hls=v['hls'], dur=v.get('dur'), date=v['date'], year=dt.year, board='Select Board', type='Video',
+                             title=f"Select Board meeting video: {dt.strftime('%a, %b')} {dt.day}, {dt.year}", chapters=v.get('chapters') or [])
             e['org'] = org
         reg[u] = e
     return reg

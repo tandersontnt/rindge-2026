@@ -201,7 +201,7 @@ T.append(("🏡","var(--cc)","Elderly exemption: current limits and how changes 
 {fact("The 2025 report prints the married income limit as $49,000; the 2020 report printed $50,000. Ask the Assessing Office which figure is current.","official","unconf")}
 {fact("March 2021, Art 19: the Deliberative Session amended a proposal to lower the limits into a committee to study it (18-6). The 748-376 vote was on that study article, and the exemption did not change. The annual report prints the original wording.","text")}
 {fact("March 2022, Art 11: a petition to lower the limits failed 395-601.","official")}
-{fact("Recipients fell from 91 ($11.07M exempted) in 2020 to 52 ($6.56M) in 2025, after the 2024 five-year review and the 2025 revaluation.","official")}
+{fact("Recipients by year (MS-1 reports): 91 (2020), 92 (2021), 89 (2022), 88 (2023), 44 (2024) and 52 (2025). The drop followed the 2024 assessor review. Assessed value exempted was $11.07M in 2020 and $6.56M in 2025.","official")}
 {fact("The 2026 warrant had no elderly-exemption article. No elderly or disabled exemption discussion was found in the 2026 agendas and minutes reviewed (175 documents) or in the Select Board meetings of Sept 9 to Oct 7.","official")}
 {fact("The only related 2026 article was the veterans' disability tax credit increase to $4,500 (Article 12 on the final warrant; numbered Article 11 in the Jan 7 draft). It passed, per press reports.","official","press")}
 </ul>
@@ -323,7 +323,7 @@ T.append(("🏛️","var(--town)","Other Select Board business", f'''
 {fact("Oct 7: the town will replace Town Hall Streams with its own camera and an official town YouTube channel; the Executive Secretary position returns to full-time; the Police Chief job description was tabled.","audio")}
 {fact("Select Board: Chair Bob Hamilton, Vice Chair Tom Coneys, Larry Cleveland.","official")}
 </ul>'''))
-TOPICS="".join(f'<details class="card topic" style="--c:{c}"><summary><span class="ico" aria-hidden="true">{i}</span><span>{E(t)}</span><span class="chev" aria-hidden="true">▾</span></summary><div class="body">{b}</div></details>' for i,c,t,b in T)
+TOPICS="".join(f'<details class="card topic" style="--c:{c}"><summary><span class="ico" aria-hidden="true">{i}</span><h3 class="sum-h">{E(t)}</h3><svg class="i chev" aria-hidden="true" focusable="false"><use href="#i-chev"/></svg></summary><div class="body">{b}</div></details>' for i,c,t,b in T)
 
 CONFLICTS=[
  ("Forristall Rd variance (Case 2026-12)","The ZBA's Sept 22 draft minutes show the variance granted 4-1. On Oct 7 the Select Board voted 3-0 to request a rehearing (from meeting audio; unofficial). Neither the ZBA nor the Select Board has posted a record of the request yet."),

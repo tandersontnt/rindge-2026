@@ -59,6 +59,16 @@ I = {
 }
 EMOJI = {'💰':'coins','🏘':'users','🚑':'ambulance','🏫':'school','📏':'frontage','💧':'water','🌲':'tree','📈':'growth','🧓':'elder','🚧':'alert','🏠':'home','🛤':'road','🏡':'home','🗺':'map','🏛':'landmark'}
 
+I.update({
+ 'play': '<path d="M8 5.5v13l10.5-6.5z" fill="currentColor" stroke="none"/>',
+ 'video': '<rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3"/>',
+ 'zin': '<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M8.5 11h5M11 8.5v5"/>',
+ 'zout': '<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M8.5 11h5"/>',
+ 'fit': '<path d="M4 9V5h4M20 9V5h-4M4 15v4h4M20 15v4h-4"/>',
+ 'chevup': '<path d="m6 15 6-6 6 6"/>',
+ 'quote': '<path d="M5 6h14v9H9l-4 3.5z"/><path d="M9 10h6"/>',
+})
+
 def sprite():
     return '<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">' + ''.join(
         f'<symbol id="i-{k}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{v}</symbol>' for k, v in I.items()) + '</svg>'
@@ -112,7 +122,7 @@ def render_r3(badge, E):
     h = ['<ul class="howgrid" id="howlist">']
     for i, (q, icon, steps, det, who, legal, labs, links, gaps) in enumerate(R.GUIDES):
         gid = 'how-' + re.sub(r'[^a-z]+', '-', q.lower()).strip('-')[:40]
-        h.append(f'<li><details class="card how" id="{gid}"><summary>{ic(icon, "i ico")}<span class="hq">How do I {E(q)}</span>{ic("chev", "i chev")}</summary><div class="body">'
+        h.append(f'<li><details class="card how" id="{gid}"><summary>{ic(icon, "i ico")}<h3 class="hq sum-h">How do I {E(q)}</h3>{ic("chev", "i chev")}</summary><div class="body">'
                  '<h4>Steps</h4><ol class="steps">' + ''.join(f'<li>{E(s)}</li>' for s in steps) + '</ol>'
                  + ''.join(f'<p><strong>{E(k)}.</strong> {E(v)}</p>' for k, v in det)
                  + f'<p><strong>Who handles it.</strong> {E(who)}</p>' + (f'<p><strong>Legal basis.</strong> {E(legal)}</p>' if legal else '')
@@ -131,7 +141,7 @@ def render_r3(badge, E):
     b.append(f'<div class="card chart"><h3>Where the 2026 default budget goes: the 10 largest lines {badge("official")}</h3><p class="note" style="margin-top:0">2026 default budget by department, from the 2025 Annual Report. Bars share one scale. The full table of all {len(R.DEPTBUD)} lines is below.</p>')
     for r in top:
         w = r[4] / mx * 100
-        b.append(f'<div class="hb"><span class="y sm">{E(r[0])}</span><span class="track"><span class="fill f-brand" style="--w:{w:.2f}%"></span></span><span class="v">{money(r[4])} · {r[4]/R.DEPTBUD_TOT[3]*100:.1f}% of total</span></div>')
+        b.append(f'<div class="hb lab"><span class="y sm">{E(r[0])}</span><span class="track"><span class="fill f-brand" style="--w:{w:.2f}%"></span></span><span class="v">{money(r[4])} · {r[4]/R.DEPTBUD_TOT[3]*100:.1f}% of total</span></div>')
     b.append('<details class="tabledetails"><summary>Show details: all department lines, 2025 and 2026</summary><div class="tablewrap"><table class="data"><caption>Department budgets (2025 Annual Report, pages 72–83)</caption>'
              '<thead><tr><th scope="col">Department</th><th class="num" scope="col">2025 budget (default)</th><th class="num" scope="col">2025 actual</th><th class="num" scope="col">2026 proposed (failed)</th><th class="num" scope="col">2026 default (in effect)</th></tr></thead><tbody>'
              + ''.join(f'<tr><th scope="row">{E(r[0])}</th>' + ''.join(f'<td class="num">{money(x)}</td>' for x in r[1:]) + '</tr>' for r in R.DEPTBUD)
@@ -141,7 +151,7 @@ def render_r3(badge, E):
     rmx = max(max(r[1], r[2] or 0) for r in R.RESERVES)
     b.append(f'<div class="card chart"><h3>Capital reserve and trust funds, end of 2025 vs end of 2024 {badge("official")}</h3><ul class="keyrow"><li><i style="--sc:var(--brand2)"></i>End 2025</li><li><i style="--sc:var(--neutral2)"></i>End 2024</li></ul>')
     for name, a, p in R.RESERVES:
-        b.append(f'<div class="hb"><span class="y sm">{E(name)}</span><span class="pair"><span class="track thin"><span class="fill f-brand" style="--w:{a/rmx*100:.2f}%"></span></span>'
+        b.append(f'<div class="hb lab"><span class="y sm">{E(name)}</span><span class="pair"><span class="track thin"><span class="fill f-brand" style="--w:{a/rmx*100:.2f}%"></span></span>'
                  + (f'<span class="track thin"><span class="fill f-b" style="--w:{p/rmx*100:.2f}%"></span></span>' if p is not None else '<span class="track thin gaptrack"></span>')
                  + f'</span><span class="v">{money(a)} · ' + (f'{money(p)} in 2024' if p is not None else 'new in 2025') + '</span></div>')
     b.append(f'<p class="note">Totals: {money(R.RES_TOT[0])} (2025) vs {money(R.RES_TOT[1])} (2024). End-2023 total was $423,914. Source: 2025 Annual Report pages 40–42; 2024 Annual Report page 41.</p></div>')
@@ -215,7 +225,7 @@ def post(page):
         idx.append(dict(k=kind, t=re.sub(r'\s+', ' ', title).strip()[:140], s=re.sub(r'\s+', ' ', text).strip()[:240], h=href))
     for s in soup.select('section.sec[id]'):
         h2 = s.find('h2')
-        if h2: add('Section', h2.get_text(' ', strip=True), (s.select_one('.plain p:not(.plain-k)') or s.select_one('.intro') or h2).get_text(' ', strip=True), '#' + s['id'])
+        if h2: add('Section', h2.get_text(' ', strip=True), (s.select_one('.summary') or s.select_one('.plain p:not(.plain-k)') or s.select_one('.intro') or h2).get_text(' ', strip=True), '#' + s['id'])
     for el in soup.select('#tl .ev'):
         add('Meeting', el.select_one('.date').get_text(' ', strip=True) + ' · ' + el.select_one('.bname').get_text(' ', strip=True), (el.select_one('.ttl').get_text(' ', strip=True) if el.select_one('.ttl') else '') + ' ' + ' '.join(li.get_text(' ', strip=True) for li in el.select('ul > li')), '#' + el['id'])
     for el in soup.select('#ulist .urow'):
@@ -236,7 +246,8 @@ def post(page):
         add('Document', e['title'], ' · '.join(str(x) for x in (e.get('board') or e.get('org'), e.get('type'), e.get('year')) if x), 'doc:' + e['id'])
     # library
     lib = library(reg)
-    docdata = {e['id']: {k: e.get(k) for k in ('title', 'src', 'kind', 'view', 'file', 'board', 'type', 'year', 'org', 'host') if e.get(k) is not None} for e in reg.values()}
+    docdata = {e['id']: {k: e.get(k) for k in ('title', 'src', 'kind', 'view', 'file', 'board', 'type', 'year', 'org', 'host', 'hls', 'dur', 'date', 'chapters') if e.get(k) not in (None, [])} for e in reg.values()}
+    import v4post; v4post.enhance(soup, reg)
     page = str(soup)
     page = page.replace('{{LIBRARY}}', lib)
     page = page.replace('{{DOCDATA}}', json.dumps(docdata, separators=(',', ':')).replace('</', '<\\/'))
@@ -246,7 +257,7 @@ def post(page):
     # library links need data-doc too (added post-soup)
     return page, reg, idx
 
-KINDLABEL = {'large': 'Large scan: opens on rindgenh.org', 'pdf': 'Opens here (copy)', 'word': 'Opens here (converted copy)', 'embed': 'Opens here', 'ext': 'Opens in a new tab', 'missing': 'Not available'}
+KINDLABEL = {'video': 'Plays here', 'large': 'Large scan: opens on rindgenh.org', 'pdf': 'Opens here (copy)', 'word': 'Opens here (converted copy)', 'embed': 'Opens here', 'ext': 'Opens in a new tab', 'missing': 'Not available'}
 def library(reg):
     rows = sorted(reg.values(), key=lambda e: (e.get('board') or e.get('org') or '', -(e.get('year') or 0), e.get('date') or '', e['title']))
     boards = sorted(set((e.get('board') or e.get('org') or 'Other') for e in rows))
@@ -265,8 +276,8 @@ def library(reg):
         view = e.get('view') or e['src']
         kind = e['kind']
         q = H.escape(' '.join(str(x) for x in (e['title'], b, e.get('type'), e.get('year'), e['src']) if x).lower())
-        tgt = '' if kind in ('pdf', 'word') else ' target="_blank" rel="noopener"'
-        main = f'<a class="docbtn" href="{H.escape(view)}" data-doc="{e["id"]}"{tgt}>{ic("doc" if kind in ("pdf","word","embed") else "external")}<span>{"View" if kind != "missing" else "Details"}</span><span class="sr"> {H.escape(e["title"])}</span></a>'
+        tgt = '' if kind in ('pdf', 'word', 'video') else ' target="_blank" rel="noopener"'
+        main = f'<a class="docbtn" href="{H.escape(view)}" data-doc="{e["id"]}"{tgt}>{ic("play" if kind == "video" else ("doc" if kind in ("pdf","word","embed") else "external"))}<span>{"Play" if kind == "video" else ("View" if kind != "missing" else "Details")}</span><span class="sr"> {H.escape(e["title"])}</span></a>'
         orig = f'<a class="origlink" href="{H.escape(e["src"])}" target="_blank" rel="noopener">Original<span class="sr"> on {H.escape(e.get("host",""))} (opens in new tab)</span></a>'
         o.append(f'<tr data-b="{H.escape(b)}" data-t="{H.escape(e.get("type") or "Other")}" data-y="{e.get("year") or ""}" data-q="{q}"><td><span class="dt">{H.escape(e["title"])}</span><span class="dk">{KINDLABEL[kind]}</span></td>'
                  f'<td>{H.escape(b)}</td><td>{H.escape(e.get("type") or "")}</td><td>{e.get("year") or ""}</td><td class="open">{main}{orig}</td></tr>')

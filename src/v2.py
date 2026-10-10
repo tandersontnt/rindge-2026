@@ -63,13 +63,13 @@ def render(badge, E, fmt, BOARDS, UPCOMING, TODAY):
     MX=12_000_000; rows=""; trs=[]
     for y,v,n in ELDERLY:
         if v is None:
-            rows+=f'<div class="hb"><span class="y">{y}</span><div class="track gaptrack"><span class="gl">Not extracted</span></div><span class="v">{badge("gap")}</span></div>'
-            trs.append([str(y),"not extracted",""]); continue
+            rows+=f'<div class="hb"><span class="y">{y}</span><div class="track gaptrack" role="img" aria-label="{y}: value exempted not extracted{f", {n} recipients" if n else ""}"><span class="gl">Value not extracted</span></div><span class="v">{f"<b>{n}</b> people " if n else ""}{badge("official") if n else ""}{badge("gap")}</span></div>'
+            trs.append([str(y),"not extracted",str(n or "")]); continue
         rows+=(f'<div class="hb"><span class="y">{y}</span><div class="track" role="img" aria-label="{y}: ${v:,} exempted{f", {n} recipients" if n else ""}"><span class="fill f-cc" style="--w:{v/MX*100:.2f}%"></span></div>'
                f'<span class="v"><b>${v/1e6:.2f}M</b>{f" · <b>{n}</b> people" if n else ""} {badge("official")}</span></div>')
         trs.append([str(y),f"${v:,}",str(n or "")])
     CH["elderly"]=(f'<div class="card chart" id="ch-elderly"><h3>Elderly exemption: assessed value exempted (MS-1 reports)</h3>{rows}'
-        '<p class="note">Recipient counts are printed only for 2020 (91) and 2025 (52). The drop in 2025 follows the 2024 five-year review, when several owners no longer qualified. 2016 and 2021 are scanned reports, and 2022–2024 were not located in the text.</p>'
+        '<p class="note">Recipients by year: 91 (2020), 92 (2021), 89 (2022), 88 (2023), 44 (2024) and 52 (2025). The drop followed the 2024 assessor review (the required five-year review, when several owners no longer qualified). The value exempted for 2016 and 2021–2024 was not located in the text; 2016 and 2021 are scanned reports.</p>'
         +details_table("Elderly exemption value",["Year","Value exempted","Recipients"],trs)+'</div>')
     # ---- reval CRF ----
     rows=""; trs=[]
@@ -86,7 +86,7 @@ def render(badge, E, fmt, BOARDS, UPCOMING, TODAY):
         n,col=BOARDS[b]
         rows+=f'<div class="grp" style="--c:{col}"><div class="gname">{E(n)}</div>'
         for lab,v in (("2024 (Sep–Dec)",a),("2025",c),("2026 to Oct 12",d)):
-            rows+=(f'<div class="hb"><span class="y sm">{lab}</span><div class="track" role="img" aria-label="{E(n)} {lab}: {v} dates"><span class="fill f-board" style="--w:{v/MX*100:.2f}%"></span></div>'
+            rows+=(f'<div class="hb lab"><span class="y sm">{lab}</span><div class="track" role="img" aria-label="{E(n)} {lab}: {v} dates"><span class="fill f-board" style="--w:{v/MX*100:.2f}%"></span></div>'
                    f'<span class="v"><b>{v}</b></span></div>')
         rows+='</div>'; trs.append([E(n),str(a),str(c),str(d)])
     CH["cadence"]=(f'<div class="card chart" id="ch-cadence"><h3>Meeting dates posted per board {badge("official")}</h3>{rows}'

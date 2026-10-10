@@ -1,0 +1,209 @@
+{
+ "d21": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-01-07_4267786_Board_of_Selectmen.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-01-07"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=71904"
+ },
+ "d22": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-01-14_2516900_Board_of_Selectmen.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-01-14"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=71905"
+ },
+ "d23": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-01-21_6515227_Board_of_Selectmen.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-01-21"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=72197"
+ },
+ "d24": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-01-28_9307586_Board_of_Selectmen.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-01-28"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=72198"
+ },
+ "d25": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-02-11_6086771_Board_of_Selectmen.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-02-11"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=72742"
+ },
+ "d26": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-02-25_6656815_Board_of_Selectmen.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-02-25"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=72743"
+ },
+ "d27": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-03-11_2470648_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-03-11"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73291"
+ },
+ "d28": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-03-25_2305514_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-03-25"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73557"
+ },
+ "d29": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-04-08_1567801_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-04-08"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73612"
+ },
+ "d30": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-04-22_9601615_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-04-22"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73613"
+ },
+ "d31": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-05-20_4987263_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-05-20"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73615"
+ },
+ "d32": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-06-03_1907948_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-06-03"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73616"
+ },
+ "d33": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-06-17_5764594_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-06-17"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73617"
+ },
+ "d34": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-07-01_576167_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-07-01"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73618"
+ },
+ "d35": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-07-15_8892798_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-07-15"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73620"
+ },
+ "d36": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-07-29_267678_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-07-29"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73621"
+ },
+ "d37": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-08-12_5501918_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-08-12"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73622"
+ },
+ "d38": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-08-26_1459449_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-08-26"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73624"
+ },
+ "d39": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-09-09_2803556_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-09-09"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73625"
+ },
+ "d40": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-09-23_1938928_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-09-23"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73626"
+ },
+ "d41": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-10-07_4935184_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-10-07"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=73627"
+ },
+ "d42": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-04-15_8868396_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-04-15"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=74109"
+ },
+ "d43": {
+  "vid": "166",
+  "hls": "https://cdn.townhallstreams.com/vod/_definst_/mp4:rindge_nh/2026-05-06_8411779_Board_of_Selectmen_Meeting.mp4/playlist.m3u8",
+  "title": "Stream Video - Town Hall Streams",
+  "used": [
+   "ev-sb-2026-05-06"
+  ],
+  "src": "https://townhallstreams.com/stream.php?location_id=166&id=74438"
+ }
+}

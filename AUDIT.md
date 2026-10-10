@@ -330,3 +330,30 @@ Headless Chrome via the DevTools protocol, at 375×812, 768×1024 and 1280×900.
 - School district items were not checked against district minutes.
 - The Wetlands ordinance file is dated 2023; later amendments were not confirmed.
 - Article 14 in the ConCom 2/26 minutes is identified as the LUCT article by matching the BAC 5-2 recommendation on the final warrant. This is an inference, consistent with the warrant.
+
+## v4 redesign (Oct 10, 2026) — local build, not published
+
+Navigation and layout
+- One navigation pattern: slim translucent sticky top bar (site name, Search, Menu). Menu is a full-screen sheet on phones and a right-hand sheet on tablets/desktop, grouped into plain-language categories. At 1280 px and wider the same bar also shows six top-level links. The old sidebar is gone.
+- Home is a "Start here" page: six task cards (What happened this year?, When is the next meeting?, Find a document, How do I...?, Who do I call?, Taxes and exemptions), a search box, and more questions.
+- Every section has breadcrumbs (Home / group / section), a one-sentence summary and a "In plain language" card. Back-to-top button, skip link, focus rings, logical headings (h1 > h2 > h3).
+- Apple-style system font, strict type scale (body >= 17 px, fluid with clamp()), one accent colour, large-radius cards, blurred bars, 8 pt spacing, 150–250 ms motion, reduced-motion and dark/high-contrast themes, safe-area insets, 100dvh sheets, scroll-padding under the bar.
+
+Expandable cards (accordion in place)
+- 229 cards expand in place: 70 meetings, 24 key dates/meeting rows, 12 recurring issues, 77 laws, 34 directory entries, 12 stat cards. Each has a visible "Details" button with chevron and a short summary of what is inside, aria-expanded/aria-controls, Enter/Space, Esc to close (focus returns to the button), tap anywhere on the card, smooth 220 ms height animation (none with reduced motion), and a deep link (#card-id opens it; opening a card updates the address).
+- Details show the full record: all notes and vote tallies with their source badges, documents and video, and links. Calendar rows link to the meeting record, the board's regular details, and related rules and guides already on the site. Stat cards list where to check the number (sources already cited on the site) and where to see more.
+- Cards that have nothing more to show are not styled as clickable. Without JavaScript every card shows everything.
+
+Documents and video inside the site
+- PDFs (156) and converted Word files (6) render inside the full-screen viewer with the bundled PDF.js 4.10.38 (vendor/pdfjs, Apache-2.0): page number box, previous/next page, zoom out/in, fit width, Download, Open original, Close, previous/next document. A loading spinner shows until the first page is drawn; if a file cannot be drawn, the sheet shows Open/Download/Original buttons instead of a blank frame. Large scans (3) and missing files (2) show an explanation card; outside pages that refuse framing (113) open in a new tab; outside pages that allow framing (14) show in the sheet with a loading state.
+- Town Hall Streams refuses to be framed (X-Frame-Options: SAMEORIGIN), so the 23 Select Board meeting videos play from its public HLS stream (CORS allowed) in the site's own player: native HLS where available, hls.js 1.7.3 (vendor/hls, Apache-2.0) elsewhere. Poster card first; one automatic retry; then a clear "Watch on Town Hall Streams" fallback.
+- For the three meetings this guide transcribed (Sept 9, Sept 23, Oct 7, 2026), the sheet lists topic jump links (timestamps from rindge_recordings_report.md) with short excerpts copied verbatim from /workspace/rec/*.txt (checked by src/curate_excerpts.py). Labeled "Unofficial · own transcription"; the note says they come from automatic speech-to-text of the audio, were not checked against the video, and may be wrong. Excerpts avoid personal remarks and obvious mis-hearings; the full transcripts are not published.
+
+Content
+- No facts added. The elderly exemption count is stated as 91 (2020), 92 (2021), 89 (2022), 88 (2023), 44 (2024), 52 (2025), and the drop followed the 2024 assessor review.
+- Exclusions kept: no Town Clerk email, no exemption petition, no family information. Site stays labeled unofficial and not affiliated with the Town. Unconfirmed-date labels kept (Jan 12, 2027 petition deadline; March 2027 ordinance hearing).
+
+Exports
+- static.html (no JavaScript, everything expanded) and rindge_2026_briefing.pdf (printed from it) regenerated in the site folder by src/export_static.py. The stale v1 copies in /workspace/rindge_v1_artifacts_outside_repo/ were left untouched.
+
+Tests: test/cdp_test.mjs (headless Chrome over CDP, served over local HTTP like GitHub Pages) -> test/results_v4.json and test/shots_v4/.

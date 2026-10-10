@@ -56,7 +56,7 @@ TAXTOT = [(2010,23.52,"text"),(2011,25.32,"text"),(2012,24.63,"text"),(2013,25.4
 REVAL = {2015,2020,2025}
 # elderly exemption: total assessed value exempted (MS-1), recipients where printed
 ELDERLY = [(2011,8186992,None),(2012,9041716,None),(2013,9128216,None),(2014,10307847,None),(2015,10205082,None),(2016,None,None),(2017,10812353,None),
- (2018,11474153,None),(2019,10442080,None),(2020,11067758,91),(2021,None,None),(2022,None,None),(2023,None,None),(2024,None,None),(2025,6559100,52)]
+ (2018,11474153,None),(2019,10442080,None),(2020,11067758,91),(2021,None,92),(2022,None,89),(2023,None,88),(2024,None,44),(2025,6559100,52)]
 # revaluation CRF articles (yes,no,label,amount)
 REVALCRF = [(2014,771,634,"text","$64,000 for 2015 revaluation work"),(2016,797,427,"scan","$28,000"),(2017,744,272,"text","$28,000"),(2018,1027,375,"text","$28,000"),
  (2019,667,387,"text","$33,600"),(2021,816,318,"text","$12,750 for the 2025 revaluation"),(2022,599,409,"text","$12,500"),(2023,474,278,"text","$20,000"),
@@ -180,7 +180,7 @@ ISSUES = [
   ("2020","MS-1 report: 91 recipients, $11.07M of assessed value exempted. It prints the married limit as $50,000.","official"),
   ("Mar 2021","Art 19 was amended at the Deliberative Session (18-6) into a committee to study lowering the limits. The 748-376 vote was on that study article and did not change the exemption. The annual report prints the original wording.","text"),
   ("Mar 2022","Petition Art 11 to lower the limits failed 395-601.","official"),
-  ("2024","Assessor's required five-year review: several owners no longer qualified.","official"),
+  ("2024","Assessor's required five-year review: several owners no longer qualified. MS-1 recipients went from 88 (2023) to 44 (2024).","official"),
   ("2025","MS-1 report: 52 recipients, $6.56M exempted (after the 2025 revaluation). Married limit printed as $49,000.","official")]),
 ("growth","🚧","var(--town)","Impact fees and growth management",
  "Rindge adopted impact fees in 2003, repealed them in 2017 and refused to bring them back in 2020. Voters also turned down a looser phasing table in 2025.",
