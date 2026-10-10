@@ -1,0 +1,1340 @@
+{
+ "title": "Rindge Town Guide: copies of public town documents",
+ "credit": "Public record, copied from rindgenh.org on Oct 9, 2026; the original is authoritative.",
+ "note": "Files are byte-for-byte copies of what the town website served on the retrieval date (sha256 recorded). Nothing was edited. Word files also have a separate PDF rendering in docs/converted/ for viewing; the Word file is the copy of record.",
+ "count": 162,
+ "total_bytes": 181596420,
+ "documents": [
+  {
+   "file": "01.07.2026_Board_of_Selectmen_Agenda_5e9a0b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/01.07.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607222010440",
+   "sha256": "55746c9a7d7fd0e4e7e5007cd27ebf1baa1b125524c401966f3358d5063e6178",
+   "bytes": 215680,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "01.07.2026_BOS_minutes_d6fa54.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/01.07.2026_BOS_minutes.pdf?t=202607222006420",
+   "sha256": "e539bea83824c9307102ba2b0189d6d70bba6e92fd91d6f27e5ba8369e8f8d23",
+   "bytes": 227204,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "01.14.2026_Board_of_Selectmen_Agenda_4e75a1.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/01.14.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "fdf33729849c0d8f2dacbcae4cc1342b36df9f78b10ab5b797f820b8dcbb40ac",
+   "bytes": 215821,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "01.14.2026_BOS_minutes_5807fd.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/01.14.2026_BOS_minutes.pdf?t=202607091430550",
+   "sha256": "baa31473f718bbc7f7aeb58236582a1551926a8a646e8a6029656684ef8920f5",
+   "bytes": 182161,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "01.21.2026_Board_of_Selectmen_Agenda_fa6c6f.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/01.21.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "b8567a53a572353cf74f6a75e8ee79ad4e29ed26ad1312217a13d7cbecc76bb3",
+   "bytes": 218081,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "01.21.2026_BOS_minutes_942320.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/01.21.2026_BOS_minutes.pdf?t=202607091431320",
+   "sha256": "14a5426e3af12916b89ed403e8d204d207c83132df860e7061f01a06113a13e8",
+   "bytes": 227114,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "01.28.2026_Board_of_Selectmen_Agenda_04e2a5.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/01.28.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "cb5b65ef929d8e2ee910847ceedcd96beb3ea0d5b9e4387d4b3c4a1349bb59a7",
+   "bytes": 214605,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "01.28.2026_BOS_minutes_1ed3be.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/01.28.2026_BOS_minutes.pdf?t=202607271738340",
+   "sha256": "6eb144540b02628c435bf942479d73225f6e6b7a655ac9363ec50c073f513c4f",
+   "bytes": 174571,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "02.11.2026_Board_of_Selectmen_Agenda_38c56b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/02.11.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "cd5e7266bd854ab832a42c10517020a024da2b7323120ffffeaa0112370c387d",
+   "bytes": 214439,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "02.11.2026_BOS_minutes_809bab.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/02.11.2026_BOS_minutes.pdf?t=202608051531160",
+   "sha256": "36cdb93e372f9ceaa41c324189748e2aa92c76299728c49fc3ac21b8b65453a4",
+   "bytes": 151390,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "02.25.2026_Board_of_Selectmen_Agenda_903443.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/02.25.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "16a8601172ce81748f1cc802c2e72d03095a09a0cc7082db2a26dddb1ba842ed",
+   "bytes": 221996,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "02.25.2026_BOS_minutes_1abaa0.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/02.25.2026_BOS_minutes.pdf?t=202608051531400",
+   "sha256": "3af84c99d3c0b804238259b3f8769d5b1dd9d76ab342cc9cdd888d29aab1e9f2",
+   "bytes": 154857,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "03.11.2026_Board_of_Selectmen_Agenda_cbcc33.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/03.11.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "b437e717aae683bd777ac12e3296fbbbd9c5084ea1518f512d39ca70af04c958",
+   "bytes": 215178,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "03.11.2026_BOS_minutes_4a63ae.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/03.11.2026_BOS_minutes.pdf?t=202608051532040",
+   "sha256": "5a2d1c9f054d2b577e4d7a9e10fa6f560678b0e96dd12b74a805ef555f3f74a9",
+   "bytes": 159581,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "03.25.2026_Board_of_Selectmen_Agenda_rev1_666790.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/03.25.2026_Board%20of%20Selectmen_Agenda_rev1.pdf?t=202607091427190",
+   "sha256": "463a1c6b435938046d9fb07c2c4dcfac6665047419892f6ff6ad4c1e2a93cca6",
+   "bytes": 221168,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "04.08.2026_Board_of_Selectmen_Agenda_22361a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/04.08.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "09aff7a25abb470a786791a412926f5e762ee7b368d3269998252f0a305cd607",
+   "bytes": 220137,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "04.08.2026_BOS_Minutes_e1d255.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/04.08.2026_BOS%20Minutes.pdf?t=202609171720260",
+   "sha256": "47a61dbb3366a895663c3230d28fa8f08c4e23e0ba902efcf2699868308e6a53",
+   "bytes": 168815,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "04.15.2026_Board_of_Selectmen_Agenda_703467.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/04.15.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "797406ad542ce7538ca96f61070df34c26801334546effa26826a9b5445c6124",
+   "bytes": 208046,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "04.22.2026_Board_of_Selectmen_Agenda_da5630.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/04.22.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "a54a480acecabdbfba91117ea10fd210f339bdbae35c834f513219e3325ba236",
+   "bytes": 219085,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "04.28.26_Zoning_Board_of_Adjustment_Meeting_Agenda_d2b251.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/04.28.26_Zoning%20Board%20of%20Adjustment_Meeting%20Agenda.pdf?t=202604211701010",
+   "sha256": "fc02fc1b0f4b4235fdce7a4599be2e5c6800d164843f8050a5ce38e0213e07a5",
+   "bytes": 713164,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "04.28.26_Zoning_Board_of_Adjustment_PUBLICNOTICE_950397.docx",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/04.28.26_Zoning%20Board%20of%20Adjustment_PUBLICNOTICE.docx?t=202604220646490",
+   "sha256": "35391a5c65e4539a853ca853c29625327454019711f55e4ceab2cec3ea37d04b",
+   "bytes": 59992,
+   "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "retrieved": "2026-10-09T22:10:54-04:00",
+   "converted": "converted/04.28.26_Zoning_Board_of_Adjustment_PUBLICNOTICE_950397.pdf",
+   "converted_sha256": "6dfe18c46c8befa4a103ccb45155adfab49a16e09944c1b7af2b0ae815f0cb5f",
+   "converted_note": "PDF rendering made with LibreOffice for in-site viewing only; the original Word file is the copy of record."
+  },
+  {
+   "file": "05.06.2026_Board_of_Selectmen_Agenda_1d2c7d.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/05.06.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "4b455a08d13b7def49f3503553131e5ec72a54fd535e2ff471c075a3d780f799",
+   "bytes": 219221,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "05.14.2026_BOS_Minutes_7ce354.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/05.14.2026_BOS%20Minutes.pdf?t=202607091434140",
+   "sha256": "91fb3d96cea811d8d4a2611f223c0b13675076d021f45d91a6dfbf4256905b53",
+   "bytes": 136110,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "05.20.2026_Board_of_Selectmen_Agenda_eeda87.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/05.20.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "26c660d05d525d1200718ec45811d00a91c68d5bb8d84a64b688eb3f19572440",
+   "bytes": 216367,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "05.20.2026_BOS_Minutes_ce2575.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/05.20.2026_BOS%20Minutes.pdf?t=202607091434530",
+   "sha256": "102d4148979239a3c8ea4c5a2918557dcdc84d487105a2eb2ac58edd16876ac1",
+   "bytes": 171976,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "05.26.2026_BOS_Minutes_f7196c.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/05.26.2026_BOS%20Minutes.pdf?t=202607091435280",
+   "sha256": "422a07875b4257adb7a8c15b66bccb461ef7c95a45c833eeb7bca25766d8d6ee",
+   "bytes": 135678,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "05.26.26_Zoning_Board_of_Adjustment_Meeting_Agenda_1__a0d586.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Agendas/05.26.26_Zoning%20Board%20of%20Adjustment_Meeting%20Agenda%20%281%29.pdf?t=202605271309490",
+   "sha256": "9e8ca9e20574e177eddddb9f514ea1cbd982902f4412c5c737030dcf3c4d8712",
+   "bytes": 654920,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "06.03.2026_Board_of_Selectmen_Agenda_febf52.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/06.03.2026_Board%20of%20Selectmen_Agenda.pdf?t=202607091427190",
+   "sha256": "991fc94342cdf51d933a4fed0597f02342073c07550f600eb3df0047e8150e26",
+   "bytes": 217397,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "06.03.2026_BOS_Minutes_8292e9.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/06.03.2026_BOS%20Minutes.pdf?t=202608131620060",
+   "sha256": "6b86f3984650acf8a54b714462621b9f40778cffe49c1cee506013b0f6f349e8",
+   "bytes": 171271,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "06.17.2026_Board_of_Selectmen_Agenda_9e0f81.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/06.17.2026_Board%20of%20Selectmen%20Agenda.pdf?t=202607091427190",
+   "sha256": "02f014ce00a464a5a79db8d55dbaa5fcc557db6e38f9a6a20694263fd6c22eb5",
+   "bytes": 217203,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "06.17.2026_BOS_Minutes_9e0484.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/06.17.2026_BOS%20Minutes.pdf?t=202607201555000",
+   "sha256": "03c6dffaa9b6c683b9c8bd63e689b20f1f2b845f4f46e46dc14e562d71428f43",
+   "bytes": 161092,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "06.23.26_ZBA_Minutes_DRAFT_7a3dfa.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/06.23.26_ZBA_Minutes_DRAFT.pdf?t=202607141059580",
+   "sha256": "59889d80aee80faa8815e24a0d3858f425516d52fc8ce73de7581f81f9ddd063",
+   "bytes": 328030,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "06.23.26_Zoning_Board_of_Adjustment_Meeting_Agenda_f241f4.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Agendas/06.23.26_Zoning%20Board%20of%20Adjustment_Meeting%20Agenda.pdf?t=202606191410030",
+   "sha256": "fccd93ac02a7156e60568da31ad8aafb98fe2360e890221a41343e1d1a24d116",
+   "bytes": 658034,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "07.01.2026_Board_of_Selectmen_Agenda_41af62.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/07.01.2026_Board%20of%20Selectmen%20Agenda.pdf?t=202607091427190",
+   "sha256": "411fb2e09af6fe3b61ab262b4a35cec358332715ffaec34c7ab6ee6d39c688f3",
+   "bytes": 220809,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "07.01.2026_BOS_Minutes_df6de2.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/07.01.2026_BOS%20Minutes.pdf?t=202608051533200",
+   "sha256": "352359362f2714145046c31a5f141099d92f62f2ecfee02488d8811896b2db5b",
+   "bytes": 176634,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "07.15.2026_BOS_Minutes_e38697.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/07.15.2026_BOS%20Minutes.pdf?t=202608051535240",
+   "sha256": "b61fa82761f795f2174e7d79e890776a32d1bcd24b08e44dff07ce936b937922",
+   "bytes": 241116,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "07.15.2026_UPDATED_Board_of_Selectmen_Agenda_b04c48.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/07.15.2026_UPDATED_Board%20of%20Selectmen%20Agenda.pdf?t=202607131601310",
+   "sha256": "23280939a498d193a2da8db42fba55573ad7d7c4a25cda67e9d7091d31f206a2",
+   "bytes": 238297,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:45-04:00"
+  },
+  {
+   "file": "07.22.2026_Budget_Advisory_Committee_Agenda_584cee.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Budget%20Advisory%20Committee/Agenda%20Minutes/2026/2%20Agendas/07.22.2026_Budget%20Advisory%20Committee_Agenda.pdf?t=202607161211550",
+   "sha256": "a6f5217f19e96fca0b3e841f1a54b9fa93d4f665fda91e5311efbfc1f27f1c99",
+   "bytes": 186134,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "07.28.26_AgendaZoning_Board_of_Adjustment_Agenda_c2dfc0.docx",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Agendas/07.28.26_AgendaZoning%20Board%20of%20Adjustment_Agenda.docx?t=202607231056270",
+   "sha256": "b1b861049e444b85b4978ccfd8715985ba5a9ec6467a2f71e134c01e08c1b202",
+   "bytes": 59823,
+   "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "retrieved": "2026-10-09T22:10:53-04:00",
+   "converted": "converted/07.28.26_AgendaZoning_Board_of_Adjustment_Agenda_c2dfc0.pdf",
+   "converted_sha256": "5cf4d5ca0419267c76affc51b1fa15326531df3c058fbce1798c82a1a22d2e35",
+   "converted_note": "PDF rendering made with LibreOffice for in-site viewing only; the original Word file is the copy of record."
+  },
+  {
+   "file": "07.28.26_DRAFT_MinutesZoning_Board_of_Adjustment_4ca228.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/07.28.26_DRAFT_MinutesZoning%20Board%20of%20Adjustment.pdf?t=202608041648560",
+   "sha256": "55a2f2be5112d796e68b6846e8f290fd797072be57d37846f5281ff09ba43b07",
+   "bytes": 766075,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "07.28.26_Zoning_Board_of_Adjustment_NonPublicSession_46015a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/07.28.26_Zoning%20Board%20of%20Adjustment_NonPublicSession.pdf?t=202607231051510",
+   "sha256": "b40de4b26ca8a545d7671f63ffb3781ea5ce93aafc7e8b24d6ef2cb36b5638a8",
+   "bytes": 518012,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "07.28.26_Zoning_Board_of_Adjustment_PUBLICNOTICE_5f005b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/07.28.26_Zoning%20Board%20of%20Adjustment_PUBLICNOTICE.pdf?t=202607151319000",
+   "sha256": "b84f74d82a8fb69865b338d89ca6d8e72bfde8c48e5d2020399cf3119ad14449",
+   "bytes": 545509,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "07.29.2026_Board_of_Selectmen_Agenda_155848.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/07.29.2026%20Board%20of%20Selectmen_Agenda.pdf?t=202607271446570",
+   "sha256": "8e71ebc00cc9fe4838331b4204c0fcc9137192788e54e0c748db729daa00d799",
+   "bytes": 228810,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "07.29.2026_BOS_Minutes_4d2093.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/07.29.2026_BOS%20Minutes.pdf?t=202608131616470",
+   "sha256": "56bf10265505afa2683470a2894ab9e60552fb7e1e06f8049f0ed80935c2960a",
+   "bytes": 158591,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "08.12.2026_Board_of_Selectmen_Agenda_25e1a7.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/08.12.2026_Board%20of%20Selectmen_Agenda.pdf?t=202608061138010",
+   "sha256": "dda3f9fb5c1e869f462e26290d1d02b30cc6e0d4243919c2bdd8f07a0cb87668",
+   "bytes": 222684,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "08.12.2026_BOS_Minutes_30095a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/03%20Minutes/08.12.2026_BOS%20Minutes.pdf?t=202609171726130",
+   "sha256": "79090a616561710dbcafc02e289d98d981c3297cb24b72add7898c48ec61ee56",
+   "bytes": 214087,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "08.19.2026_Budget_Advisory_Committee_Agenda_8eb6ec.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Budget%20Advisory%20Committee/Agenda%20Minutes/2026/2%20Agendas/08.19.2026_Budget%20Advisory%20Committee_Agenda.pdf?t=202608181215400",
+   "sha256": "f2f160ad5451047ece68fdba04436ddcd82de4f639dd0fc25b2a81a316c7ce13",
+   "bytes": 185202,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "08.26.2026_Board_of_Selectmen_Agenda_a0dcda.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/08.26.2026_Board%20of%20Selectmen_Agenda.pdf?t=202608241501310",
+   "sha256": "faf6d6be6c6308c79dbac765a957b381e60c1f10c6a0551491b10fb493d56c52",
+   "bytes": 221382,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "09.09.2026_Board_of_Selectmen_Agenda_1cead7.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/09.09.2026_Board%20of%20Selectmen_Agenda.pdf?t=202609081918230",
+   "sha256": "a2eeed2855781282be1665e97d844bb9fb6c88f4c657e8793c92b5b622c63e92",
+   "bytes": 221539,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "09.23.2026_Board_of_Selectmen_Agenda_c17bcb.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/09.23.2026_Board%20of%20Selectmen_Agenda.pdf?t=202609171715550",
+   "sha256": "423ba0413776d8f6bfdc0423c71ba26a5e6a76432d45df2bb54451a53e45cc5b",
+   "bytes": 218233,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "0_2025_Annual_Report_for_the_Town_of_Rindge_230c81.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/0%202025%20Annual%20Report%20for%20the%20Town%20of%20Rindge.pdf",
+   "sha256": "8eaf77366e20930d5f186450296847499605376b105a217fcd170561263101b1",
+   "bytes": 6815044,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "1.27.2026_DRAFT_ZBA_Minutes_3e39e2.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/1.27.2026_DRAFT_ZBA_Minutes.pdf?t=202602031054490",
+   "sha256": "1f01876e2f1eec29ce64b889fff3a8b1045b5a42c3d6102cc2b4fc67cf3cf138",
+   "bytes": 565983,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "10.07.2026_UPDATE_2_Board_of_Selectmen_Agenda_40ea99.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Board%20of%20Selectmen/Agendas%20Minutes/2026/02%20Agendas/10.07.2026_UPDATE%202_Board%20of%20Selectmen_Agenda.pdf?t=202610061659470",
+   "sha256": "251728252a520e2170239d3dd8efbf94c2aeef702d04d03613d3edec9781d009",
+   "bytes": 223692,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:46-04:00"
+  },
+  {
+   "file": "102496_rindge_2021_annual_report_rev2_proof_-_optimized_6d464f.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/102496_rindge_2021_annual_report_rev2_proof_-_optimized.pdf",
+   "sha256": "28d9f20e75d0915fc552b7369186e76d24d67d76beafb74b0dea1bb5e9aa57d3",
+   "bytes": 5763219,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "2.24.26_DRAFT_ZBA_Minutes_c2925c.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/2.24.26_DRAFT_ZBA_Minutes.pdf?t=202603131645120",
+   "sha256": "4653649e826202f9aa6c6bbc96116f58e7b5d3c3a3986d56e23c60ca71bb7ed2",
+   "bytes": 756569,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "2011_Annual_Report_of_the_Town_of_Rindge_New_Hampshire_124ad1.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2011_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "sha256": "b047750ec4a352d48984dde45c61e5965ff3aede9e23e68ac01e2a33df11c782",
+   "bytes": 6008204,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:24:40-04:00"
+  },
+  {
+   "file": "2013_Annual_Report_of_the_Town_of_Rindge_New_Hampshire_18f7f7.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2013_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "sha256": "d8708391c15a3131a15368a2a20d9f4756593ba6dc34ca259d33aa9fe7c8341b",
+   "bytes": 3431084,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:24:42-04:00"
+  },
+  {
+   "file": "2015_Annual_report_of_the_Town_of_Rindge_New_Hampshire_42ad6f.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2015_Annual%20report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "sha256": "db4f42509cfa1a3aef9de0e49129ec538908b1e4e830aeb7a8032ffc1ddf791d",
+   "bytes": 10665240,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:24:45-04:00"
+  },
+  {
+   "file": "2016_Annual_Report_of_the_Town_of_Rindge_New_Hampshire_f368b4.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2016_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "sha256": "0b7cdd563b24b1cd9ff238128c7e3f5814d7c1542e497ef78b76fac270260792",
+   "bytes": 14940084,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:56-04:00"
+  },
+  {
+   "file": "2018-08-07_master_plan_pdf_to_print_e12f9f.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/2018-08-07_master_plan_pdf_to_print.pdf",
+   "sha256": "0a8ea96992d15e80796c91673af670bbee0c5aabf9fc375c09c84e7a30514670",
+   "bytes": 11036148,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2018_Annual_Report_of_the_Town_of_Rindge_New_Hampshire_329e55.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2018_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "sha256": "7c8f048067c40ae5f2e6d5a9522911013c04c369c835b20539979b72d8748e62",
+   "bytes": 8843663,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:24:47-04:00"
+  },
+  {
+   "file": "2019_Annual_Report_of_the_Town_of_Rindge_New_Hampsire_ada189.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2019_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampsire.pdf",
+   "sha256": "a18b166baf31c386eaebe20919afaa6611f471cdb7ccd785b071123f49d8ae80",
+   "bytes": 12655282,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:24:49-04:00"
+  },
+  {
+   "file": "2020_Annual_Report_4a7c02.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2020%20Annual%20Report.pdf",
+   "sha256": "ffa1debf61f86668236e8fe51d12d744445250c457ee35d3df7923e3fcc0dad7",
+   "bytes": 7480027,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:56-04:00"
+  },
+  {
+   "file": "2023_Town_Report_6bbb55.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2023%20Town%20Report.pdf",
+   "sha256": "84fefdbbb625cd2cc4afb89fec074e15a9b0215b34f6c5e0f4d9a7d8e8d88dda",
+   "bytes": 10392328,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:24:50-04:00"
+  },
+  {
+   "file": "2024_Annual_Report-Town_of_Rindge-Final_Print_8836b2.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2024%20Annual%20Report-Town%20of%20Rindge-Final%20Print.pdf",
+   "sha256": "39646d7aa67615abe2c633a392b31d97ac2f9a26a9b9f5058b5304664ca3ba4d",
+   "bytes": 11535526,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:56-04:00"
+  },
+  {
+   "file": "2025_ZoningMap_36x24_58fc12.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/2025%20ZoningMap_36x24.pdf",
+   "sha256": "9eaede65f1a620d6d42a3883db1fdafa47172c984f78af9200d80a0156081b80",
+   "bytes": 1144861,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-01-06_Approved_Minutes_81e28d.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Minutes/2026-01-06%20%20Approved%20Minutes.pdf?t=202602181349270",
+   "sha256": "011264705c7f3b6bf35a4e66735c7a5e2962b6fb9a0ef9d06ba2f701962f8db4",
+   "bytes": 204739,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-01-06_PB_Agenda_5af407.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Agendas/2026-01-06%20%20PB%20Agenda.pdf?t=202601061524580",
+   "sha256": "30e5e6e39d530cbbdc479c818960ae090b08b94fad08e9fb4b38b2e82069b8d6",
+   "bytes": 139189,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-02-03_Approved_Minutes-1_1a5b23.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Minutes/2026-02-03%20Approved%20Minutes-1.pdf?t=202604201423170",
+   "sha256": "8528a8cb1295b36d7f3954905218747191ad934ff30e6d9e3393d8b3e5f52caa",
+   "bytes": 133638,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-02-03_PB_Agenda_d320f1.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Agendas/2026-02-03%20PB%20Agenda.pdf?t=202602181349410",
+   "sha256": "b0d745511548dd22f29f7869ac6b0dc51ec5386110d38690f7a1e2ec5e90a68c",
+   "bytes": 115295,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-03-17_Approved_Minutes_5f2394.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Minutes/2026-03-17%20Approved%20Minutes.pdf?t=202607131602520",
+   "sha256": "bb0e86b783d7f9344e94ff317b7a1b3d75162e2c9562198c0142840eef57abb6",
+   "bytes": 134178,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-03-17_PB_Agenda_290ee9.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Agendas/2026-03-17%20PB%20Agenda.pdf?t=202607131606110",
+   "sha256": "36d8add867b01b589ec52087fc5073982fde226dc1b4997cef0d31fb19c9e7b4",
+   "bytes": 116903,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-04-07_Approved_Minutes_335ebc.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Minutes/2026-04-07%20Approved%20Minutes.pdf?t=202607131607560",
+   "sha256": "4d3f87bcde898e168078e325395c8f96f42b219fc325cb0c140a1dd1488bc3af",
+   "bytes": 188710,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-04-07_Notice_of_Public_Hearing_Planning_Board_meeting_April_7-1_37d61e.docx",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Public%20Notices/2026-04-07%20%20Notice%20of%20Public%20Hearing%20Planning%20Board%20meeting%20April%207-1.docx?t=202607131606320",
+   "sha256": "aa5682ab0be30ea3759b4770bf5df8686cb8e6a9fedf51052bf13d9a078796e0",
+   "bytes": 60330,
+   "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "retrieved": "2026-10-09T22:10:51-04:00",
+   "converted": "converted/2026-04-07_Notice_of_Public_Hearing_Planning_Board_meeting_April_7-1_37d61e.pdf",
+   "converted_sha256": "5e6b0b844aabf040cd46315b0488ad2b19a85682689e1be6be74da92668a2752",
+   "converted_note": "PDF rendering made with LibreOffice for in-site viewing only; the original Word file is the copy of record."
+  },
+  {
+   "file": "2026-04-07_PB_Agenda_1442cb.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Agendas/2026-04-07%20%20PB%20Agenda.pdf?t=202607131606580",
+   "sha256": "4164c566da40f58892942707f021b91387593b9030a4d3bba8242f8ba3e3d59d",
+   "bytes": 142890,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-04-13_Notice_of_Public_Hearing_Planning_Board_meeting_May_5_2026_3e7e1b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Public%20Notices/2026-04-13%20%20Notice%20of%20Public%20Hearing%20Planning%20Board%20meeting%20May%205%202026.pdf?t=202607131609110",
+   "sha256": "c0bcb3b980f5afd6eecf77f6421d1f58dcc33798dc612bdb8fd0ae8038868cc2",
+   "bytes": 148445,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-05-05_Approved_Minutes_d973a9.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Minutes/2026-05-05%20Approved%20%20Minutes.pdf?t=202607131617160",
+   "sha256": "8608d4e19d77de5de876f8c441aee4889267b92367b5aefd4230af827f218937",
+   "bytes": 294821,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-05-05_PB_Agenda_37c07b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Agendas/2026-05-05%20%20%20PB%20Agenda.pdf?t=202607131609010",
+   "sha256": "b053fd2bc4ff348a5d39ea446ba31c098e86533e35297e3b87d0cf85e37e1bb6",
+   "bytes": 149472,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-05-18_Notice_of_Public_Hearing_Planning_Board_meeting_June_2_2026_628abb.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Public%20Notices/2026-05-18%20%20Notice%20of%20Public%20Hearing%20Planning%20Board%20meeting%20June%202%2C%202026.pdf?t=202607131619140",
+   "sha256": "50344e83f34dc2f500b1aa3a2b22802b006671f40ec1ff3e769b10391db80af3",
+   "bytes": 176229,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-06-02_Approved_Minutes_b666b6.pdf",
+   "source_url": "https://www.rindgenh.org/2026-06-02%20Approved%20Minutes.pdf?t=202610070834380",
+   "sha256": "1f4bd8623222f1cd0246600e4b0e0231b4353bd88d00329735685eee064a3d01",
+   "bytes": 229987,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "2026-06-02_PB_Agenda_d6983a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Agendas/2026-06-02%20%20PB%20Agenda.pdf?t=202607131619270",
+   "sha256": "b0047a420cc6144568d3387072f5b0942d297f9077004447355ae7958ea18e15",
+   "bytes": 144635,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-06-10_Notice_of_Public_Hearing_Planning_Board_meeting_July_7_2026_fed575.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Public%20Notices/2026-06-10%20%20Notice%20of%20Public%20Hearing%20Planning%20Board%20meeting%20July%207%2C%202026.pdf?t=202607131619430",
+   "sha256": "cf2d61436e8287766aa13797eddd89288362a2aad6888a6631e34ceb4aa43a6d",
+   "bytes": 178353,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-07-07_Approved_Minutes_e3dfad.pdf",
+   "source_url": "https://www.rindgenh.org/2026-07-07%20Approved%20Minutes.pdf?t=202610070835260",
+   "sha256": "5df70ca1619dc79d433f1fbdd2a2dfd9f65b354c464d9a5ff5f0f58e932d4245",
+   "bytes": 281864,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "2026-07-07_PB_Agenda-1_5dd3d0.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Agendas/2026-07-07%20%20%20%20PB%20Agenda-1.pdf?t=202607131619570",
+   "sha256": "b21a5910e8d69dca95c1e156b6cf5a8643b2b84f2857ab9f38fe18a3c7c264e9",
+   "bytes": 150158,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-08-04_Approved_Minutes_a60dbd.pdf",
+   "source_url": "https://www.rindgenh.org/2026-08-04%20%20%20Approved%20%20Minutes.pdf?t=202610070836030",
+   "sha256": "142f24676ae92cd50666a62aa0a92e35a37a8c0b8247f0f79e1208cafc5c74c0",
+   "bytes": 286162,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "2026-08-04_Notice_of_Public_Hearing_Planning_Board_meeting_August_4_20_242fac.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Public%20Notices/2026-08-04%20%20Notice%20of%20Public%20Hearing%20Planning%20Board%20meeting%20August%204%2C%2C%202026-1.pdf?t=202608031327360",
+   "sha256": "17311088525e29dc0efc0f994e2c543ce67be7c764af655f2e54c65480632bde",
+   "bytes": 157117,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "2026-08-04_PB_Agenda-1_c95c0f.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Agendas/2026-08-04%20%20PB%20Agenda-1.pdf?t=202608031327260",
+   "sha256": "f4d597d7968f8aa40d8a8c3ec5d755210754ef92f7456083452aaebbe39e15ec",
+   "bytes": 148196,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "2026-08-12_Notice_of_Public_Hearing_Planning_Board_meeting_September_1_11c765.pdf",
+   "source_url": "https://www.rindgenh.org/2026-08-12%20Notice%20of%20Public%20Hearing%20Planning%20Board%20meeting%20September%201%2C%2C%202026.pdf?t=202608121543240",
+   "sha256": "4e630c3c99d9b4549f011b060f6fe2a6b984cf2c3c819ab04c6a64e8c20cb345",
+   "bytes": 154445,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "2026-09-01_PB_Agenda-1_47bd6c.pdf",
+   "source_url": "https://www.rindgenh.org/2026-09-01%20PB%20Agenda-1.pdf?t=202608260957310",
+   "sha256": "a1f6f762de29d07c2ea02a6f8f25cf5e0d2ae8c3e0cc067b7367e89da9ffea6e",
+   "bytes": 123677,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "2026-09-01_special_meeting_at_600_PM_PB_Agenda-2_834349.pdf",
+   "source_url": "https://www.rindgenh.org/2026-09-01%20%20special%20meeting%20at%20600%20PM%20PB%20Agenda-2.pdf?t=202608260958210",
+   "sha256": "8ea4a6ab2296e5ea178a7896dda1749e2caba0c40fd95b00bbe1da35b9d90dc6",
+   "bytes": 109809,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "2026-10-06_PB_Agenda-1_282505.pdf",
+   "source_url": "https://www.rindgenh.org/2026-10-06%20%20PB%20Agenda-1.pdf?t=202609300907250",
+   "sha256": "0f25633d545feb8e53fa3d88da35a20d7455f749fe6a20685068a2d2586ca8e5",
+   "bytes": 138901,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:44-04:00"
+  },
+  {
+   "file": "2026_Official_Building_and_Fire_Department_Permit_Fee_Schedule_c5e95a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Departments/Building/Files%20Documents/2026%20Official%20Building%20and%20Fire%20Department%20Permit%20Fee%20Schedule.pdf",
+   "sha256": "31993a05b95eddb3a3d2926e8fc80d20d8f1fce147c3604b0a9ed1c86c1da78f",
+   "bytes": 465580,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:24:39-04:00"
+  },
+  {
+   "file": "3.24.26_DRAFT_ZBA_Minutes_e193a1.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/3.24.26_DRAFT_ZBA_Minutes.pdf?t=202603311023170",
+   "sha256": "4274f24e78e2f01e07b98e48acb5eda55ccb67f7063b495673e28a0576c7dcfc",
+   "bytes": 755226,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "Accessory_Dwelling_Unit_Ordinance_2026_426a01.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/Accessory%20Dwelling%20Unit%20Ordinance%202026.pdf",
+   "sha256": "0f7fec81022a171045bfd069906ca888ecfcd702c3088f310a0b8d62bfca77ad",
+   "bytes": 142052,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "Alternative_Lot___Back_Lot_Subcommittee_Meeting_Minutes_3_16_2026_3fab82.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Minutes/Alternative%20Lot%20_%20Back%20Lot%20Subcommittee%20Meeting%20Minutes%203_16_2026.pdf?t=202607131607320",
+   "sha256": "3041cd9ad4243e19233cca331b23fac9da56709bd42b5af3f5e250808d8bbf88",
+   "bytes": 54437,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "Annual_Report_of_the_Town_of_Rindge_New_Hampshire_2022_e8afb4.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire%202022.pdf",
+   "sha256": "42caeb20323330d3e7bc77771b79adf0352bf8af707ae75ccad116f125b32cb6",
+   "bytes": 8613360,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:24:51-04:00"
+  },
+  {
+   "file": "APPROVED_4.28.26ZBA_Minutes_ff25b3.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/APPROVED_4.28.26ZBA_Minutes.pdf?t=202607151306280",
+   "sha256": "133840ad65d1706d5cf099fa1f6f96be918db66a0e786f5699a851517eedbfa5",
+   "bytes": 8125540,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "APPROVED_5.26.26ZBA_Minutes_23277b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/APPROVED_5.26.26ZBA_Minutes.pdf?t=202607151307160",
+   "sha256": "ac5239f1d3ea121a1e4784fe1ae26278b69ab63c28e76239cdd6311fba634c34",
+   "bytes": 6147785,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "aquifer_ordinance_amended_march_11_2014_83cfe1.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/aquifer_ordinance_amended_march_11_2014.pdf",
+   "sha256": "67852bb4556a9097946869aa3beb7f92690144ecfbf18f2a3b6f20d4b24ada6a",
+   "bytes": 149251,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "blasting_and_heavy_construction_site_plan_regulations_4cf88f.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Regulations/blasting_and_heavy_construction_site_plan_regulations.pdf",
+   "sha256": "e7e16d4f44ac1bc77e6fd68783e3334f756b823be834476b08a67d1c6ff2cfc2",
+   "bytes": 843770,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "DRAFT_09.22.26_ZBA_Minutes_728076.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/DRAFT_09.22.26_ZBA%20Minutes.pdf?t=202610090818230",
+   "sha256": "2a92f3f0c5f05a20f38fd37e67f8bd510393ba7db5d37d8301b7f3989cc7c8c8",
+   "bytes": 683425,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "DRAFT_Upload_ZBA_Minutes_05.26.26_b54639.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/DRAFT_Upload_ZBA_Minutes_05.26.26.pdf?t=202606021409430",
+   "sha256": "4e02ce2e07b7b851f778fcc4543168a42ce5b8288ba1d22a434e787f1d329499",
+   "bytes": 860890,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "driveway_regulations_amended_december_5_2017_7e084f.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Regulations/driveway_regulations_amended_december_5_2017.pdf",
+   "sha256": "982ba83257dfaf6484250e842006e1a73eefd8b67967b0476f96972528b90b16",
+   "bytes": 416417,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "excavate2006_282a10.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Regulations/excavate2006.pdf",
+   "sha256": "8f1486223a7404d455a47eb4501272f13a3c405b5a9b3eea69b2eb99501c0209",
+   "bytes": 171571,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "floodplain_management_ordinance_-_changes_adopted_2006_8fc6fa.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/floodplain_management_ordinance_-_changes_adopted_2006.pdf",
+   "sha256": "bbe0aa605b4ca3a134366b71ef697adaf679ecfc088f99063e889b28e461218b",
+   "bytes": 163791,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "gravelroadpolicy.22_24e8fc.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Departments/Public%20Works/Resources/gravelroadpolicy.22.pdf",
+   "sha256": "e879ff1fcb9fa6825e355312a75598b24a465c28230d2b58b93bba9fa4426e50",
+   "bytes": 222569,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "planned_unit_residential_development_regulations_march_2_2021_58e8ba.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Regulations/planned_unit_residential_development_regulations_march_2_2021.pdf",
+   "sha256": "f40fd57a883b7df98fbb8eee18b3f68a636af28eb0833073098024653d631592",
+   "bytes": 241335,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "RCC_Agenda_010626_306255.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20010626.pdf?t=202601241705040",
+   "sha256": "14089a5213de5aa3cedd7b0f831e9b92d4cbb2e3e29189610760d295004a92d0",
+   "bytes": 220765,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "RCC_Agenda_011226_2df2ce.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20011226.pdf?t=202601241705230",
+   "sha256": "7298d864c6e1ac51c18162e7e393352e5cc6964eb682d6683bacbf3a550f26a3",
+   "bytes": 222195,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "RCC_Agenda_012226_1f0824.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20012226.pdf?t=202602141706540",
+   "sha256": "28f775469eca69b58681823982d2acded60deb20c81e8adb2d70d1498c089098",
+   "bytes": 221915,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "RCC_Agenda_020926_0e020c.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20020926.pdf?t=202602060902390",
+   "sha256": "b485d10770a697bd2cb8c45e4cbdbc1c7b5a470df0edd6db7ed9300f75a5c224",
+   "bytes": 223648,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "RCC_Agenda_022626_8a328b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20022626.pdf?t=202602231423330",
+   "sha256": "a80dd38e6b842403748578108ce964fbf90363dd2966ae67fc309ddf0e1f770b",
+   "bytes": 217528,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:47-04:00"
+  },
+  {
+   "file": "RCC_Agenda_030926_5486cd.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20030926.pdf?t=202603051348510",
+   "sha256": "f5fcb795b21bff39b78a0f87fe112a8f7dd8f0aac877ebc7dbd792dc105130cf",
+   "bytes": 219158,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_032626_d0557a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20032626.pdf?t=202603240933080",
+   "sha256": "7d77cd3871e29bab5221d8990512013868e0f49e9e7fbdd488ac3c33d5378001",
+   "bytes": 220343,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_041326_ab2ef2.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20041326.pdf?t=202604101904500",
+   "sha256": "e598fbe045cf0c9c7518f0c3376301e6e8c6663a2107c0f68bde1a755ee363fe",
+   "bytes": 238793,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_042326_374c9a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20042326.pdf?t=202604211131110",
+   "sha256": "c10dacc4dfa7304c7870b7176dfff9d4fd4a33be2085779dd560be461c63272d",
+   "bytes": 269209,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_051126_c43b5b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20051126.pdf?t=202605081547540",
+   "sha256": "2301e6154ceb1c3c2cffff10d8b9bc6728dca169611359a0c6204d688a103f4b",
+   "bytes": 248255,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_060826_251b79.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20060826.pdf?t=202606051009460",
+   "sha256": "03cb24ef7a175202563e0ee94fc331132b31c517ce649431d225e32f4e70ee95",
+   "bytes": 248654,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_062526_2abc6a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20062526.pdf?t=202606241326060",
+   "sha256": "0aeefe68c680cc2b40350fdbd958d4e39c8ef9c43ac5151673e800f612a6ac86",
+   "bytes": 248771,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_072326_22d4b6.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20072326.pdf?t=202607211929390",
+   "sha256": "f42feb4af55a054cc9a2461d70fad0b37c404416fbf720372cd3c59839881247",
+   "bytes": 248586,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_081026_d5d361.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20081026.pdf?t=202608061724310",
+   "sha256": "7de10a720be985afbc47ecbf4112893aa8154c044c23b4f58b400236ca7d3609",
+   "bytes": 247036,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_082726_d58af0.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20082726.pdf?t=202608261854490",
+   "sha256": "31500e7a575a0795e105436f355a727aef13dbd8b630e22c72edf1bfe161a5d1",
+   "bytes": 248848,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_092426_35b157.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20092426.pdf?t=202609220706140",
+   "sha256": "fed35e2c45c3c94c47a5d9439268215a34dfe5627bb3bb00545fe0c7af08561d",
+   "bytes": 241150,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Agenda_101226_2cefa1.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Agenda/RCC%20Agenda%20101226.pdf?t=202610090948480",
+   "sha256": "4c6669225e18431950426dac335669d5fe76d17045c622d5694e61f7db06ae87",
+   "bytes": 245789,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:48-04:00"
+  },
+  {
+   "file": "RCC_Minutes_010626_fe8acf.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20010626.pdf?t=202601251148390",
+   "sha256": "f64e1fb51be3ea07a36d345734f7476d6a3dd4aa4949dd1939590350a23c5e5c",
+   "bytes": 275278,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_011226_49bff1.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20011226.pdf?t=202601271116020",
+   "sha256": "8f63333e2dddc915a1342f005523bf63f5da775e93f63a07dc58027336d939bf",
+   "bytes": 675152,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_012226_ec5e0b.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20012226.pdf?t=202602160804400",
+   "sha256": "b5ae98d02133139eadbad5a0900ba7d87dc1ab8feecda3f6f9aa9f8c5486dbd1",
+   "bytes": 321195,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_020926_9b5ea5.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20020926.pdf?t=202602280655180",
+   "sha256": "279dd63028a9518cf0d35f5ce38660158cc78a47eabe1b77a89e7517a1a590fc",
+   "bytes": 332410,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_022626_800e95.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20022626.pdf?t=202603181914110",
+   "sha256": "fce8eff9a1d8479cd9a998e0325a2107f2a00a731dc0024653802de827da27af",
+   "bytes": 256552,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_030926_822fa2.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20030926.pdf?t=202603311453290",
+   "sha256": "16f0dfdb99d47a5da5cf722d377461b16763dbd26257dcc430911d715425c830",
+   "bytes": 669597,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_032626_eb80c0.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20032626.pdf?t=202604191342070",
+   "sha256": "77833d7fc2ba3ccb17274576826f6075d44851783eb32212347d8cb3095f15ff",
+   "bytes": 357496,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_041326_8d9905.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20041326.pdf?t=202604280753500",
+   "sha256": "9650b0de457b4e48120139fed857546b9f3be71a5ac72a14d29265066c9e5fb9",
+   "bytes": 700279,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_042326_35d6b9.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20042326.pdf?t=202605141328460",
+   "sha256": "b213b292990dafef031a8330a1b34d89e4f6ccca5b4b61792e2270a98cba7f13",
+   "bytes": 335161,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_051126_950c73.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20051126.pdf?t=202606111308130",
+   "sha256": "584fe2495e3c81df75503e2728a6c49c76d0dfd480273aa25041ede5558d25ab",
+   "bytes": 342975,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_052826_6cde9a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20052826.pdf?t=202606111306560",
+   "sha256": "2adadb7ae75a630c5f6188a13259894c1c17262a8fc0687f643423730f486666",
+   "bytes": 277290,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_060826_2bab4a.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20060826.pdf?t=202607071026430",
+   "sha256": "b9a2a2c6a7fb78cecbf3c14a58946bd588b5945b5d233590289721731870a4c2",
+   "bytes": 294846,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:49-04:00"
+  },
+  {
+   "file": "RCC_Minutes_062526_3837d9.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20062526.pdf?t=202607281617140",
+   "sha256": "c00aeaedceb71183baecbf761b5c7fa738f28237b2872d6ef262deaa12e76161",
+   "bytes": 330308,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "RCC_Minutes_072326_d2aaa6.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20072326.pdf?t=202608181017010",
+   "sha256": "42051484506bb27374f93b8b35e45f4910c5d9a90d335b9e130a74153799655e",
+   "bytes": 330500,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "RCC_Minutes_081026_76fab3.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Conservation%20Commission/Agenda%20Minutes/2026/Minutes/RCC%20Minutes%20081026.pdf?t=202608281920070",
+   "sha256": "bb276c6b84f4308abd3afba8cf7b86d3e95b11d2e874a3d4842802f51598b57f",
+   "bytes": 346065,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:50-04:00"
+  },
+  {
+   "file": "rindge_class_vi_road_waiver_20200329_367b21.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Departments/Building/Files%20Documents/rindge_class_vi_road_waiver_20200329.pdf",
+   "sha256": "7255499c6fe77242b482a3d3d2b93f1ab0ba6d7d2df319376effbe6d3e2db6ba",
+   "bytes": 88606,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "Rindge_ZBA_September_Agenda_ff0d74.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Agendas/Rindge_ZBA_September%20Agenda.pdf?t=202609151225380",
+   "sha256": "d236cc8862d90cd63295aba8476a86045497a57715fd076f2f2a0f583f066c2d",
+   "bytes": 649862,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "Rindge_ZBA_September_Public_Notice_6f026d.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/Rindge_ZBA_September%20Public%20Notice.pdf?t=202609151221360",
+   "sha256": "0b0224459d5c9881416c9540e3068db1136aa902ecb0d97b01a54b0ed196e589",
+   "bytes": 536399,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "sexually_oriented_bus_2006_2c00a4.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/sexually_oriented_bus_2006.pdf",
+   "sha256": "0f0d263e3410f95ed556126be4ccb40a0e1728c6bfcd3cbae3df92d12b84faf2",
+   "bytes": 183476,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "sign_ordinance_amended_march_12_2024_f9a9c2.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/sign_ordinance_amended_march_12_2024.pdf",
+   "sha256": "824e79aa6448b2adf7544fb6515d5c03edfbc774f37e659988b1d3ce561dd13e",
+   "bytes": 276174,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "site_plan_regulations_amended_april_152025_cb93c6.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Regulations/site_plan_regulations_amended_april_152025.pdf",
+   "sha256": "087c0d2809396df9dcfe66c6d071514b7dc6528bec4b18678f697ab397a0d3fa",
+   "bytes": 348095,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "small_wind_energy_final_approved_by_voters_march_12_2013_99102e.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/small_wind_energy_final_approved_by_voters_march_12_2013.pdf",
+   "sha256": "01920626fc2e1297a41ebcd328cca5a6678b0102d017d61080e08b703c6ba4ed",
+   "bytes": 208238,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "Subcommittee_Meeting_Minutes_6_APR_1ada87.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Agenda%20Minutes/2026/Minutes/Subcommittee%20Meeting%20Minutes%206%20APR.pdf?t=202607131607130",
+   "sha256": "d291c03b5fbba792b3c444eb4aee975ea8e779db42c2a11e77ee75693cf9a279",
+   "bytes": 64962,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:51-04:00"
+  },
+  {
+   "file": "subdivision_regulations_adopted_09_20_11_7e2b3d.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Regulations/subdivision_regulations_adopted_09_20_11.pdf",
+   "sha256": "e099a5867db4a033207f19af4013a819c32192d20fdbe786ad2c8068ceb625ef",
+   "bytes": 399522,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "telecommunication_ordinance_2011_40b177.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/telecommunication_ordinance_2011.pdf",
+   "sha256": "95ae65910f7c002a99adf545a31b4189d8bcaa7b25544050483de5d4f38050bc",
+   "bytes": 721250,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "underground_storage_tank_2006_f4f6b3.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/underground_storage_tank_2006.pdf",
+   "sha256": "a6d6bcb521983f3234973288f322c868e8fa64017a0a8360efdaa8170d5da208",
+   "bytes": 131182,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  },
+  {
+   "file": "Upload_4.28.26DRAFTMINUTES_Zoning_Board_of_Adjustment_47f850.docx",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Upload_4.28.26DRAFTMINUTES_Zoning%20Board%20of%20Adjustment.docx?t=202607131620570",
+   "sha256": "18bd40f73ed8c122923e5fd4b44b6233b5881b7c28cee503705d460278f0e0ff",
+   "bytes": 76291,
+   "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "retrieved": "2026-10-09T22:10:55-04:00",
+   "converted": "converted/Upload_4.28.26DRAFTMINUTES_Zoning_Board_of_Adjustment_47f850.pdf",
+   "converted_sha256": "a6db5592792f6b5b200ef4d7d566efc7768639fdb081511a129e9445749b882d",
+   "converted_note": "PDF rendering made with LibreOffice for in-site viewing only; the original Word file is the copy of record."
+  },
+  {
+   "file": "Upload_4.28.26DRAFTMINUTES_Zoning_Board_of_Adjustment_bc6616.docx",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/Upload_4.28.26DRAFTMINUTES_Zoning%20Board%20of%20Adjustment.docx?t=202605050751010",
+   "sha256": "18bd40f73ed8c122923e5fd4b44b6233b5881b7c28cee503705d460278f0e0ff",
+   "bytes": 76291,
+   "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+   "retrieved": "2026-10-09T22:10:54-04:00",
+   "converted": "converted/Upload_4.28.26DRAFTMINUTES_Zoning_Board_of_Adjustment_bc6616.pdf",
+   "converted_sha256": "3cb1ade43f83ea324a4bcca8716bf0c432c4ca157c8062890c7986e725bda8b3",
+   "converted_note": "PDF rendering made with LibreOffice for in-site viewing only; the original Word file is the copy of record."
+  },
+  {
+   "file": "wetlands_conservation_district_ordinance_amended_march_28_2023_75f284.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/wetlands_conservation_district_ordinance_amended_march_28_2023.pdf",
+   "sha256": "b11417891f954123f04480543914b896ee1188737310157b073c9ce3c696f95e",
+   "bytes": 628325,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:53-04:00"
+  },
+  {
+   "file": "ZBA_APPROVED_June_23_2026_Minutes_3f1ecb.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/ZBA_APPROVED_June%2023%2C%202026%20Minutes.pdf?t=202609111200340",
+   "sha256": "5e3ebd297f64c293aa83e8e58b51d1cdb1b4456dc3fd00a8f49750629a149750",
+   "bytes": 6098092,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "ZBA_ApprovedMinutes_2.24.26_7fa6d9.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Minutes/ZBA_ApprovedMinutes_2.24.26.pdf?t=202603261913330",
+   "sha256": "1a485e4aebe54605f203281cee38e1d27f4358dd3dbf0ed3cee06abcedc6bd16",
+   "bytes": 1294438,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:54-04:00"
+  },
+  {
+   "file": "ZBA_JUNE_PUBLIC_NOTICE_ab35a1.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/ZBA_JUNE%20PUBLIC%20NOTICE.pdf?t=202606111402160",
+   "sha256": "bcd2d0acd55dc057f3c4e101360256a8d53a881a279f3573a33f0cc5c129624e",
+   "bytes": 464704,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "ZBA_PublicNotice_August2026_3bf045.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/ZBA_PublicNotice_August2026.pdf?t=202608180759400",
+   "sha256": "efbd16ebf0cc069f1c0e0cd4c442c7d1be29208e1f3233328a0d0d03ab6804c3",
+   "bytes": 433211,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "ZBA_PublicNotice_February2026_18bb4e.doc",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/ZBA_PublicNotice_February2026.doc?t=202602101223580",
+   "sha256": "264a463884fd3896ca59c126c4626b07fc90ee26df617ecc01cf13bdbab02025",
+   "bytes": 60928,
+   "content_type": "application/msword",
+   "retrieved": "2026-10-09T22:10:55-04:00",
+   "converted": "converted/ZBA_PublicNotice_February2026_18bb4e.pdf",
+   "converted_sha256": "988b7c479748ec0c52922a9e1976ef74e2f49171bf4ebdb82ae5ce90ba012508",
+   "converted_note": "PDF rendering made with LibreOffice for in-site viewing only; the original Word file is the copy of record."
+  },
+  {
+   "file": "ZBA_PublicNotice_March2026_03a6e7.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/ZBA_PublicNotice_March2026.pdf?t=202603171413470",
+   "sha256": "201dd96b64fc8945df20aaabaf5bba0926a5d2a3455cb341ce16e00368c2175a",
+   "bytes": 436310,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "ZBA_PublicNotice_May026_1__992c5e.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/Agenda%20Minutes/2026/Public%20Notices/ZBA_PublicNotice_May026%20%281%29.pdf?t=202605271311260",
+   "sha256": "54046779f5689d9a51b2c2c10df9c52fbae3256a26918c1e70959426fa537a52",
+   "bytes": 451408,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "ZBA_ROP_APPROVED_09-28-2021_d1d25e.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Zoning%20Board%20of%20Adjustment/ZBA%20ROP%20APPROVED%20%2009-28-2021.pdf",
+   "sha256": "5be05a846a11741b18f4fd5583a3aee5ba2618dbc63b62ed8dc9c8fbd23fe208",
+   "bytes": 739786,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:55-04:00"
+  },
+  {
+   "file": "Zoning_Ordinance_Amended_March_11_2025_23fd30.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/Boards%20Commission/Planning%20Board/Zoning%20Ordinances/Zoning_Ordinance%20Amended%20March%2011,%202025.pdf",
+   "sha256": "e7fdc8f6c7782e90190591318b96d29710117011c3fd7659855cd5fc2ce8547e",
+   "bytes": 417706,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-09T22:10:52-04:00"
+  }
+ ],
+ "not_copied": [
+  {
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2012_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "bytes": 38443321,
+   "reason": "Larger than 25 MB; not copied to keep the repository small. Opens on rindgenh.org in a new tab."
+  },
+  {
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2014_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "bytes": 28503860,
+   "reason": "Larger than 25 MB; not copied to keep the repository small. Opens on rindgenh.org in a new tab."
+  },
+  {
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2017_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "bytes": 38174608,
+   "reason": "Larger than 25 MB; not copied to keep the repository small. Opens on rindgenh.org in a new tab."
+  }
+ ]
+}
