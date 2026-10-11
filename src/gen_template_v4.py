@@ -11,8 +11,10 @@ GROUPS = [
    [('home', 'Home'), ('start', 'How this guide works'), ('glossary', 'Glossary of terms'), ('facts', 'Town facts and history')]),
  ('happening', "What's happening", 'chart', 'The issues of 2026, the March election, and the questions that keep coming back.',
    [('topics', '2026 topics'), ('election', 'March 2026 election'), ('recurring', 'Issues that keep coming up')]),
- ('meetdocs', 'Meetings and documents', 'calendar', 'Every 2026 meeting, the dates ahead, and the documents behind them.',
-   [('timeline', '2026 meeting timeline'), ('calendar', 'Upcoming dates and deadlines'), ('library', 'Document library')]),
+ ('meetdocs', 'Meetings and dates', 'calendar', 'Every 2026 meeting, and the dates and deadlines ahead.',
+   [('timeline', '2026 meeting timeline'), ('calendar', 'Upcoming dates and deadlines')]),
+ ('documents', 'Documents', 'doc', 'Agendas, minutes, ordinances and annual reports, opened right here.',
+   [('library', 'Document library')]),
  ('money', 'Money and taxes', 'coins', 'Tax rates, the town budget, and how votes and taxes have changed since 2011.',
    [('numbers', 'Rindge by the numbers'), ('budget', 'Budget and finances'), ('trends', 'Trends since 2011')]),
  ('rules', 'Laws and rules', 'scale', 'Zoning, regulations and the state laws behind them, in plain language.',
@@ -24,7 +26,7 @@ GROUPS = [
  ('about', 'About this guide', 'info', 'What is missing, where sources disagree, and every source link.',
    [('gaps', 'Gaps and conflicts'), ('sources', 'Sources')]),
 ]
-TOPLINKS = [('happening', "What's happening"), ('meetdocs', 'Meetings &amp; documents'), ('money', 'Money'), ('rules', 'Laws &amp; rules'), ('howdoi', 'How do I'), ('contacts', 'Contacts')]
+TOPLINKS = [('happening', "What's happening"), ('meetdocs', 'Meetings'), ('documents', 'Documents'), ('money', 'Money'), ('rules', 'Laws &amp; rules'), ('howdoi', 'How do I'), ('contacts', 'Contacts')]
 SEC_GROUP = {sid: (gid, glab) for gid, glab, _, _, secs in GROUPS for sid, _ in secs}
 SEC_LABEL = {sid: lab for _, _, _, _, secs in GROUPS for sid, lab in secs}
 
@@ -154,21 +156,21 @@ S['start'] = sec('start', 'st-h', 'How this guide works',
 S['facts'] = sec('facts', 'facts-h', 'Town facts and history',
  'Rindge, incorporated in 1768, is a town of about 6,500 people with many lakes and ponds on the Massachusetts border.',
  '{{FACTS}}',
- plain='Rindge was incorporated in 1768. It covers about 40 square miles on the Massachusetts border, has many lakes and ponds, and had 6,476 residents in the 2020 Census.')
+ plain='It covers about 40 square miles and had 6,476 residents in the 2020 Census.')
 S['topics'] = sec('topics', 'top-h', 'Topics',
  'Short briefings on the subjects that came up most in 2026.',
  '{{TOPICS}}',
- plain='Short briefings on the subjects that came up most in 2026, such as the budget, ambulance service, zoning, wetlands and elderly exemptions. Select a topic to open it.',
- intro='Select a topic to expand it. Each item carries its source label.')
+ plain='They cover the budget, ambulance service, zoning, wetlands, elderly exemptions and more. Select a topic to open it.',
+ intro='Each item carries its source label.')
 S['election'] = sec('election', 'el-h', 'March 2026 election',
  'Voters turned down the proposed town budget in March 2026, so the $5,654,177 default budget applies.',
  '<div class="grid g3" id="elecCharts">{{ELEC}}</div><div class="mt2">{{CRFTABLE}}</div>',
- plain='In March 2026 voters turned down the proposed $5.81 million town budget (707-824), so the $5,654,177 default budget applies. All seven savings-fund articles passed. These results come from newspapers; the town has not posted official results.',
- intro='March 2026 results are press-reported only; they are not yet in any annual report. The Deliberative Session was Sat Jan 31, 2026 <span class="bdg b-official">Official</span> and voting was Tue Mar 10, 2026 (7am–7pm, Rindge Memorial School). The town\'s results page returned an error on Oct 9, so these tallies are as reported by the Monadnock Ledger-Transcript and the Keene Sentinel. Both were re-checked online on Oct 9.')
+ plain='The proposed budget was $5.81 million and lost 707-824. All seven savings-fund articles passed. These results come from newspapers; the town has not posted official results.',
+ intro='The Deliberative Session was Sat Jan 31, 2026 <span class="bdg b-official">Official</span> and voting was Tue Mar 10, 2026 (7am–7pm, Rindge Memorial School). The town\'s results page returned an error on Oct 9, so the tallies are as reported by the Monadnock Ledger-Transcript and the Keene Sentinel, both re-checked online on Oct 9. They are not yet in any annual report.')
 S['recurring'] = sec('recurring', 'rc-h', 'Things that keep coming up',
  'Some issues, such as lot frontage, wetlands setbacks and the budget, return year after year.',
  '<div class="callout"><strong>About the dates.</strong> The town\'s online agendas and minutes begin in <strong>Sept 2024</strong>. Earlier history here comes from annual reports and press, so "first found" is the earliest record found, not necessarily when an issue first arose. For older minutes, submit a records request to the Executive Secretary or Town Administrator at the Town Offices.</div>{{ISSUES}}',
- plain='Some issues come back again and again: lot frontage, back lots, wetlands setbacks, ambulance service, the budget and school costs. Each card shows when an issue first appears in the records and what has happened since.')
+ plain='The list also covers back lots, ambulance service and school costs. Each card shows when an issue first appears in the records and what has happened since.')
 S['timeline'] = sec('timeline', 'tl-h', 'Meeting timeline, January 1 – October 9, 2026',
  'Every 2026 board meeting found on the town\'s pages, with links to its agenda, minutes and video.',
  '''<div class="controls js-only" role="search" aria-label="Filter meetings">
@@ -189,8 +191,7 @@ S['timeline'] = sec('timeline', 'tl-h', 'Meeting timeline, January 1 – October
 {{TIMELINE}}
   </ol>
   <p class="empty" id="empty" hidden>No entries match these filters.</p>''',
- plain='This list has 70 entries from January 1 to October 9, 2026: board meetings, the Deliberative Session, the election and two school board meetings. Pick a board or search for a road or topic. Every entry says where its information comes from.',
- intro='Every 2026 meeting found on the town\'s board pages, plus the Deliberative Session, the election and two school board meetings. Entries link to their agendas, minutes and video.')
+ plain='There are 70 entries from January 1 to October 9, 2026, including the Deliberative Session, the election and two school board meetings. Pick a board or search for a road or topic. Every entry says where its information comes from.')
 S['calendar'] = sec('calendar', 'cal-h', 'Key dates: fall 2026 and the March 2027 ballot',
  'The next town vote is Tuesday, March 9, 2027, and most deadlines before it are worked out from state law rather than posted by the town.',
  '''<div class="segfilter js-only" role="group" aria-label="Filter key dates">
@@ -202,13 +203,12 @@ S['calendar'] = sec('calendar', 'cal-h', 'Key dates: fall 2026 and the March 202
   <ol class="ulist" id="ulist">
 {{UPLIST}}
   </ol>''',
- plain='The next town vote is Tuesday, March 9, 2027. The town has not posted its 2027 calendar yet, so most deadlines here are worked out from state law. Confirm any date with the Town Clerk\'s office before relying on it.',
- intro='The town has posted almost none of these dates. Most come from regular meeting patterns (labeled unofficial / inferred) or from state law and the NH Municipal Association\'s generic 2027 SB2 calendar (labeled derived). Confirm every date with the Town Clerk.')
+ plain='The town has not posted its 2027 calendar. Dates here come from regular meeting patterns (labeled unofficial / inferred) or from state law and the NH Municipal Association\'s generic 2027 SB2 calendar (labeled derived). Confirm any date with the Town Clerk\'s office before relying on it.')
 S['library'] = sec('library', 'library-h', 'Document library',
  'Open any of the {{NDOCS}} town documents cited in this guide right here, without leaving the site.',
  '{{LIBRARY}}',
- plain='{{NDOCS}} town documents cited in this guide are copied here so they open right inside the site. Search or filter by board, type or year. The originals on rindgenh.org are authoritative.',
- intro='Every document cited in this guide. Town documents are byte-for-byte copies of what rindgenh.org served on Oct 9, 2026, with a checksum for each in docs/MANIFEST.json. Other sources open in the viewer only if the source allows it; otherwise they open in a new tab.')
+ plain='Search or filter by board, type or year. The originals on rindgenh.org are authoritative.',
+ intro='Town documents are byte-for-byte copies of what rindgenh.org served on Oct 9, 2026, with a checksum for each in docs/MANIFEST.json. Other sources open in the viewer only if the source allows it; otherwise they open in a new tab.')
 S['numbers'] = sec('numbers', 'num-h', 'Rindge by the numbers',
  'The key figures, including the 2025 tax rate of $13.79 per $1,000 and the elderly exemption count.',
  '''<div class="grid g4">
@@ -231,12 +231,12 @@ S['numbers'] = sec('numbers', 'num-h', 'Rindge by the numbers',
 S['budget'] = sec('budget', 'budget-h', 'Budget and finances',
  'The town spends about $5.5 to $5.8 million a year on its own operations, before school and county taxes.',
  '{{BUDGET}}',
- plain='The town spends about $5.5 to $5.8 million a year on its own operations, before school and county taxes. Voters rejected the proposed budget in 2025 and 2026, so the default budget applies. The largest lines are police, highway and fire.',
+ plain='Voters rejected the proposed budget in 2025 and 2026, so the default budget applies. The largest lines are police, highway and fire.',
  intro='Department budgets, savings funds, debt and the capital plan, from the town\'s 2024 and 2025 annual reports. 2026 vote results are press-reported.')
 S['trends'] = sec('trends', 'tr-h', 'Trends, 2011–2026',
  'How budget votes, zoning changes and tax rates have moved since 2011.',
  '{{TRENDS}}',
- plain='Since 2011 voters have approved the town budget in most years but rejected it in 2011, 2021, 2025 and 2026. Zoning changes usually pass. Numbers read from scanned reports are marked so you can check them against the original.',
+ plain='Voters have approved the town budget in most years since 2011, but rejected it in 2011, 2021, 2025 and 2026. Zoning changes usually pass.',
  intro='Built from the town\'s annual reports (2011–2025), the town\'s board index pages and press reports for 2026. Every value is labeled. Values read from scans are marked "verify against PDF", and figures that look like printing errors are withheld.')
 S['laws'] = sec('laws', 'lw-h', 'Laws and regulations that apply in Rindge',
  'Plain-language notes on Rindge\'s zoning, its regulations and the state laws behind them, each linked to the official text.',
@@ -255,28 +255,26 @@ S['laws'] = sec('laws', 'lw-h', 'Laws and regulations that apply in Rindge',
 S['howto'] = sec('howto', 'howto-h', 'How do I...?',
  'Step-by-step help with common tasks, from permits and licenses to property tax bills.',
  '{{HOWTO}}',
- plain='Step-by-step help with common tasks: permits, dog licenses, registering a vehicle, voting, and appealing or lowering a property tax bill. Each guide says who to contact and what to check first.')
+ plain='Guides cover permits, dog licenses, registering a vehicle, voting, and appealing or lowering a property tax bill. Each one says who to contact and what to check first.')
 S['emergency'] = sec('emergency', 'emergency-h', 'Emergency and utilities',
  'In an emergency, call 911.',
  '{{EMERG}}',
- plain='In an emergency, call 911. Ambulance service is due to switch to Peterborough Fire &amp; Rescue on January 1, 2027 (press-reported). No town water or sewer system is listed, so homes generally use private wells and septic (unconfirmed).')
+ plain='Ambulance service is due to switch to Peterborough Fire &amp; Rescue on January 1, 2027 (press-reported). No town water or sewer system is listed, so homes generally use private wells and septic (unconfirmed).')
 S['schools'] = sec('schools', 'schools-h', 'Schools and community',
  'Rindge children attend the Jaffrey-Rindge Cooperative School District (SAU 47), whose budget is voted separately from the town\'s.',
  '{{SCHOOLS}}',
- plain='Rindge children attend the Jaffrey-Rindge Cooperative School District (SAU 47): Rindge Memorial School for PreK–5, then Conant Middle and High School in Jaffrey. School budgets are voted separately from the town budget.')
+ plain='Rindge Memorial School serves PreK–5, then students go to Conant Middle and High School in Jaffrey.')
 S['directory'] = sec('directory', 'directory-h', 'Town directory: who to call',
  'For most questions, call the Town Offices at (603) 899-5181; in an emergency, dial 911.',
  '{{DIRECTORY}}',
- plain='For most questions, call the Town Offices at (603) 899-5181. In an emergency, dial 911. Each office below lists its phone number, hours and town web page.',
- intro='Town offices, departments, boards and committees, with phone numbers, hours and town web pages. Offices are listed by title. Checked Oct 9, 2026.')
+ plain='Each office below lists its phone number, hours and town web page. Offices are listed by title. Checked Oct 9, 2026.')
 S['gaps'] = sec('gaps', 'gap-h', 'Known gaps and conflicts',
  'Where sources disagree and what could not be found, so you know what to double-check.',
  '''<div class="grid g2">
    <div class="card"><h3>Conflicts between sources</h3>{{CONF}}</div>
    <div class="card"><h3>Gaps: not found or not posted</h3>{{GAPS}}</div>
   </div>''',
- plain='No source is perfect. This part lists where sources disagree and what could not be found, so you know what to double-check.',
- intro='Where sources disagree, and what was not available, as of Oct 9, 2026.')
+ plain='No source is perfect. Check these items before relying on them. Current as of Oct 9, 2026.')
 S['sources'] = sec('sources', 'src-h', 'Sources',
  'Every source used in this guide, grouped by type.',
  '<div class="card srcgrp">{{SOURCES}}</div>',
