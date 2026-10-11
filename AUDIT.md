@@ -1,3 +1,77 @@
+# Rindge Town Guide v8: structured data (Oct 11, 2026)
+
+**Machine-readable layer.** `src/structured.py` runs at the end of `build.py`.
+
+- **Office hours.** The posted hours of 10 offices are re-typed as rules, one to one with the text in `r3data.DEPTS`. Days the town does not post stay "not posted" and are never guessed: the Town Clerk's Friday, and Public Works on Fridays May–Oct. Planning's Thursday is by appointment.
+- **schema.org JSON-LD** in the page head:
+  - `WebSite`, with a `SearchAction` (`?q=`) and an unofficial-status disclaimer;
+  - 16 `GovernmentOffice` / `Library` entries with phone, address, town page and non-seasonal opening hours, each with `parentOrganization` Town of Rindge;
+  - a `FAQPage` of the 15 how-to guides, with answers taken from each guide's own summary;
+  - a `Dataset` for `meetings.json`. No license is declared; that is the owner's decision.
+- **No `Event` markup.** Most upcoming dates are inferred or derived, not posted by the town, and publishing them as events would present them as fact.
+
+**On the page.** All of these are built in `app.js` from data already in the page:
+
+- **Right now in Rindge** (Home): open/closed status for five places, computed in America/New_York time from the posted hours. A note says holidays are not included. Next to it, the next three dates from the calendar, with countdowns and their source labels.
+- **Directory:** an open/closed status on each office with posted hours. It refreshes every minute.
+- **Timeline:** a "2026 at a glance" grid of boards by months. Each cell filters the timeline to that board and jumps to that month.
+- **Tables:** every data table has sortable columns (`aria-sort`; Total rows stay at the bottom) and a "Download CSV" button.
+- **Search links:** `?q=word` opens search with that word.
+
+**Design test:** a new `data` check validates the JSON-LD. It runs the open/closed logic at six fixed moments (weekday, a Friday with unposted hours, Sunday, a by-appointment day, winter and summer hours) and checks the countdown, the grid totals against the filter counts, numeric sorting and `?q=`. The full suite has 0 failures and 0 warnings.
+
+# Rindge Town Guide v7: design test and deep polish (Oct 11, 2026)
+
+**Design test.** `test/design_test.mjs` runs headless Chromium with axe-core across every chapter. It covers phone and desktop, light and dark: 40 views, plus reflow and search runs.
+
+To run it: `PLAYWRIGHT=<path to playwright> AXE=<path to axe-core/axe.min.js> node test/design_test.mjs index.html`. Results are written to `test/design_results.json`.
+
+| Check | What passes |
+|---|---|
+| axe | WCAG 2.0, 2.1 and 2.2 A/AA rules, with expanded cards included |
+| structure | exactly one h1 per view and no skipped heading levels |
+| focus | a visible focus ring on every tab stop |
+| readability | no text under 12px; warnings for text under 14px and lines over 95 characters |
+| targets | controls at least 24px (fail) and 44px (goal) |
+| reflow | 320px wide, 200% text, and WCAG text-spacing override |
+| charts | every bar with a value draws |
+| findability | 16 common resident questions: a one-tap link from Home, and the first search result lands on the answer |
+
+**Baseline v6:** 50 failures and 81 warnings.
+
+**Final:** 0 failures and 0 warnings.
+
+**Fixes:**
+- **Chapter titles** are the page h1.
+- **Text size:** there is a 14px floor for all text, including source labels.
+- **Touch targets:** link lists, phone numbers and section tabs are 44px.
+- **Line length:** notes are capped at 72 characters per line.
+- **Search** matches whole words only ("rate" no longer matches "separate"). It ranks by relevance, and a "Top hit" row covers the most common resident questions.
+- **Election result bars** were invisible because chart rows reused the top bar's `.bar` class. This was a bug that predates this work.
+- **Chart colors** use a categorical palette that passes the colorblind and contrast checks in light and dark mode:
+  - Town / local school / state education / county: `#2a78d6`, `#eb6834`, `#1baf7a`, `#eda100`.
+  - Boards use the same order, with violet unused.
+  - Text never uses a series color; a dot carries the color instead.
+- **Calendar days** use a tinted cell with an ink number. Before, white text sat on the board color.
+- **Home:** the facts line is plain text, and the label key is a clean two-column list.
+- **Phone header:** the subtitle wraps instead of being cut off.
+
+**No content changes.** No facts, labels or links were added or removed.
+
+# Rindge Town Guide v6: design pass (Oct 11, 2026)
+
+- **Chapter header.** Each chapter opens with a large title, a "‹ Home" back link and a one-line description, instead of a boxed card plus a breadcrumb. With JavaScript off, breadcrumbs still show.
+- **Sticky section tabs.** Chapters with more than one section get a segmented control for their sections. It stays under the top bar and highlights the section in view. On phones it becomes a solid band under the top bar.
+- **Quieter content chrome.**
+  - The "In plain language" note is now text with an accent rule instead of a separate box.
+  - Source labels are a coloured dot plus text, with no pill or outline.
+  - The Share button is icon-only.
+  - Shadows are lighter.
+- **One accent colour.** Topic and how-to icons use the accent colour. Board colours appear only as dots in the timeline and its filter chips.
+- **Inset grouped lists.** Topics and how-to guides each read as one rounded list with hairline dividers.
+- **Fixes:** stat numbers no longer wrap ($19,904,756), and the cut-off "Source and …" text is gone from stat tiles.
+- **No content changes.** No facts, labels or links were added or removed.
+
 # Rindge Town Guide v5: navigation polish (Oct 11, 2026)
 
 - **One chapter per screen (JavaScript only).** Home, or one group with its sections, is shown at a time, so links no longer scroll through the whole guide. Without JavaScript the full long page still works. Jumps between chapters are instant. Smooth scrolling is kept only for short moves within a chapter.

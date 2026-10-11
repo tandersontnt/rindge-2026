@@ -107,7 +107,7 @@ for i,(d,t,b,st,key,end) in enumerate(UPCOMING):
     byday[d][1].append(t)
     rid_attr = f' id="{rid}"' if sum(1 for x in UPCOMING[:i] if x[0]==d)==0 else ""
     dd = fmt(d) + (f" – {fmt(end)}" if end else "")
-    UPROWS.append(f'<li class="card urow{" key" if key else ""}" style="--c:{BOARDS[b][1]}"{rid_attr} data-kind="{kind}"><div class="dd">{dd}</div>'
+    UPROWS.append(f'<li class="card urow{" key" if key else ""}" style="--c:{BOARDS[b][1]}"{rid_attr} data-kind="{kind}" data-date="{d}"{f' data-end="{end}"' if end else ""} data-board="{BOARDS[b][0]}"><div class="dd">{dd}</div>'
                   f'<div>{"<strong>Key date. </strong>" if key else ""}{E(t)} <span class="who">· {E(BOARDS[b][0])}</span></div><div>{badge(*STB[st])}</div></li>')
 UPLIST="\n".join(UPROWS)
 def month_grid(y,m):
@@ -438,6 +438,7 @@ for k,v in dict(CSS=css,JS=js,TIMELINE=TIMELINE,CHIPS=CHIPS,NEV=str(len(events))
     TOPICS=TOPICS,CONF=CONF_HTML,GAPS=GAP_HTML,SOURCES=SRC_HTML,SH_TOWN=str(SH25["Town"]),SH_LOCAL=str(SH25["Local school"]),SH_STATE=str(SH25["State education"]),SH_COUNTY=str(SH25["County"]),**V2,**R3).items():
     out=out.replace("{{"+k+"}}",v)
 out,REG,IDX=v3.post(out)
+import structured; out=structured.inject(out)
 assert "{{" not in out, out[out.find("{{"):out.find("{{")+40]
 open(os.path.join(ROOT,"index.html"),"w").write(out)
 print("events",len(events),"bytes",len(out),"docs",len(REG),"index",len(IDX))
