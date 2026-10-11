@@ -183,6 +183,12 @@ def main():
             pm['frame'][u] = dict(status=st, frameable=frameable(hd), xfo=hd.get('x-frame-options', ''), checked=NOW.isoformat(timespec='seconds'))
             if is_gov(host) and not any(n in host for n in NEVER) and st == 200 and 'html' in ct:
                 e = save_page(u, raw, final)
+                if not e and not any(n in u for n in NEVER):  # content drawn by JavaScript: let a real browser render it
+                    try:
+                        st2, hd2, raw2, final2 = browser_fetch(u)
+                        if st2 == 200: e = save_page(u, raw2, final2)
+                    except Exception as ex2:
+                        log.append(f'browser render failed {u}: {ex2}')
                 if e: pm['pages'][u] = e; log.append(f'page saved {e["file"]} {e["words"]} words')
                 else: log.append(f'page too short to save {u}')
             pm['errors'].pop(u, None)
