@@ -1,3 +1,15 @@
+# Rindge Town Guide v5: navigation polish (Oct 11, 2026)
+
+- **One chapter per screen (JavaScript only).** Home, or one group with its sections, is shown at a time, so links no longer scroll through the whole guide. Without JavaScript the full long page still works. Jumps between chapters are instant. Smooth scrolling is kept only for short moves within a chapter.
+- **Back and Forward** restore your place on the chapter you came from (`history.scrollRestoration` is manual).
+- **Previous and Next cards** appear at the end of every chapter.
+- **Quick-call strip on Home:** 911, police non-emergency (603) 899-5009 and Town Offices (603) 899-5181, as tap-to-call links. The numbers are the same ones the guide already lists.
+- **No focus ring on headings that navigation focuses.** Keyboard focus rings on controls are unchanged.
+- **The "Top" button** goes to the top of the current chapter.
+- **No repeated intros.** Each section's lead line gives the answer. The "In plain language" box now adds only details the lead line doesn't already state, and the grey note keeps only source and date details. No facts or source labels were removed.
+- **The Document library is its own chapter** ("Documents" in the top bar and the menu). "Meetings and documents" became "Meetings and dates" (the timeline and the key dates).
+- **Fix:** closing the document viewer now keeps the link that opened it on screen. Before, the browser's scroll restoration could move the page.
+
 # Rindge Town Guide v3: audit (Oct 9, 2026, ET)
 
 This section covers v3 and the round-3 content. The v2 and v1 audits follow below and still apply. To rebuild, run `python3 src/build.py`, which reads `data.py`, `v2data.py`, `lawdata.py`, `r3data.py`, `v2.py`, `v3.py` and `v3docs.py`. To add any newly cited town files to `docs/`, run `python3 src/fetch_docs.py` first. To run the tests, use `node --experimental-websocket test/cdp_test.mjs`, which writes `test/results_v3.json`.
