@@ -15,6 +15,8 @@ GROUPS = [
    [('timeline', '2026 meeting timeline'), ('calendar', 'Upcoming dates and deadlines')]),
  ('documents', 'Documents', 'doc', 'Agendas, minutes, ordinances and annual reports, opened right here.',
    [('library', 'Document library')]),
+ ('reports', 'Town reports', 'book', 'Every annual town report, from 2025 back to the 1800s.',
+   [('townreports', 'Annual town reports')]),
  ('money', 'Money and taxes', 'coins', 'Tax rates, the town budget, and how votes and taxes have changed since 2011.',
    [('numbers', 'Rindge by the numbers'), ('budget', 'Budget and finances'), ('trends', 'Trends since 2011')]),
  ('rules', 'Laws and rules', 'scale', 'Zoning, regulations and the state laws behind them, in plain language.',
@@ -78,6 +80,7 @@ MINIS = [
  ('how-file-a-citizen-petition-for-the-march-ba', 'petition', 'How do I file a petition?'),
  ('laws', 'frontage', 'What are the zoning rules for my lot?'),
  ('budget', 'coins', 'How does the town spend money?'),
+ ('townreports', 'book', 'Where are the annual town reports?'),
  ('emergency', 'alert', 'What do I do in an emergency?'),
  ('schools', 'school', 'Which schools serve Rindge?'),
  ('topics', 'elder', 'Elderly exemption limits'),
@@ -209,6 +212,10 @@ S['library'] = sec('library', 'library-h', 'Document library',
  '{{LIBRARY}}',
  plain='Search or filter by board, type or year. The originals on rindgenh.org are authoritative.',
  intro='Town documents are byte-for-byte copies of what rindgenh.org served on Oct 9, 2026, with a checksum for each in docs/MANIFEST.json. Other sources open in the viewer only if the source allows it; otherwise they open in a new tab.')
+S['townreports'] = sec('townreports', 'tr2-h', 'Annual town reports',
+ 'Every annual report of the Town of Rindge from {{RPT_FIRST}} to {{RPT_LAST}}, in one place, plus where to find the older ones.',
+ '{{TOWNREPORTS}}',
+ plain='Each spring the town publishes a report on the year before: the budget and what was spent, the town meeting results, tax rates, and a report from every department and board. Select a year to read it here.')
 S['numbers'] = sec('numbers', 'num-h', 'Rindge by the numbers',
  'The key figures, including the 2025 tax rate of $13.79 per $1,000 and the elderly exemption count.',
  '''<div class="grid g4">

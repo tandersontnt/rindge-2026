@@ -429,12 +429,14 @@ SRC_HTML="".join(f'<h3>{E(g)}</h3><ul>'+"".join(f'<li><a href="{E(u)}" target="_
 SRC_HTML+=f'<p class="note">Plus {ndocs} agenda, minutes, notice and video links on individual timeline entries. Select Board audio items come from machine transcription of the Town Hall Streams recordings linked on the Sept 9, Sept 23 and Oct 7 entries.</p>'
 
 V2=v2.render(badge,E,fmt,BOARDS,UPCOMING,TODAY)
+import reports
+RPT_HTML,RPT_N,RPT_FIRST,RPT_LAST=reports.render(lambda n,c='i':f'<svg class="{c}" aria-hidden="true" focusable="false"><use href="#i-{n}"/></svg>')
 R3=v3.render_r3(badge,E)
 tpl=open(os.path.join(os.path.dirname(__file__),"template.html")).read()
 css=open(os.path.join(os.path.dirname(__file__),"style.css")).read()
 js=open(os.path.join(os.path.dirname(__file__),"app.js")).read()
 out=tpl
-for k,v in dict(CSS=css,JS=js,TIMELINE=TIMELINE,CHIPS=CHIPS,NEV=str(len(events)),UPLIST=UPLIST,CALGRID=CALGRID,ELEC=ELEC,CRFTABLE=CRFTABLE,TAXCHART=TAXCHART,TAXTABLE=TAXTABLE,
+for k,v in dict(TOWNREPORTS=RPT_HTML,RPT_FIRST=str(RPT_FIRST),RPT_LAST=str(RPT_LAST),CSS=css,JS=js,TIMELINE=TIMELINE,CHIPS=CHIPS,NEV=str(len(events)),UPLIST=UPLIST,CALGRID=CALGRID,ELEC=ELEC,CRFTABLE=CRFTABLE,TAXCHART=TAXCHART,TAXTABLE=TAXTABLE,
     TOPICS=TOPICS,CONF=CONF_HTML,GAPS=GAP_HTML,SOURCES=SRC_HTML,SH_TOWN=str(SH25["Town"]),SH_LOCAL=str(SH25["Local school"]),SH_STATE=str(SH25["State education"]),SH_COUNTY=str(SH25["County"]),**V2,**R3).items():
     out=out.replace("{{"+k+"}}",v)
 out,REG,IDX=v3.post(out)
