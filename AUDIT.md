@@ -1,3 +1,17 @@
+# Rindge Town Guide v6: design pass (Oct 11, 2026)
+
+- **Chapter header.** Each chapter opens with a large title, a "‹ Home" back link and a one-line description, instead of a boxed card plus a breadcrumb. With JavaScript off, breadcrumbs still show.
+- **Sticky section tabs.** Chapters with more than one section get a segmented control for their sections. It stays under the top bar and highlights the section in view. On phones it becomes a solid band under the top bar.
+- **Quieter content chrome.**
+  - The "In plain language" note is now text with an accent rule instead of a separate box.
+  - Source labels are a coloured dot plus text, with no pill or outline.
+  - The Share button is icon-only.
+  - Shadows are lighter.
+- **One accent colour.** Topic and how-to icons use the accent colour. Board colours appear only as dots in the timeline and its filter chips.
+- **Inset grouped lists.** Topics and how-to guides each read as one rounded list with hairline dividers.
+- **Fixes:** stat numbers no longer wrap ($19,904,756), and the cut-off "Source and …" text is gone from stat tiles.
+- **No content changes.** No facts, labels or links were added or removed.
+
 # Rindge Town Guide v5: navigation polish (Oct 11, 2026)
 
 - **One chapter per screen (JavaScript only).** Home, or one group with its sections, is shown at a time, so links no longer scroll through the whole guide. Without JavaScript the full long page still works. Jumps between chapters are instant. Smooth scrolling is kept only for short moves within a chapter.
