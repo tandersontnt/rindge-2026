@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, 'docs'); P = os.path.join(D, 'pages'); M = os.path.join(D, 'MANIFEST.json')
 PM = os.path.join(P, 'MANIFEST.json')
-UA = 'Mozilla/5.0 (compatible; RindgeTownGuide/1.0; +https://tandersontnt.github.io/rindge-2026/)'
+UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36'
 NOW = datetime.datetime.now().astimezone()
 GOV = ('rindgenh.org', 'rindgenh.gov', 'gencourt.state.nh.us', 'gc.nh.gov', 'des.nh.gov', 'revenue.nh.gov', 'sos.nh.gov',
        'nhes.nh.gov', 'dncr.nh.gov', 'census.gov', 'co.cheshire.nh.us')
@@ -24,7 +24,7 @@ def is_gov(host): return any(host == g or host.endswith('.' + g) for g in GOV)
 
 
 def fetch(url, timeout=60, head=False):
-    req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': '*/*'}, method='HEAD' if head else 'GET')
+    req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.9'}, method='HEAD' if head else 'GET')
     with urllib.request.urlopen(req, timeout=timeout, context=ssl.create_default_context()) as r:
         return r.status, dict((k.lower(), v) for k, v in r.headers.items()), (b'' if head else r.read()), r.geturl()
 
@@ -72,11 +72,22 @@ table{border-collapse:collapse;width:100%;font-size:.9rem;display:block;overflow
 pre{white-space:pre-wrap}"""
 
 
+CTRL = re.compile('[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f\ufffd]')
+
+
 def save_page(url, raw, final):
     soup = BeautifulSoup(raw, 'lxml')
     title = re.sub(r'\s+', ' ', (soup.title.get_text() if soup.title else '') or url).strip()
     title = re.sub(r'\s*[|\-–]\s*(Rindge, NH|Town of Rindge.*|NH General Court.*)$', '', title, flags=re.I) or title
     body = main_content(soup)
+    # menu leftovers: tables and lists made only of a few links
+    for t in body.find_all(['table', 'ul']):
+        links = ' '.join(a.get_text(' ', strip=True) for a in t.find_all('a'))
+        if links and len(t.get_text(' ', strip=True)) <= len(links) + 3 and len(links.split()) < 12: t.decompose()
+    first = body.find(['h1', 'h2'])
+    if first and (re.fullmatch(r'(Rindge, ?NH|Town of Rindge.*|Home)', title, re.I) or first.get_text(' ', strip=True).lower() == title.lower()):
+        title = first.get_text(' ', strip=True) or title
+        first.decompose()
     for a in body.find_all('a', href=True):
         a['href'] = urllib.parse.urljoin(final, a['href']); a['target'] = '_blank'; a['rel'] = 'noopener'
     for img in body.find_all('img', src=True):
@@ -87,14 +98,14 @@ def save_page(url, raw, final):
         for k in list(t.attrs):
             if k.startswith('on') or k in ('style', 'class', 'id'): del t[k]
     text = body.get_text(' ', strip=True)
-    if len(text) < 120: return None
+    if len(text) < 60: return None
     host = urllib.parse.urlparse(url).netloc
     when = NOW.strftime('%b %-d, %Y')
     doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
            f'<meta name="robots" content="noindex"><link rel="canonical" href="{H.escape(url)}"><title>{H.escape(title)}</title><style>{PAGE_CSS}</style></head><body>'
            f'<div class="band"><b>Saved copy</b> of a page from {H.escape(host)}, captured {when}. The original page is authoritative and may have changed. '
            f'<a href="{H.escape(url)}" target="_blank" rel="noopener">Open the original</a></div>'
-           f'<main><h1>{H.escape(title)}</h1>{body.decode_contents()}</main></body></html>')
+           f'<main><h1>{H.escape(title)}</h1>{CTRL.sub(" ", body.decode_contents())}</main></body></html>')
     fn = slug(url)
     data = doc.encode('utf-8')
     open(os.path.join(P, fn), 'wb').write(data)

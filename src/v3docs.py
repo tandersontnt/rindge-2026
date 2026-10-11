@@ -137,6 +137,10 @@ def not_copied():
 
 VIDEOS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'videodata.json'))) if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'videodata.json')) else {}
 
+PAGES_M = os.path.join(DOCS, 'pages', 'MANIFEST.json')
+def pages_manifest():
+    return json.load(open(PAGES_M)) if os.path.exists(PAGES_M) else {'pages': {}, 'frame': {}}
+
 def registry(urls, link_text):
     """Return {url: entry}. Every entry has id, kind (pdf|word|missing|embed|ext), title, board, type, year, src."""
     man = {d['source_url']: d for d in load()}
@@ -169,6 +173,13 @@ def registry(urls, link_text):
                 if host == 'townhallstreams.com': title = txt if len(txt) > 8 else 'Meeting video (Town Hall Streams)'
                 e.update(title=title, board=org, type=typ, year=_year(u, u), date=None)
                 e['kind'] = 'missing' if missing else ('embed' if host in EMBED_HOSTS else 'ext')
+                pmf = pages_manifest()
+                snap = pmf['pages'].get(u); fr = pmf['frame'].get(u)
+                if e['kind'] == 'ext' and snap:  # saved copy of a public government page, shown inside the site
+                    e.update(kind='page', view='docs/' + snap['file'], captured=snap['captured'][:10])
+                    if not txt or txt.lower() in ('source', 'link', 'here', 'town page', 'website', 'web page') or txt.lower().startswith('source for'): e['title'] = snap['title']
+                elif e['kind'] == 'ext' and fr and fr.get('frameable') and fr.get('status') == 200:
+                    e['kind'] = 'embed'  # the site allows framing (checked by the snapshot workflow)
                 v = VIDEOS.get(u)
                 if v:  # Town Hall Streams blocks framing; its public HLS stream (CORS *) plays in our own player
                     dt = datetime.date.fromisoformat(v['date'])
