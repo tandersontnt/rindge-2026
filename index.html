@@ -975,6 +975,43 @@ main li>a:only-child:not([class]),footer li>a:only-child:not([class]){display:fl
 .disclaimer p{max-width:72ch}
 details.how>summary,details.topic>summary{min-width:0}
 details.how>summary>*,details.topic>summary>*{min-width:0;overflow-wrap:anywhere}
+/* home: "at a glance" facts read as one quiet line, not buttons */
+.home .meta{gap:4px 0;margin-top:var(--s3)}
+.home .meta li{background:none;padding:0;border-radius:0;color:var(--muted);font-size:.92rem}
+.home .meta li+li::before{content:"·";margin:0 10px;color:var(--line2)}
+[data-theme=contrast] .home .meta li{border:0}
+/* phones: let the brand subtitle wrap rather than cut off "not a Town site" */
+@media (max-width:440px){.brand .bu{white-space:normal;line-height:1.2;display:block;max-width:12em}}
+/* label key: one row per label, label on the left, meaning beside it (stacked on phones) */
+.legend{list-style:none;padding:0;margin:var(--s2) 0;display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--hair)}
+.legend li{display:grid;grid-template-columns:minmax(11em,auto) 1fr;gap:4px 16px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--hair);color:var(--muted);font-size:.95rem}
+.legend li .bdg{margin:0}
+@media (max-width:599px){.legend li{grid-template-columns:1fr;gap:2px}}
+
+/* =====================================================================
+   v7 chart colours: validated categorical palette (colour-blind safe,
+   checked light and dark). Text never wears series colour; a dot does.
+   ===================================================================== */
+:root{--sb:#2a78d6;--pb:#eb6834;--zba:#1baf7a;--cc:#eda100;--bac:#e87ba4;--school:#008300;
+ --t-town:#2a78d6;--t-local:#eb6834;--t-state:#1baf7a;--t-county:#eda100}
+@media (prefers-color-scheme:dark){:root:not([data-theme]){--sb:#3987e5;--pb:#d95926;--zba:#199e70;--cc:#c98500;--bac:#d55181;--school:#008300;
+ --t-town:#3987e5;--t-local:#d95926;--t-state:#199e70;--t-county:#c98500}}
+[data-theme=dark]{--sb:#3987e5;--pb:#d95926;--zba:#199e70;--cc:#c98500;--bac:#d55181;--school:#008300;
+ --t-town:#3987e5;--t-local:#d95926;--t-state:#199e70;--t-county:#c98500}
+.gname,.mw,.lvl{color:var(--ink2)}
+.gname::before,.lvl::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--c);margin-right:7px;vertical-align:.1em}
+.issue .ico{background:var(--accentbg);color:var(--accent)}
+/* fix: chart rows share the class name "bar" with the top bar's inner row; undo the top-bar layout inside cards */
+main .bar{display:block;height:auto;max-width:none;padding:0;margin:14px 0}
+/* calendar days with events: tinted cell, ink number, board colour as a bar (text never sits on series colour) */
+.mcal a.d,[data-theme=dark] .mcal a.d{position:relative;color:var(--ink);background:color-mix(in srgb,var(--c) 18%,var(--surface));box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--c) 70%,transparent)}
+@media (prefers-color-scheme:dark){:root:not([data-theme]) .mcal a.d{color:var(--ink)}}
+.mcal a.d::after{content:"";position:absolute;left:30%;right:30%;bottom:6px;height:3px;border-radius:2px;background:var(--c)}
+.mcal a.d:hover{background:color-mix(in srgb,var(--c) 30%,var(--surface))}
+[data-theme=contrast] .mcal a.d{background:#fff;color:#000;box-shadow:inset 0 0 0 2px #000}
+li:has(>details.how),li:has(>details.topic){min-width:0;max-width:100%}
+details.how,details.topic{max-width:100%;min-width:0}
+main .localnav li>a:only-child{display:flex;padding:0 16px}
 
 </style>
 </head>
@@ -1815,15 +1852,17 @@ function topHits(v){var out=[];TOP.forEach(function(t){if(t[0].some(function(k){
 var ORDER=['Section','How do I','Directory','Meeting','Date','Topic','Recurring issue','Law','Glossary','Document'],KIC={'Section':'grid','How do I':'question','Directory':'phone','Meeting':'calendar','Date':'calendar','Topic':'info','Recurring issue':'growth','Law':'scale','Glossary':'book','Document':'doc'};
 var SUGG=['budget','building permit','elderly exemption','tax rate','wetlands','ambulance','petition','dog license','Town Offices','zoning ordinance','Select Board minutes','frontage'];
 var JUMP=[['#calendar','calendar','Upcoming dates and deadlines'],['#library','doc','Document library'],['#howto','question','How do I...? guides'],['#directory','phone','Town directory'],['#numbers','tax','Taxes and exemptions']];
-function hits(v){var ws=v.toLowerCase().split(/\s+/).filter(Boolean);return IDX.filter(function(x){return ws.every(function(w){return x.n.indexOf(w)>-1;});});}
+function rx(w){return w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function wordAt(str,w){return new RegExp('(^|[^a-z0-9])'+rx(w)).test(str);}
+function hits(v){var ws=v.toLowerCase().split(/\s+/).filter(Boolean);return IDX.filter(function(x){return ws.every(function(w){return wordAt(x.n,w);});});}
 sdSugg.innerHTML='<h3 id="sgK">Try searching for</h3><ul class="sd-chips" aria-labelledby="sgK">'+SUGG.filter(function(s){return hits(s).length>0;}).map(function(s){return '<li><button type="button" class="sd-chip" data-q="'+esc(s)+'">'+icon('search')+esc(s)+'</button></li>';}).join('')+'</ul>'
  +'<h3 id="jpK">Or jump to</h3><ul class="sd-jump" aria-labelledby="jpK">'+JUMP.map(function(j){return '<li><a href="'+j[0]+'">'+icon(j[1])+'<span>'+esc(j[2])+'</span></a></li>';}).join('')+'</ul>';
 sdSugg.addEventListener('click',function(e){var b=e.target.closest('.sd-chip');if(!b)return;sdq.value=b.getAttribute('data-q');runSearch();sdq.focus();});
-function hi(t,ws){var s=esc(t);ws.forEach(function(w){if(w.length<2)return;s=s.replace(new RegExp('('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig'),'<mark>$1</mark>');});return s;}
+function hi(t,ws){var s=esc(t);ws.forEach(function(w){if(w.length<2)return;s=s.replace(new RegExp('(^|[^A-Za-z0-9>])('+rx(esc(w))+')','ig'),'$1<mark>$2</mark>');});return s;}
 function runSearch(){var v=sdq.value.trim().toLowerCase(),ws=v.split(/\s+/).filter(Boolean);sdres.innerHTML='';results=[];sel=-1;sdq.removeAttribute('aria-activedescendant');
  if(v.length<2){sdSugg.hidden=false;sdq.setAttribute('aria-expanded','false');sdHint.textContent='Type at least 2 letters, or pick a suggestion. Use the arrow keys to move, Enter to open, Esc to close.';return;}
  sdSugg.hidden=true;sdq.setAttribute('aria-expanded','true');
- var hs=hits(v).map(function(x){var sc=0,all=true;ws.forEach(function(w){if(x.tl.indexOf(w)>-1)sc+=3;else all=false;if(x.tl.indexOf(w)===0)sc+=2;});
+ var hs=hits(v).map(function(x){var sc=0,all=true;ws.forEach(function(w){if(wordAt(x.tl,w))sc+=3;else all=false;if(x.tl.indexOf(w)===0)sc+=2;});
   if(all)sc+=10;if(ws.length>1&&x.tl.indexOf(v)>-1)sc+=6;if(x.k!=='Document'&&(x.s||'').toLowerCase().indexOf(v)>-1)sc+=2;sc+=(BOOST[x.k]||0);return {x:x,sc:sc};});
  hs.sort(function(a,b){return b.sc-a.sc;});
  var groups={},best={};hs.forEach(function(h){(groups[h.x.k]=groups[h.x.k]||[]).push(h.x);if(!(h.x.k in best))best[h.x.k]=h.sc;});

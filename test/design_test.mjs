@@ -9,6 +9,7 @@
 //  6. structure: exactly one visible h1 per view, no skipped heading levels
 //  7. keyboard: every tab stop shows a visible focus indicator
 //  8. findability: common resident questions answered within 1 tap from Home and by the first search result
+//  9. charts: every bar with a value draws (catches layout collisions that hide data)
 import { createRequire } from 'module';
 import path from 'path';
 import fs from 'fs';
@@ -135,6 +136,12 @@ for (const c of CONFIGS) {
       });
       return { small, tiny, longLines, targets };
     });
+    // 9. charts: every bar that has a value actually draws
+    const empty = await p.evaluate(() => [...document.querySelectorAll('#main > :not(.pg-off) .fill, #main > :not(.pg-off) .seg')]
+      .filter(f => f.offsetParent !== null && parseFloat(f.style.getPropertyValue('--w')) > 0.5 && f.getBoundingClientRect().width < 1)
+      .map(f => (f.closest('.chart,.card')?.querySelector('h3,h4')?.textContent || '').trim().slice(0, 40)));
+    count('charts');
+    if (empty.length) fail('charts', where, `${empty.length} chart bars draw at zero width, e.g. ${[...new Set(empty)].slice(0, 3).join(' | ')}`);
     count('readability'); count('targets');
     if (m.tiny.length) fail('readability', where, `${m.tiny.length} text runs under 12px, e.g. ${m.tiny.slice(0, 4).join(' | ')}`);
     if (m.small.length) warn('readability', where, `${m.small.length} text runs 12-14px, e.g. ${m.small.slice(0, 4).join(' | ')}`);
@@ -203,7 +210,7 @@ for (const [label, setup] of [
 }
 await b.close();
 
-const cats = ['axe', 'structure', 'focus', 'readability', 'targets', 'reflow', 'findability', 'errors'];
+const cats = ['axe', 'structure', 'focus', 'readability', 'targets', 'reflow', 'charts', 'findability', 'errors'];
 console.log('\nDESIGN TEST  ' + results.file);
 for (const k of cats) {
   const f = results.failures.filter(x => x.check === k).length, w = results.warnings.filter(x => x.check === k).length;

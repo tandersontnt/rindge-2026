@@ -1,3 +1,41 @@
+# Rindge Town Guide v7: design test and deep polish (Oct 11, 2026)
+
+**Design test.** `test/design_test.mjs` runs headless Chromium with axe-core across every chapter. It covers phone and desktop, light and dark: 40 views, plus reflow and search runs.
+
+To run it: `PLAYWRIGHT=<path to playwright> AXE=<path to axe-core/axe.min.js> node test/design_test.mjs index.html`. Results are written to `test/design_results.json`.
+
+| Check | What passes |
+|---|---|
+| axe | WCAG 2.0, 2.1 and 2.2 A/AA rules, with expanded cards included |
+| structure | exactly one h1 per view and no skipped heading levels |
+| focus | a visible focus ring on every tab stop |
+| readability | no text under 12px; warnings for text under 14px and lines over 95 characters |
+| targets | controls at least 24px (fail) and 44px (goal) |
+| reflow | 320px wide, 200% text, and WCAG text-spacing override |
+| charts | every bar with a value draws |
+| findability | 16 common resident questions: a one-tap link from Home, and the first search result lands on the answer |
+
+**Baseline v6:** 50 failures and 81 warnings.
+
+**Final:** 0 failures and 0 warnings.
+
+**Fixes:**
+- **Chapter titles** are the page h1.
+- **Text size:** there is a 14px floor for all text, including source labels.
+- **Touch targets:** link lists, phone numbers and section tabs are 44px.
+- **Line length:** notes are capped at 72 characters per line.
+- **Search** matches whole words only ("rate" no longer matches "separate"). It ranks by relevance, and a "Top hit" row covers the most common resident questions.
+- **Election result bars** were invisible because chart rows reused the top bar's `.bar` class. This was a bug that predates this work.
+- **Chart colors** use a categorical palette that passes the colorblind and contrast checks in light and dark mode:
+  - Town / local school / state education / county: `#2a78d6`, `#eb6834`, `#1baf7a`, `#eda100`.
+  - Boards use the same order, with violet unused.
+  - Text never uses a series color; a dot carries the color instead.
+- **Calendar days** use a tinted cell with an ink number. Before, white text sat on the board color.
+- **Home:** the facts line is plain text, and the label key is a clean two-column list.
+- **Phone header:** the subtitle wraps instead of being cut off.
+
+**No content changes.** No facts, labels or links were added or removed.
+
 # Rindge Town Guide v6: design pass (Oct 11, 2026)
 
 - **Chapter header.** Each chapter opens with a large title, a "‹ Home" back link and a one-line description, instead of a boxed card plus a breadcrumb. With JavaScript off, breadcrumbs still show.
