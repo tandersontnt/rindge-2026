@@ -1,5 +1,5 @@
 {
- "captured": "2026-10-11T21:49:06+00:00",
+ "captured": "2026-10-11T21:52:23+00:00",
  "errors": {
   "https://catalog.hathitrust.org/Record/008607781": "HTTPError: HTTP Error 403: Forbidden",
   "https://citizenportal.ai/source/10354672/september-22-2026-fy28-budget-advisory-committeespecial-selectboard-meeting": "HTTPError: HTTP Error 403: Forbidden",
@@ -27,781 +27,781 @@
  "files": {},
  "frame": {
   "http://rindgehistoricalsociety.org/": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://archive.org/search?query=rindge+annual+report": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://co.cheshire.nh.us/departments/commissioners/": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://data.avitarassociates.com/logon.aspx": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://pay.eb2gov.com/RINDGENH": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://pay.eb2gov.com/Service/Index/1422?towncode=328&source=MV&towncodemasterid=321": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://rindge.recdesk.com/Community/Home": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://rindgenh.genasys.com/portal/en/register?dc=2nrz0z20pbl": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://rindgenh.gov/departments/town_clerk/elections-draft/local_elections.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://sau47.org": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://scholars.unh.edu/rindge_nh_reports/": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=71904": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=71905": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=72197": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=72198": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=72742": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=72743": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73291": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73557": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73612": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73613": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73615": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73616": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73617": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73618": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73620": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73621": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73622": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73624": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73625": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73626": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=73627": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=74109": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/stream.php?location_id=166&id=74438": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://townhallstreams.com/towns/rindge_nh": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.cathedralofthepines.org/contact/": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://www.franklinpierce.edu/about/locations/rindge.html": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://www.gencourt.state.nh.us/rsa/html/II/23/23-1.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/II/24/24-13.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/31/31-39.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/32/32-5-b.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/36/36-56.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/39/39-3.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/40/40-13.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/L/482-A/482-A-3.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/672/672-3.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/673/673-3.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-16.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-21.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-33.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-36.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-39.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-41.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-43.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-59.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-72.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-3.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-4.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-7.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/676/676-17.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/677/677-2.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/72/72-27-a.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/72/72-28.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/72/72-39-a.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/72/72-39-b.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/75/75-8-a.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/76/76-16.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/79-A/79-A-7.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/VI/91-A/91-A-4.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/XX/229/229-5.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.gencourt.state.nh.us/rsa/html/XX/231/231-43.htm": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.ingallslibrary.com/": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://www.keenesentinel.com/news/local/town-and-school-election-results-march-10/article_6dcaaa56-eace-4031-9f74-812d06b64e12.html": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://www.keenesentinel.com/news/local/where-key-zoning-changes-passed-and-failed-in-the-monadnock-region-nh/article_a1157345-1244-4711-bf2e-526605ec08e7.html": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://www.nhdeeds.org/cheshire-home/": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://www.rindgechamber.org/": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": true,
    "status": 200,
    "xfo": ""
   },
   "https://www.rindgenh.gov/boards_commission/board_of_selectmen/citizen_request_center.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/board_of_selectmen/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/budget_advisory_committee/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/capital_improvement_program_committee/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/cemetery_trustees/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/community_power_committee/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/conservation_commission/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/conservation_commission/rindge_conservation_lands.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/energy_commission/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/hazard_mitigation_committee/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/meetinghouse_oversight_committee/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/planning_board/applications.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/planning_board/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/recreation_committee/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/roadway_committee/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/supervisors_of_the_checklist/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/teltech/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/town_gown_committee/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/trustees_of_trust_funds/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/boards_commission/zoning_board_of_adjustment/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/calendar.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/community/clubs_and_organizations.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/community/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/assessing/2025_reassessment.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/assessing/exemptions___credits.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/assessing/forms_and_applications.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/assessing/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/assessing/the_abatement_process.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/building/files_documents.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/building/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/code_enforcement/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/fire/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/health_officer/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/ingalls_memorial_library/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/police/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/public_works/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/recreation/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/recycling_transfer_station/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/tax_collector/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/town_clerk/elections-draft/voter_registration.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/town_clerk/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/town_clerk/motor_vehicles.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/departments/welfare/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/enotify/index.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.gov/how_do_i/contact_us.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/boards_commission/board_of_selectmen/agendas_minutes.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/boards_commission/budget_advisory_committee/agendas_minutes.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/boards_commission/conservation_commission/agendas_minutes.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/boards_commission/planning_board/agendas_minutes.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/boards_commission/planning_board/regulations.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/boards_commission/planning_board/zoning_ordinances.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/boards_commission/zoning_board_of_adjustment/agendas_minutes.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
   },
   "https://www.rindgenh.org/how_do_i/town_reports.php": {
-   "checked": "2026-10-11T21:49:06+00:00",
+   "checked": "2026-10-11T21:52:23+00:00",
    "frameable": false,
    "status": 200,
    "xfo": "SAMEORIGIN"
@@ -810,7 +810,7 @@
  "pages": {
   "https://co.cheshire.nh.us/departments/commissioners/": {
    "bytes": 6837,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/co-cheshire-nh-us-departments-commissioners-3c680c.html",
    "final_url": "https://co.cheshire.nh.us/departments/commissioners/",
    "sha256": "1de864c48f35e4c6df9a3af344bd21468f3b18b12b7401c9d0b5e92d65b076da",
@@ -819,16 +819,25 @@
   },
   "https://rindgenh.gov/departments/town_clerk/elections-draft/local_elections.php": {
    "bytes": 11482,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/rindgenh-gov-departments-town-clerk-elections-draft-local-elections-ph-56b39c.html",
    "final_url": "https://rindgenh.gov/departments/town_clerk/elections-draft/local_elections.php",
    "sha256": "26c3107dd78cd993d743eb47293e22699e06a66ecb0e4adf62a58c35b716c2eb",
    "title": "Local Elections",
    "words": 210
   },
+  "https://sau47.org": {
+   "bytes": 2022,
+   "captured": "2026-10-11T21:52:23+00:00",
+   "file": "pages/sau47-org-77c97d.html",
+   "final_url": "https://www.sau47.org/",
+   "sha256": "de379d3c92d9cefb7de113701be33e9f2d336ea9357137317a5ac6fa196b446c",
+   "title": "Home - Jaffrey-Rindge Cooperative School District",
+   "words": 15
+  },
   "https://www.gencourt.state.nh.us/rsa/html/II/23/23-1.htm": {
    "bytes": 2359,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-ii-23-23-1-htm-df8cc6.html",
    "final_url": "https://gc.nh.gov/rsa/html/II/23/23-1.htm",
    "sha256": "92c20a7f80d73e9636fa7a93a7f59009d2925fde2575a5bf5097c539b4edadf8",
@@ -837,7 +846,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/II/24/24-13.htm": {
    "bytes": 4143,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-ii-24-24-13-htm-ec31bc.html",
    "final_url": "https://gc.nh.gov/rsa/html/II/24/24-13.htm",
    "sha256": "46e2268c3348b72db87e94f3247a9ce8006d28384d3414e8010b51ffb14792f1",
@@ -846,7 +855,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/31/31-39.htm": {
    "bytes": 5265,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-31-31-39-htm-e11c9e.html",
    "final_url": "https://gc.nh.gov/rsa/html/III/31/31-39.htm",
    "sha256": "b762d566536e2088d6118c42a3246ebe2091acfaf710a87dd5449981172560fd",
@@ -855,7 +864,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/32/32-5-b.htm": {
    "bytes": 7690,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-32-32-5-b-htm-5fd3e8.html",
    "final_url": "https://gc.nh.gov/rsa/html/III/32/32-5-b.htm",
    "sha256": "1717e9012e48477e2c33f0420b108fbe92d2bd3e12f5cb18b079bedb9f4d81db",
@@ -864,7 +873,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/36/36-56.htm": {
    "bytes": 3679,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-36-36-56-htm-bac207.html",
    "final_url": "https://gc.nh.gov/rsa/html/III/36/36-56.htm",
    "sha256": "c7221a8cfc21ca8ca677df2f54f3dfdd6574a20c66fddda65cc95d83f894c8e3",
@@ -873,7 +882,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/39/39-3.htm": {
    "bytes": 4450,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-39-39-3-htm-af48b5.html",
    "final_url": "https://gc.nh.gov/rsa/html/III/39/39-3.htm",
    "sha256": "113e74b39b2c5a7c93cdd1dc85312d50e9b907916f2ef807b0131b0604f5aab2",
@@ -882,7 +891,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/III/40/40-13.htm": {
    "bytes": 22421,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-40-40-13-htm-5ff3e6.html",
    "final_url": "https://gc.nh.gov/rsa/html/III/40/40-13.htm",
    "sha256": "1ee08fbc0642da18a38411b2741d3efd4a720be80169e2b16bd69d5b244fe8e6",
@@ -891,7 +900,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/L/482-A/482-A-3.htm": {
    "bytes": 48859,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-l-482-a-482-a-3-htm-0f7b63.html",
    "final_url": "https://gc.nh.gov/rsa/html/L/482-A/482-A-3.htm",
    "sha256": "ca606bf40bff31e766c866bc82b3b80573a9b95087a0e20de9c48ada0737642f",
@@ -900,7 +909,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/672/672-3.htm": {
    "bytes": 3740,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-672-672-3-htm-1c2f7d.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/672/672-3.htm",
    "sha256": "0c6a509931fed753d7358a31edb98bd7720d9369104434cbd324a039968f0d06",
@@ -909,7 +918,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/673/673-3.htm": {
    "bytes": 4688,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-673-673-3-htm-923abf.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/673/673-3.htm",
    "sha256": "3d9de5e3d9dc13fd01aab71bcb8f5c59de967fbdb3fe734742224cb15f741066",
@@ -918,7 +927,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-16.htm": {
    "bytes": 7488,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-16-htm-fdb56e.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-16.htm",
    "sha256": "37626051b480bca247476fb1c46fac7acc6d2ae26b1a2029fbf298112bb027b7",
@@ -927,7 +936,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-21.htm": {
    "bytes": 19143,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-21-htm-62345d.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-21.htm",
    "sha256": "ddb4428743291ea03cea3d2c43520cdb14e4998a5e06cbbde39254ec7acf922e",
@@ -936,7 +945,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-33.htm": {
    "bytes": 9721,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-33-htm-8275ea.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-33.htm",
    "sha256": "ffe2e26a2e3d82a5b5b6879805791f4110f66769fc55227a677c204bace4875c",
@@ -945,7 +954,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-36.htm": {
    "bytes": 10401,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-36-htm-3c2e76.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-36.htm",
    "sha256": "a1fd8f5ea12dad001c94ecec4b63f1bd4f76860ec9c3e1623f55f61eac9de455",
@@ -954,7 +963,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-39.htm": {
    "bytes": 5625,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-39-htm-2287cb.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-39.htm",
    "sha256": "21f1769527e89e921ec1989b330410fa24b68d210812db66ace0220588682d7d",
@@ -963,7 +972,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-41.htm": {
    "bytes": 9030,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-41-htm-f2710f.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-41.htm",
    "sha256": "1af4393961dc15fc1c28334f89ba09fe284d04ba85ed13ffc053402f93f83655",
@@ -972,7 +981,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-43.htm": {
    "bytes": 6776,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-43-htm-d72bff.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-43.htm",
    "sha256": "57750c0b043c825903d8497b73cb44b941447da88462f35e12d3297ba5e826a7",
@@ -981,7 +990,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-59.htm": {
    "bytes": 4079,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-59-htm-6d0e2c.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-59.htm",
    "sha256": "7dfb141496cd827f7feb078beb714145d55b2c14f5fd130db8505fadf97cc3d8",
@@ -990,7 +999,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-72.htm": {
    "bytes": 9186,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-72-htm-e8a8bf.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-72.htm",
    "sha256": "d940b031b932cbfd6462ce043e99ef21d390247dc2d2b51d5af6b72e8c683a00",
@@ -999,7 +1008,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-3.htm": {
    "bytes": 7232,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-675-675-3-htm-5c8330.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/675/675-3.htm",
    "sha256": "f82500c4100b662ae77203fe1bcfb060130b4191ad6e01971a3008116d5d4ba6",
@@ -1008,7 +1017,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-4.htm": {
    "bytes": 4588,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-675-675-4-htm-f796a3.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/675/675-4.htm",
    "sha256": "1137b006a63cada527b04a9a11259212ab6ab23fcc4a2c75244adb70b2d8be53",
@@ -1017,7 +1026,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-7.htm": {
    "bytes": 5924,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-675-675-7-htm-849395.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/675/675-7.htm",
    "sha256": "0eab462f77c6d9cfaa63bcbd9e10b9a06c94911ed791b07b029d5c6fbdfef1c7",
@@ -1026,7 +1035,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/676/676-17.htm": {
    "bytes": 5741,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-676-676-17-htm-9a78c4.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/676/676-17.htm",
    "sha256": "95d5111cd9a3b6c8d480923b30713de1bdcfcc7724ab67c62458ccbf83cec13a",
@@ -1035,7 +1044,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/LXIV/677/677-2.htm": {
    "bytes": 4189,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-677-677-2-htm-91a36f.html",
    "final_url": "https://gc.nh.gov/rsa/html/LXIV/677/677-2.htm",
    "sha256": "19a688f622dffa93483a3f38799a0f03219652e40fe9017c2340d344024892e6",
@@ -1044,7 +1053,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/72/72-27-a.htm": {
    "bytes": 4225,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-v-72-72-27-a-htm-dfffba.html",
    "final_url": "https://gc.nh.gov/rsa/html/V/72/72-27-a.htm",
    "sha256": "63d9c7ddbad16a263c3bfc409adcbed47e980afba53372e9813ff9784ebe769b",
@@ -1053,7 +1062,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/72/72-28.htm": {
    "bytes": 6031,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-v-72-72-28-htm-bf43f3.html",
    "final_url": "https://gc.nh.gov/rsa/html/V/72/72-28.htm",
    "sha256": "7b1b7228bacf217603c53f269456d1e64538856409b5c83e3791fd5879363031",
@@ -1062,7 +1071,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/72/72-39-a.htm": {
    "bytes": 5454,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-v-72-72-39-a-htm-7ba6b6.html",
    "final_url": "https://gc.nh.gov/rsa/html/V/72/72-39-a.htm",
    "sha256": "e18963e55f44f07a7f8c8efa49f88feeb6e7551bb8ef8c886fca4ec680357dc5",
@@ -1071,7 +1080,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/72/72-39-b.htm": {
    "bytes": 3844,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-v-72-72-39-b-htm-29c9dc.html",
    "final_url": "https://gc.nh.gov/rsa/html/V/72/72-39-b.htm",
    "sha256": "921470ad69fbd2635041d42200bfa44adfa22bac623bf8d6365cd6dc0667611e",
@@ -1080,7 +1089,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/75/75-8-a.htm": {
    "bytes": 2771,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-v-75-75-8-a-htm-27b92f.html",
    "final_url": "https://gc.nh.gov/rsa/html/V/75/75-8-a.htm",
    "sha256": "9c8f06b9818f15cd6db5b31952de6fc21f1369e2a4c8490f9962f82703e9428a",
@@ -1089,7 +1098,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/76/76-16.htm": {
    "bytes": 5778,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-v-76-76-16-htm-39c8c9.html",
    "final_url": "https://gc.nh.gov/rsa/html/V/76/76-16.htm",
    "sha256": "23ba5a396c3ce034b1ee53c578daf43acfadf784e83384315b3f9d31ef6b419a",
@@ -1098,7 +1107,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/V/79-A/79-A-7.htm": {
    "bytes": 15417,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-v-79-a-79-a-7-htm-f75f70.html",
    "final_url": "https://gc.nh.gov/rsa/html/V/79-A/79-A-7.htm",
    "sha256": "1b3dc5539f74f2c2d5d8fe73cc98f9d4bad4255f24943f60e3a2b0c1d30cd38d",
@@ -1107,7 +1116,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/VI/91-A/91-A-4.htm": {
    "bytes": 12686,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-vi-91-a-91-a-4-htm-bdde7f.html",
    "final_url": "https://gc.nh.gov/rsa/html/VI/91-A/91-A-4.htm",
    "sha256": "f1a4d4d549947e2f05e87cb32619b2600243316cf689153817c0c2c83965a32b",
@@ -1116,7 +1125,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/XX/229/229-5.htm": {
    "bytes": 7643,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-xx-229-229-5-htm-5c5935.html",
    "final_url": "https://gc.nh.gov/rsa/html/XX/229/229-5.htm",
    "sha256": "855dcd580328330536ad80b92402b438236137dfad21a28546f2de108dd0f627",
@@ -1125,7 +1134,7 @@
   },
   "https://www.gencourt.state.nh.us/rsa/html/XX/231/231-43.htm": {
    "bytes": 3472,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-gencourt-state-nh-us-rsa-html-xx-231-231-43-htm-aaa01e.html",
    "final_url": "https://gc.nh.gov/rsa/html/XX/231/231-43.htm",
    "sha256": "9ee89f3634f483eba9a1a7fa9e479c0834ecf462985c973c00e6c50b21f300de",
@@ -1134,7 +1143,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/board_of_selectmen/index.php": {
    "bytes": 4815,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-board-of-selectmen-index-php-9eef9a.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/board_of_selectmen/index.php",
    "sha256": "992a158a15032d13d2c3a801d23f9246002ecc3fe3960e507854ff3387608589",
@@ -1143,7 +1152,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/budget_advisory_committee/index.php": {
    "bytes": 3132,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-budget-advisory-committee-index-php-e2e50c.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/budget_advisory_committee/index.php",
    "sha256": "aae3c2d5336b55da65228de77368e270ab64d7ff9540827876987d5eb81c73d5",
@@ -1152,7 +1161,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/capital_improvement_program_committee/index.php": {
    "bytes": 3654,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-capital-improvement-program-committ-074a34.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/capital_improvement_program_committee/index.php",
    "sha256": "77b7bfb0c1adb93aeacc1fa285237db348f5025fd784421c2b910056fa76998d",
@@ -1161,7 +1170,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/cemetery_trustees/index.php": {
    "bytes": 3165,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-cemetery-trustees-index-php-08b644.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/cemetery_trustees/index.php",
    "sha256": "07a252bdc7cd5829a78c1d99e56a690508f5b9dfb67069f339206947094025f5",
@@ -1170,7 +1179,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/community_power_committee/index.php": {
    "bytes": 3964,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-community-power-committee-index-php-3ec890.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/community_power_committee/index.php",
    "sha256": "5fd988e2c255e49183d88b752187ab5fd8886f1576e8e429898f862fc0b3ceef",
@@ -1179,16 +1188,25 @@
   },
   "https://www.rindgenh.gov/boards_commission/conservation_commission/index.php": {
    "bytes": 2098,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-conservation-commission-index-php-a2ecf4.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/conservation_commission/index.php",
    "sha256": "b59b9cb57d3125ea0adab77d8c95564b07ef706afa18a2406b8855ea088d269f",
    "title": "Conservation Commission",
    "words": 56
   },
+  "https://www.rindgenh.gov/boards_commission/conservation_commission/rindge_conservation_lands.php": {
+   "bytes": 2109,
+   "captured": "2026-10-11T21:52:23+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-conservation-commission-rindge-cons-d441ab.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/conservation_commission/rindge_conservation_lands.php",
+   "sha256": "60b0a25f7cc06dc8948cb4b279c5768edb297b996d60abf41028e3d08dca6bf8",
+   "title": "Rindge, NH",
+   "words": 15
+  },
   "https://www.rindgenh.gov/boards_commission/energy_commission/index.php": {
    "bytes": 4074,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-energy-commission-index-php-d6fabf.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/energy_commission/index.php",
    "sha256": "1bfba209b5695061b6390debf5673f2017afb6b095f777ef91e1997a1f5088ea",
@@ -1197,7 +1215,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/hazard_mitigation_committee/index.php": {
    "bytes": 2573,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-hazard-mitigation-committee-index-p-8be8fa.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/hazard_mitigation_committee/index.php",
    "sha256": "752f68b3b3a946b73799abe1a4ce2ee1c51592c093c96e1cd3591de92aa8e828",
@@ -1206,7 +1224,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/meetinghouse_oversight_committee/index.php": {
    "bytes": 2765,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-meetinghouse-oversight-committee-in-b3ef5d.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/meetinghouse_oversight_committee/index.php",
    "sha256": "5fa9406b1bc0a65ad5b28ff9dd1d90d93ca91027f38c5a3e45fc0d4d2e531894",
@@ -1215,7 +1233,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/planning_board/applications.php": {
    "bytes": 7520,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-planning-board-applications-php-421afe.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/planning_board/applications.php",
    "sha256": "e8133bdbce6b3594feae8eb743a5311d7d3437b05284041ffd0a2d2868918533",
@@ -1224,7 +1242,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/planning_board/index.php": {
    "bytes": 5403,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-planning-board-index-php-4f39e4.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/planning_board/index.php",
    "sha256": "02d18855e2a35184a2ed213549ef119087920b69368f9dac7e9bde65f4642c99",
@@ -1233,7 +1251,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/recreation_committee/index.php": {
    "bytes": 3738,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-recreation-committee-index-php-71b81f.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/recreation_committee/index.php",
    "sha256": "ccc8552f94159cbcf3c447389a3fdcc5d191c7a5e6ffc7daf14f0f64cc692a09",
@@ -1242,16 +1260,25 @@
   },
   "https://www.rindgenh.gov/boards_commission/roadway_committee/index.php": {
    "bytes": 5706,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-roadway-committee-index-php-bb583a.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/roadway_committee/index.php",
    "sha256": "bec7da9cedb172e2a34f7404304b80d0204ac2f37112be3c30f237f6db433aa7",
    "title": "Roadway Committee",
    "words": 60
   },
+  "https://www.rindgenh.gov/boards_commission/supervisors_of_the_checklist/index.php": {
+   "bytes": 2079,
+   "captured": "2026-10-11T21:52:23+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-supervisors-of-the-checklist-index--edcfd0.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/supervisors_of_the_checklist/index.php",
+   "sha256": "e84ea5ad437d6674757c49ed667b6e8229d8f07d609b5d116284df071371ed99",
+   "title": "Rindge, NH",
+   "words": 15
+  },
   "https://www.rindgenh.gov/boards_commission/teltech/index.php": {
    "bytes": 2604,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-teltech-index-php-e733f3.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/teltech/index.php",
    "sha256": "42db239bf519e3a56d7074821bfca016bfd2f0ea6015729c72ac69b3b8a76569",
@@ -1260,7 +1287,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/town_gown_committee/index.php": {
    "bytes": 3608,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-town-gown-committee-index-php-97be96.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/town_gown_committee/index.php",
    "sha256": "5e61bbdbf0a8de3ae037716d747f1b6603fbe5f064ac5d34745ffd856cde1258",
@@ -1269,7 +1296,7 @@
   },
   "https://www.rindgenh.gov/boards_commission/trustees_of_trust_funds/index.php": {
    "bytes": 4333,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-trustees-of-trust-funds-index-php-a7fd03.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/trustees_of_trust_funds/index.php",
    "sha256": "35ed7c42939e2c16956dcd3f69a26b590966bff5ca7cb88c8b5ff70c222b2364",
@@ -1278,16 +1305,25 @@
   },
   "https://www.rindgenh.gov/boards_commission/zoning_board_of_adjustment/index.php": {
    "bytes": 3549,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-boards-commission-zoning-board-of-adjustment-index-ph-23fe1e.html",
    "final_url": "https://www.rindgenh.gov/boards_commission/zoning_board_of_adjustment/index.php",
    "sha256": "8ff58ba9e39122f4255eeb2eabd4006848484f40a8fa71cb815c9b4ab7809b99",
    "title": "Rindge, NH",
    "words": 78
   },
+  "https://www.rindgenh.gov/calendar.php": {
+   "bytes": 1987,
+   "captured": "2026-10-11T21:52:23+00:00",
+   "file": "pages/www-rindgenh-gov-calendar-php-722f76.html",
+   "final_url": "https://www.rindgenh.gov/calendar.php?view=month&month=10&day=01&year=2026",
+   "sha256": "fbac282459649b9289b88315e635d180396f428666cc31b1135f1bebddd4738b",
+   "title": "Calendar",
+   "words": 15
+  },
   "https://www.rindgenh.gov/community/clubs_and_organizations.php": {
    "bytes": 5525,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-community-clubs-and-organizations-php-e28918.html",
    "final_url": "https://www.rindgenh.gov/community/clubs_and_organizations.php",
    "sha256": "b18de5d706b2546c6a2cac0e42e404c6f1eed88529145b515b5adf568c1d162f",
@@ -1296,7 +1332,7 @@
   },
   "https://www.rindgenh.gov/community/index.php": {
    "bytes": 8275,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-community-index-php-9c1cf5.html",
    "final_url": "https://www.rindgenh.gov/community/index.php",
    "sha256": "49fe47f594426ebf3ab5608dbb10a7c0a3e486e87d507e80fc15d176281517b8",
@@ -1305,7 +1341,7 @@
   },
   "https://www.rindgenh.gov/departments/assessing/2025_reassessment.php": {
    "bytes": 4099,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-assessing-2025-reassessment-php-1b2dc4.html",
    "final_url": "https://www.rindgenh.gov/departments/assessing/2025_reassessment.php",
    "sha256": "ecec1910bf639de8ac713712b1fcb0a19335506d73875f43572430ffe44145dd",
@@ -1314,7 +1350,7 @@
   },
   "https://www.rindgenh.gov/departments/assessing/exemptions___credits.php": {
    "bytes": 3680,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-assessing-exemptions-credits-php-bdfde5.html",
    "final_url": "https://www.rindgenh.gov/departments/assessing/exemptions___credits.php",
    "sha256": "2dddaa2cd59155a5d1e0f01c1371f36ee23035f424cf628b304a210e88ac6882",
@@ -1323,7 +1359,7 @@
   },
   "https://www.rindgenh.gov/departments/assessing/forms_and_applications.php": {
    "bytes": 6776,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-assessing-forms-and-applications-php-97ae3f.html",
    "final_url": "https://www.rindgenh.gov/departments/assessing/forms_and_applications.php",
    "sha256": "f80a060bba141c23aae3e63197d93f76ef518edafe9f1885efe6e7adfca9518f",
@@ -1332,7 +1368,7 @@
   },
   "https://www.rindgenh.gov/departments/assessing/index.php": {
    "bytes": 5059,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-assessing-index-php-4bf306.html",
    "final_url": "https://www.rindgenh.gov/departments/assessing/index.php",
    "sha256": "e3f0b6107e1c8fe71336d654f7414d7d261a19df709b203acbbb69134440a27d",
@@ -1341,7 +1377,7 @@
   },
   "https://www.rindgenh.gov/departments/assessing/the_abatement_process.php": {
    "bytes": 4275,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-assessing-the-abatement-process-php-479241.html",
    "final_url": "https://www.rindgenh.gov/departments/assessing/the_abatement_process.php",
    "sha256": "cff824bc1948e6bc924b788ce99917b8a9835bedd5aa047ddf119585278b560f",
@@ -1350,7 +1386,7 @@
   },
   "https://www.rindgenh.gov/departments/building/files_documents.php": {
    "bytes": 16259,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-building-files-documents-php-b46ad0.html",
    "final_url": "https://www.rindgenh.gov/departments/building/files_documents.php",
    "sha256": "4a60123cd0849a0eb4c0c0423a39d8dd26162d1e7023980f5bcc6a26ad8fe981",
@@ -1359,7 +1395,7 @@
   },
   "https://www.rindgenh.gov/departments/building/index.php": {
    "bytes": 3917,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-building-index-php-c307e3.html",
    "final_url": "https://www.rindgenh.gov/departments/building/index.php",
    "sha256": "bc9bf0e333a8f387ddf0cdd71723476e500aa5dcb8acec132e5b03d26821402b",
@@ -1368,7 +1404,7 @@
   },
   "https://www.rindgenh.gov/departments/code_enforcement/index.php": {
    "bytes": 3454,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-code-enforcement-index-php-99f7f1.html",
    "final_url": "https://www.rindgenh.gov/departments/code_enforcement/index.php",
    "sha256": "754c826f5a85629a64513593bd7981ac8af367ffd04740adc5ad7373a539d565",
@@ -1377,16 +1413,25 @@
   },
   "https://www.rindgenh.gov/departments/fire/index.php": {
    "bytes": 3028,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-fire-index-php-75ebbd.html",
    "final_url": "https://www.rindgenh.gov/departments/fire/index.php",
    "sha256": "6a09c8f074ba614413b51766e8515b9b9d7245de445fd6c52fc86f7a2beaff3a",
    "title": "Fire Department",
    "words": 69
   },
+  "https://www.rindgenh.gov/departments/health_officer/index.php": {
+   "bytes": 2039,
+   "captured": "2026-10-11T21:52:23+00:00",
+   "file": "pages/www-rindgenh-gov-departments-health-officer-index-php-f1169f.html",
+   "final_url": "https://www.rindgenh.gov/departments/health_officer/index.php",
+   "sha256": "338febd250634558b1664bfc57d91a527b0630d8ca3402cc847e2ebd395f89f1",
+   "title": "Rindge, NH",
+   "words": 15
+  },
   "https://www.rindgenh.gov/departments/ingalls_memorial_library/index.php": {
    "bytes": 11453,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-ingalls-memorial-library-index-php-6b69f1.html",
    "final_url": "https://www.rindgenh.gov/departments/ingalls_memorial_library/index.php",
    "sha256": "039bc5641a5ec5fd23a4652e693f2b282bee9ea749ef41ae721c3fb6762d5b63",
@@ -1395,7 +1440,7 @@
   },
   "https://www.rindgenh.gov/departments/police/index.php": {
    "bytes": 4382,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-police-index-php-e72f5b.html",
    "final_url": "https://www.rindgenh.gov/departments/police/index.php",
    "sha256": "67fd43564af72442e03d0577ad45277da9ed6146c044727f0399c001d01ca748",
@@ -1404,7 +1449,7 @@
   },
   "https://www.rindgenh.gov/departments/public_works/index.php": {
    "bytes": 5022,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-public-works-index-php-d99c67.html",
    "final_url": "https://www.rindgenh.gov/departments/public_works/index.php",
    "sha256": "60c1be9a64d6f7d36e4ec40a81c970a4123ca42b6965a45217ef260e2ffdd8fa",
@@ -1413,7 +1458,7 @@
   },
   "https://www.rindgenh.gov/departments/recreation/index.php": {
    "bytes": 2173,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-recreation-index-php-f5e4e3.html",
    "final_url": "https://www.rindgenh.gov/departments/recreation/index.php",
    "sha256": "7dcc3b0110da2f2a84dec501f38bfdada0cc2ab3130945684842f101d390f25e",
@@ -1422,7 +1467,7 @@
   },
   "https://www.rindgenh.gov/departments/recycling_transfer_station/index.php": {
    "bytes": 4031,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-recycling-transfer-station-index-php-910b49.html",
    "final_url": "https://www.rindgenh.gov/departments/recycling_transfer_station/index.php",
    "sha256": "83e4089b94272d26901b074fdda63d7009fbd878300c5a86ce0ee3fd0d992ace",
@@ -1431,7 +1476,7 @@
   },
   "https://www.rindgenh.gov/departments/tax_collector/index.php": {
    "bytes": 7504,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-tax-collector-index-php-118334.html",
    "final_url": "https://www.rindgenh.gov/departments/tax_collector/index.php",
    "sha256": "317f6bf6234e569a830e097a14d9c8365d734ba27fbec23c39059a394e91041a",
@@ -1440,7 +1485,7 @@
   },
   "https://www.rindgenh.gov/departments/town_clerk/elections-draft/voter_registration.php": {
    "bytes": 6746,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-town-clerk-elections-draft-voter-registra-5fdcd0.html",
    "final_url": "https://www.rindgenh.gov/departments/town_clerk/elections-draft/voter_registration.php",
    "sha256": "aaa4ec7fbf33858ff16276ea4da58cebf1114d495b79d978ee5157a9bce66b7b",
@@ -1449,7 +1494,7 @@
   },
   "https://www.rindgenh.gov/departments/town_clerk/index.php": {
    "bytes": 35117,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-town-clerk-index-php-241ebf.html",
    "final_url": "https://www.rindgenh.gov/departments/town_clerk/index.php",
    "sha256": "ffea30eae55c0b3b81327e3863c3def6bb27e2b9c8544fc8df3d07edb999049b",
@@ -1458,7 +1503,7 @@
   },
   "https://www.rindgenh.gov/departments/town_clerk/motor_vehicles.php": {
    "bytes": 8067,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-town-clerk-motor-vehicles-php-d7e1ac.html",
    "final_url": "https://www.rindgenh.gov/departments/town_clerk/motor_vehicles.php",
    "sha256": "c846f2f1f9ad1c847533fcdf0aa80e4a826f6e09df31fd07e1ad8837c2b2d9c5",
@@ -1467,7 +1512,7 @@
   },
   "https://www.rindgenh.gov/departments/welfare/index.php": {
    "bytes": 3918,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-departments-welfare-index-php-598c5d.html",
    "final_url": "https://www.rindgenh.gov/departments/welfare/index.php",
    "sha256": "edba6b2d83f8ceca0610f7b1db9d36d96131b6912e52c39857a8ca6d01901fbe",
@@ -1476,7 +1521,7 @@
   },
   "https://www.rindgenh.gov/how_do_i/contact_us.php": {
    "bytes": 12433,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-gov-how-do-i-contact-us-php-49880b.html",
    "final_url": "https://www.rindgenh.gov/how_do_i/contact_us.php",
    "sha256": "265ec5440471919a3e1e9c39173af7e8eb07523c2765abac0fee29c0fbb955c2",
@@ -1485,7 +1530,7 @@
   },
   "https://www.rindgenh.org/": {
    "bytes": 11141,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-534de8.html",
    "final_url": "https://www.rindgenh.org/",
    "sha256": "62b51b07d9ad8e918a51ba9633e7f133d8871c0b70570cc65f834e4119e098d5",
@@ -1494,7 +1539,7 @@
   },
   "https://www.rindgenh.org/boards_commission/board_of_selectmen/agendas_minutes.php": {
    "bytes": 77395,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-boards-commission-board-of-selectmen-agendas-minutes--a88fed.html",
    "final_url": "https://www.rindgenh.org/boards_commission/board_of_selectmen/agendas_minutes.php",
    "sha256": "de202a27aa9b4861f49b25779f267ed70def2497d4ed02e5c559f37568ec0b85",
@@ -1503,7 +1548,7 @@
   },
   "https://www.rindgenh.org/boards_commission/budget_advisory_committee/agendas_minutes.php": {
    "bytes": 14578,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-boards-commission-budget-advisory-committee-agendas-m-856017.html",
    "final_url": "https://www.rindgenh.org/boards_commission/budget_advisory_committee/agendas_minutes.php",
    "sha256": "1f1cc47807a3a9a08dd90e6833d3be945e16b58315e7424acfe07140fcccc118",
@@ -1512,7 +1557,7 @@
   },
   "https://www.rindgenh.org/boards_commission/conservation_commission/agendas_minutes.php": {
    "bytes": 34292,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-boards-commission-conservation-commission-agendas-min-dcd164.html",
    "final_url": "https://www.rindgenh.org/boards_commission/conservation_commission/agendas_minutes.php",
    "sha256": "1b1d92f44e58559579b37b217d8994609e4c5f25e28fa3f9d9395a4b3235d1c5",
@@ -1521,7 +1566,7 @@
   },
   "https://www.rindgenh.org/boards_commission/planning_board/agendas_minutes.php": {
    "bytes": 37502,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-boards-commission-planning-board-agendas-minutes-php-b55575.html",
    "final_url": "https://www.rindgenh.org/boards_commission/planning_board/agendas_minutes.php",
    "sha256": "8589fe9fd6bb8f52bf9490e7b81484c3cdd9133d0f362b4d3f80bd3340114477",
@@ -1530,7 +1575,7 @@
   },
   "https://www.rindgenh.org/boards_commission/planning_board/regulations.php": {
    "bytes": 5282,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-boards-commission-planning-board-regulations-php-445cf0.html",
    "final_url": "https://www.rindgenh.org/boards_commission/planning_board/regulations.php",
    "sha256": "bed916e22c2946e0190213326e3df3f17e096d255d8388d1df4cf2ea628dff91",
@@ -1539,7 +1584,7 @@
   },
   "https://www.rindgenh.org/boards_commission/planning_board/zoning_ordinances.php": {
    "bytes": 8039,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-boards-commission-planning-board-zoning-ordinances-ph-87033f.html",
    "final_url": "https://www.rindgenh.org/boards_commission/planning_board/zoning_ordinances.php",
    "sha256": "5f208d10d24a87c128eb9120fe592a879c80b3b28ab65dd5d2073060657a046c",
@@ -1548,7 +1593,7 @@
   },
   "https://www.rindgenh.org/boards_commission/zoning_board_of_adjustment/agendas_minutes.php": {
    "bytes": 32043,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-boards-commission-zoning-board-of-adjustment-agendas--6a3e4b.html",
    "final_url": "https://www.rindgenh.org/boards_commission/zoning_board_of_adjustment/agendas_minutes.php",
    "sha256": "c438efbafda676c5326ef1f3a66142b507a1e10c350238564271f4c2fbd4acb6",
@@ -1557,7 +1602,7 @@
   },
   "https://www.rindgenh.org/how_do_i/town_reports.php": {
    "bytes": 8975,
-   "captured": "2026-10-11T21:49:06+00:00",
+   "captured": "2026-10-11T21:52:23+00:00",
    "file": "pages/www-rindgenh-org-how-do-i-town-reports-php-2dd1d5.html",
    "final_url": "https://www.rindgenh.org/how_do_i/town_reports.php",
    "sha256": "0e0797ed7c2b754ba4dfee9db96eaac86a5780b2273ff7706668c82ce992f4d7",
