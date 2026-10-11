@@ -66,6 +66,7 @@ var pages=[],curPage=null,pageY={};try{if('scrollRestoration' in history)history
    (next?'<a class="pg-next" href="#'+next.id+'"><span class="pg-txt"><span class="pg-k">Next</span><span class="pg-t">'+esc(next.label)+'</span></span>'+icon('next')+'</a>':'');
   p.els[p.els.length-1].insertAdjacentElement('afterend',nav);p.els.push(nav);});
  pages.forEach(function(p){var gb=p.els[0];if(!gb.matches('.groupban'))return;
+  var k=$('.gb-k',gb);if(k){var h=d.createElement('h1');h.className=k.className;h.innerHTML=k.innerHTML;h.id=gb.id+'-h';k.parentNode.replaceChild(h,k);gb.setAttribute('aria-labelledby',h.id);gb.removeAttribute('aria-label');}
   var back=d.createElement('a');back.className='gb-back';back.href='#home';back.innerHTML=icon('prev')+'<span>Home</span>';gb.insertBefore(back,gb.firstChild);
   var links=$$('.gb-l a',gb);if(links.length<2)return;
   var nav=d.createElement('nav');nav.className='localnav';nav.setAttribute('aria-label','Sections in '+p.label);
@@ -352,6 +353,20 @@ d.addEventListener('keydown',function(e){if(e.key!=='Escape')return;var c=d.acti
 var IDX=[];try{IDX=JSON.parse($('#searchdata').textContent);}catch(e){}
 IDX.forEach(function(x){x.n=(x.t+' '+x.s).toLowerCase();x.tl=x.t.toLowerCase();});
 var SD=$('#searchDlg'),sdq=$('#sdq'),sdres=$('#sdres'),sdHint=$('#sdHint'),sdSugg=$('#sdSugg'),sdLast=null,sel=-1,results=[];
+var BOOST={'How do I':3,'Topic':2,'Section':2,'Directory':1,'Document':-4};
+/* top hits: the answer most residents want for common words, shown first (like Spotlight) */
+var TOP=[[['tax rate','tax rates','property tax','tax bill','taxes'],'#numbers','Tax rate and key figures','Money and taxes','tax'],
+ [['trash','dump','transfer station','recycling','garbage'],'#emergency','Trash, recycling and utilities','How do I...','leaf'],
+ [['emergency','911','police','fire','ambulance service'],'#emergency','Emergency numbers and services','How do I...','alert'],
+ [['phone','contact','call','town office','town offices','town clerk','clerk','hours'],'#directory','Town directory: who to call','Contacts','phone'],
+ [['vote','voting','election','ballot','next vote'],'#calendar','Next town vote and key dates','Meetings and dates','vote'],
+ [['meeting','meetings','agenda','select board meeting'],'#timeline','2026 meeting timeline','Meetings and dates','calendar'],
+ [['document','documents','minutes','annual report'],'#library','Document library','Documents','doc'],
+ [['permit','permits','license','licence'],'#howto','How do I...? step-by-step guides','How do I...','question'],
+ [['budget','spending'],'#budget','Budget and finances','Money and taxes','coins'],
+ [['zoning','frontage','setback','setbacks','ordinance'],'#laws','Laws and regulations','Laws and rules','scale'],
+ [['school','schools'],'#schools','Schools and community','How do I...','school']];
+function topHits(v){var out=[];TOP.forEach(function(t){if(t[0].some(function(k){return k===v||(v.length>=4&&k.indexOf(v)===0)||(k.indexOf(' ')>0&&v.indexOf(k)>-1);}))out.push({k:'Top hit',t:t[2],s:t[3],h:t[1],ic:t[4]});});return out.slice(0,2);}
 var ORDER=['Section','How do I','Directory','Meeting','Date','Topic','Recurring issue','Law','Glossary','Document'],KIC={'Section':'grid','How do I':'question','Directory':'phone','Meeting':'calendar','Date':'calendar','Topic':'info','Recurring issue':'growth','Law':'scale','Glossary':'book','Document':'doc'};
 var SUGG=['budget','building permit','elderly exemption','tax rate','wetlands','ambulance','petition','dog license','Town Offices','zoning ordinance','Select Board minutes','frontage'];
 var JUMP=[['#calendar','calendar','Upcoming dates and deadlines'],['#library','doc','Document library'],['#howto','question','How do I...? guides'],['#directory','phone','Town directory'],['#numbers','tax','Taxes and exemptions']];
@@ -363,12 +378,15 @@ function hi(t,ws){var s=esc(t);ws.forEach(function(w){if(w.length<2)return;s=s.r
 function runSearch(){var v=sdq.value.trim().toLowerCase(),ws=v.split(/\s+/).filter(Boolean);sdres.innerHTML='';results=[];sel=-1;sdq.removeAttribute('aria-activedescendant');
  if(v.length<2){sdSugg.hidden=false;sdq.setAttribute('aria-expanded','false');sdHint.textContent='Type at least 2 letters, or pick a suggestion. Use the arrow keys to move, Enter to open, Esc to close.';return;}
  sdSugg.hidden=true;sdq.setAttribute('aria-expanded','true');
- var hs=hits(v).map(function(x){var sc=0;ws.forEach(function(w){if(x.tl.indexOf(w)>-1)sc+=3;if(x.tl.indexOf(w)===0)sc+=2;});return {x:x,sc:sc};});
+ var hs=hits(v).map(function(x){var sc=0,all=true;ws.forEach(function(w){if(x.tl.indexOf(w)>-1)sc+=3;else all=false;if(x.tl.indexOf(w)===0)sc+=2;});
+  if(all)sc+=10;if(ws.length>1&&x.tl.indexOf(v)>-1)sc+=6;if(x.k!=='Document'&&(x.s||'').toLowerCase().indexOf(v)>-1)sc+=2;sc+=(BOOST[x.k]||0);return {x:x,sc:sc};});
  hs.sort(function(a,b){return b.sc-a.sc;});
- var groups={};hs.forEach(function(h){(groups[h.x.k]=groups[h.x.k]||[]).push(h.x);});
- var html='',n=0;ORDER.forEach(function(k){var g=groups[k];if(!g)return;html+='<li class="sg" role="presentation">'+esc(k)+(g.length>8?' ('+g.length+')':'')+'</li>';
+ var groups={},best={};hs.forEach(function(h){(groups[h.x.k]=groups[h.x.k]||[]).push(h.x);if(!(h.x.k in best))best[h.x.k]=h.sc;});
+ var order=ORDER.slice().sort(function(a,b){return (best[b]||-1)-(best[a]||-1)||ORDER.indexOf(a)-ORDER.indexOf(b);});
+ var html='',n=0,top=topHits(v);if(top.length){html+='<li class="sg" role="presentation">Top hit</li>';top.forEach(function(x){results.push(x);html+='<li role="option" class="tophit" id="sr'+n+'" aria-selected="false" data-i="'+n+'">'+icon(x.ic)+'<span class="st">'+esc(x.t)+'</span><span class="ss">'+esc(x.s)+'</span></li>';n++;});}
+ order.forEach(function(k){var g=groups[k];if(!g)return;html+='<li class="sg" role="presentation">'+esc(k)+(g.length>8?' ('+g.length+')':'')+'</li>';
   g.slice(0,8).forEach(function(x){results.push(x);html+='<li role="option" id="sr'+n+'" aria-selected="false" data-i="'+n+'">'+icon(KIC[k]||'info')+'<span class="st">'+hi(x.t,ws)+'</span><span class="ss">'+hi(x.s,ws)+'</span></li>';n++;});});
- sdres.innerHTML=html;sdHint.textContent=hs.length?(hs.length+' result'+(hs.length===1?'':'s')+(hs.length>n?', showing the best '+n:'')+'.'):'No results. Try a different word, such as "budget", "permit" or "wetlands".';
+ sdres.innerHTML=html;var tot=hs.length+top.length;sdHint.textContent=tot?(tot+' result'+(tot===1?'':'s')+(tot>n?', showing the best '+n:'')+'.'):'No results. Try a different word, such as "budget", "permit" or "wetlands".';
  if(n)move(0);}
 function move(i){var opts=$$('[role=option]',sdres);if(!opts.length)return;sel=(i+opts.length)%opts.length;opts.forEach(function(o,j){o.setAttribute('aria-selected',j===sel?'true':'false');});sdq.setAttribute('aria-activedescendant','sr'+sel);opts[sel].scrollIntoView({block:'nearest'});}
 function activate(i){var x=results[i];if(!x)return;closeSearch(false);
