@@ -88,6 +88,11 @@ HOME = f'''<section class="home" id="home" aria-labelledby="home-h">
  <h1 id="home-h">What would you like to know?</h1>
  <p class="lead">A plain-language guide to Rindge town government: meetings, votes, money, rules, services and documents. Every fact is labeled by source.</p>
  <div class="homesearch js-only" role="search"><button type="button" class="hs-btn" id="homeSearch" aria-haspopup="dialog">{ic("search")}<span class="hs-ph">Search meetings, laws, offices, documents…</span><kbd class="kbd" aria-hidden="true">Ctrl K</kbd></button></div>
+ <ul class="quickcall" aria-label="Phone numbers">
+  <li><a class="qc qc-911" href="tel:911">{ic("alert")}<span class="qc-t">Emergency</span><span class="qc-n">911</span></a></li>
+  <li><a class="qc" href="tel:+16038995009">{ic("shield")}<span class="qc-t">Police, non-emergency</span><span class="qc-n">(603) 899-5009</span></a></li>
+  <li><a class="qc" href="tel:+16038995181">{ic("building")}<span class="qc-t">Town Offices</span><span class="qc-n">(603) 899-5181</span></a></li>
+ </ul>
  <h2 class="sr">Popular tasks</h2>
  <ul class="tasks">{tasks}</ul>
  <h2 class="morek">More questions</h2>

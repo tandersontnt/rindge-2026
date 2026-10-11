@@ -50,15 +50,37 @@ if('IntersectionObserver' in W){var so=new IntersectionObserver(function(es){es.
  $$('section.sec[id], section.home, .groupban').forEach(function(s){so.observe(s);});}
 setCurrent('home');
 
+/* ---------- pages: with JavaScript, show one chapter (Home, or a group and its sections) at a time ---------- */
+var pages=[],curPage=null,pageY={};try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
+(function(){var main=$('#main'),pg=null;if(!main)return;
+ Array.prototype.slice.call(main.children).forEach(function(el){
+  if(el.matches('section.home')){pg={id:'home',els:[el],label:'Home'};pages.push(pg);}
+  else if(el.matches('.groupban')){pg={id:el.id,els:[el],label:($('.gb-k',el)||el).textContent.trim()};pages.push(pg);}
+  else if(pg)pg.els.push(el);});
+ pages.forEach(function(p,i){var prev=pages[i-1],next=pages[i+1];if(!prev&&!next)return;
+  var nav=d.createElement('nav');nav.className='pager';nav.setAttribute('aria-label','Previous and next topics');
+  nav.innerHTML=(prev?'<a class="pg-prev" href="#'+prev.id+'">'+icon('prev')+'<span class="pg-txt"><span class="pg-k">Previous</span><span class="pg-t">'+esc(prev.label)+'</span></span></a>':'<span></span>')+
+   (next?'<a class="pg-next" href="#'+next.id+'"><span class="pg-txt"><span class="pg-k">Next</span><span class="pg-t">'+esc(next.label)+'</span></span>'+icon('next')+'</a>':'');
+  p.els[p.els.length-1].insertAdjacentElement('afterend',nav);p.els.push(nav);});
+ if(pages.length)root.classList.add('paged');})();
+function pageOf(el){for(var i=0;i<pages.length;i++)for(var j=0;j<pages[i].els.length;j++)if(pages[i].els[j]===el||pages[i].els[j].contains(el))return pages[i];return null;}
+function showPage(p){if(!p||p===curPage)return false;var first=!curPage;if(!first)pageY[curPage.id]=scrollY;
+ pages.forEach(function(q){q.els.forEach(function(el){el.classList.toggle('pg-off',q!==p);});});curPage=p;
+ if(!first){checkTables();setTimeout(checkCharts,0);}return true;}
+
 /* ---------- in-page links: open enclosing details, scroll below the bar, move focus ---------- */
 function reveal(el){var p=el;while(p&&p!==d.body){if(p.tagName==='DETAILS')p.open=true;if(p.classList&&p.classList.contains('xc')&&typeof xcSet==='function')xcSet(p,true,{noscroll:true});p=p.parentElement;}}
-function goTo(id,focus){var el=d.getElementById(id);if(!el)return false;reveal(el);
- el.scrollIntoView({behavior:reduce()?'auto':'smooth',block:'start'});
+function goTo(id,focus,restore){var el=d.getElementById(id);if(!el)return false;var pg=pageOf(el),changed=showPage(pg);reveal(el);
+ if(pg&&(el===pg.els[0]||(changed&&el===pg.els[1]))){scrollTo({top:restore&&pageY[pg.id]||0,behavior:'instant'});}
+ else{var far=changed||Math.abs(el.getBoundingClientRect().top)>innerHeight*1.5;el.scrollIntoView({behavior:far?'instant':(reduce()?'auto':'smooth'),block:'start'});}
+ if(pg)setCurrent(pg.id);
  if(focus!==false){var f=el.matches('section,.groupban')?($('h1,h2',el)||el):(el.matches('details')?$('summary',el):(el.matches('.xc')?$('.xc-tog',el):el));if(!f.hasAttribute('tabindex')&&!/^(A|BUTTON|SUMMARY|INPUT)$/.test(f.tagName))f.setAttribute('tabindex','-1');f.focus({preventScroll:true});}
  if(!reduce()&&!el.matches('section,.groupban')){el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash');}
  setCurrent(el.closest('section.sec,section.home,.groupban')?el.closest('section.sec,section.home,.groupban').id:id);return true;}
-W.addEventListener('hashchange',function(){var h=location.hash.slice(1);if(h)goTo(decodeURIComponent(h));});
-if(location.hash.length>1){var h0=decodeURIComponent(location.hash.slice(1));var t0=d.getElementById(h0);if(t0){reveal(t0);setTimeout(function(){goTo(h0,false);},60);}}
+W.addEventListener('hashchange',function(){var h=location.hash.slice(1);goTo(h?decodeURIComponent(h):'home',undefined,true);});
+var h0=location.hash.length>1?decodeURIComponent(location.hash.slice(1)):'',t0=h0&&d.getElementById(h0);
+showPage(pageOf(t0||d.getElementById('home'))||pages[0]);
+if(t0){reveal(t0);setTimeout(function(){goTo(h0,false);},60);}
 d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a||e.defaultPrevented||e.metaKey||e.ctrlKey)return;var id=decodeURIComponent(a.getAttribute('href').slice(1));if(!id)return;var el=d.getElementById(id);if(!el)return;
  e.preventDefault();var fromMenu=M.contains(a),fromSearch=SD.contains(a);if(fromMenu)closeMenu(false);if(fromSearch)closeSearch(false);
  if(location.hash!=='#'+id)history.pushState(null,'','#'+id);goTo(id);});
@@ -281,9 +303,10 @@ function openDoc(id,list,trigger){if(!DOCS[id])return false;seq=list&&list.lengt
 var ignorePop=0;
 function closeDoc(fromPop,noRestore){if(V.hidden)return;token++;stopPdf();stopVid();V.hidden=true;vBody.innerHTML='';lock(false);
  if(pushed&&!fromPop){ignorePop++;try{history.back();}catch(e){ignorePop--;}}pushed=false;
- if(!noRestore&&lastFocus&&lastFocus.focus&&d.contains(lastFocus)){lastFocus.focus({preventScroll:true});refocus=lastFocus;}}
+ if(!noRestore&&lastFocus&&lastFocus.focus&&d.contains(lastFocus)){lastFocus.focus({preventScroll:true});refocus=lastFocus;keepInView(lastFocus);}}
+function keepInView(el){var fix=function(){var r=el.getBoundingClientRect();if(r.bottom<72||r.top>innerHeight-24)el.scrollIntoView({block:'center',behavior:'instant'});};fix();setTimeout(fix,60);}
 var refocus=null;
-W.addEventListener('popstate',function(){if(ignorePop>0){ignorePop--;var r=refocus;refocus=null;if(r){var fix=function(){if((d.activeElement===d.body||!d.activeElement)&&d.contains(r)&&V.hidden)r.focus({preventScroll:true});};fix();setTimeout(fix,0);setTimeout(fix,80);}return;}if(!V.hidden)closeDoc(true);});
+W.addEventListener('popstate',function(){if(ignorePop>0){ignorePop--;var r=refocus;refocus=null;if(r){var fix=function(){if((d.activeElement===d.body||!d.activeElement)&&d.contains(r)&&V.hidden)r.focus({preventScroll:true});};fix();setTimeout(fix,0);setTimeout(fix,80);keepInView(r);}return;}if(!V.hidden)closeDoc(true);});
 vClose.addEventListener('click',function(){closeDoc();});
 vPrev.addEventListener('click',function(){if(pos>0){pos--;render();}});
 vNext.addEventListener('click',function(){if(pos<seq.length-1){pos++;render();}});
@@ -380,7 +403,7 @@ var prog=$('#progress'), tt=$('#toTop'), ticking=false;
 function onScroll(){ticking=false;var h=root.scrollHeight-innerHeight;var p=h>0?Math.min(1,Math.max(0,scrollY/h)):0;prog.style.transform='scaleX('+p+')';tt.classList.toggle('show',scrollY>Math.max(600,innerHeight));}
 addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});
 onScroll();
-tt.addEventListener('click',function(){scrollTo({top:0,behavior:reduce()?'auto':'smooth'});if(location.hash)history.pushState(null,'',location.pathname+location.search);var m=$('#home-h');if(m){m.setAttribute('tabindex','-1');m.focus({preventScroll:true});}});
+tt.addEventListener('click',function(){scrollTo({top:0,behavior:reduce()?'auto':'smooth'});var top=curPage&&curPage.els[0],m=top&&(top.matches('.groupban')?top:$('h1,h2',top));if(m){if(!m.hasAttribute('tabindex'))m.setAttribute('tabindex','-1');m.focus({preventScroll:true});}});
 
 /* ---------- print: open everything ---------- */
 var opened=[];

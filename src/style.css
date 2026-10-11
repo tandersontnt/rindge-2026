@@ -808,3 +808,43 @@ html:not(.js) .js-only{display:none!important}
 @media (min-width:768px){.urow.xc{grid-template-columns:minmax(0,190px) minmax(0,1fr) fit-content(40%)}}
 .urow>.xc-body,.urow>.xc-tog,.xc>.xc-body{contain:inline-size}
 @media print{.xc-foot,.xc-link[href^="#"]{display:none!important}.minis,.minis *{break-inside:auto!important}.chaps,.vid{display:none}}
+
+/* =====================================================================
+   v5 polish: one chapter per screen, previous/next pager, quick-call strip
+   ===================================================================== */
+/* chapters: with JS, only the current chapter is shown (no-JS keeps the long page) */
+.pg-off{display:none!important}
+.paged .groupban{margin-top:var(--s4)}
+.paged .home{padding-bottom:0}
+/* headings focused by navigation get no ring: the view change is the cue */
+h1[tabindex="-1"]:focus-visible,h2[tabindex="-1"]:focus-visible,.groupban:focus-visible,section[tabindex="-1"]:focus-visible{outline:none}
+[data-theme=contrast] h1[tabindex="-1"]:focus-visible,[data-theme=contrast] h2[tabindex="-1"]:focus-visible{box-shadow:none}
+
+/* pager */
+.pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:var(--s8) 0 0;padding-top:var(--s3);border-top:1px solid var(--hair)}
+.pager a{display:flex;align-items:center;gap:12px;min-height:72px;padding:14px 18px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow);color:var(--ink);text-decoration:none;
+ transition:box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.pager a:hover{box-shadow:var(--shadowh)}
+.pager a:active{transform:scale(.985)}
+.pager .pg-next{grid-column:2;justify-content:flex-end;text-align:right}
+.pager .i{flex:none;width:20px;height:20px;color:var(--accent)}
+.pg-txt{display:flex;flex-direction:column;min-width:0}
+.pg-k{font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.01em}
+.pg-t{font-size:1.02rem;font-weight:600;color:var(--accent);line-height:1.3}
+@media (max-width:599px){.pager{grid-template-columns:1fr}.pager .pg-next{grid-column:1;grid-row:1}.pager>span:empty{display:none}}
+[data-theme=contrast] .pager a{border:2px solid #000}
+
+/* quick-call strip on Home */
+.quickcall{list-style:none;margin:0 0 var(--s4);padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.qc{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;column-gap:12px;align-items:center;min-height:64px;padding:12px 16px;border-radius:var(--r);
+ background:var(--surface);box-shadow:var(--shadow);color:var(--ink);text-decoration:none;transition:box-shadow var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.qc:hover{box-shadow:var(--shadowh)}
+.qc:active{transform:scale(.985)}
+.qc .i{grid-row:1 / span 2;width:22px;height:22px;color:var(--accent)}
+.qc-t{font-size:.84rem;color:var(--muted);line-height:1.25}
+.qc-n{font-size:1.06rem;font-weight:650;letter-spacing:-.01em;font-variant-numeric:tabular-nums;color:var(--ink)}
+.qc-911 .i,.qc-911 .qc-n{color:var(--c-gap)}
+.qc-911{background:var(--c-gapbg)}
+@media (max-width:719px){.quickcall{grid-template-columns:1fr;gap:8px}.qc{grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto;min-height:56px}.qc .i{grid-row:auto}.qc-t{font-size:.95rem;color:var(--ink)}.qc-n{white-space:nowrap;color:var(--accent)}}
+[data-theme=contrast] .qc{border:2px solid #000;background:#fff}
+@media print{.pager,.quickcall{display:none!important}}
