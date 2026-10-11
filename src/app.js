@@ -441,5 +441,104 @@ tt.addEventListener('click',function(){scrollTo({top:0,behavior:reduce()?'auto':
 var opened=[];
 addEventListener('beforeprint',function(){charts.forEach(revealC);opened=$$('details:not([open])');opened.forEach(function(x){x.open=true;});});
 addEventListener('afterprint',function(){opened.forEach(function(x){x.open=false;});});
+/* ==========================================================================
+   Smart data views (v8): built from data already on the page
+   ========================================================================== */
+/* ---------- time in Rindge (America/New_York), whatever the viewer's zone ---------- */
+var DOW={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6},DSHORT=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],DLONG=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+function rindgeNow(){var t=W.__rindgeNow?new Date(W.__rindgeNow):new Date(),p={};
+ try{new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',year:'numeric',month:'numeric',day:'numeric',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(t).forEach(function(x){p[x.type]=x.value;});}catch(e){return {dow:t.getDay(),y:t.getFullYear(),m:t.getMonth()+1,d:t.getDate(),min:t.getHours()*60+t.getMinutes()};}
+ return {dow:DOW[p.weekday],y:+p.year,m:+p.month,d:+p.day,min:(+p.hour%24)*60+(+p.minute)};}
+function ymd(n){return n.y+'-'+(n.m<10?'0':'')+n.m+'-'+(n.d<10?'0':'')+n.d;}
+function addDays(n,k){var dt=new Date(Date.UTC(n.y,n.m-1,n.d+k));return {y:dt.getUTCFullYear(),m:dt.getUTCMonth()+1,d:dt.getUTCDate(),dow:dt.getUTCDay()};}
+function mins(s){var a=s.split(':');return +a[0]*60+(+a[1]);}
+function clock(s){var m=mins(s),h=Math.floor(m/60),mm=m%60;if(m===720)return 'noon';var ap=h>=12?'pm':'am';h=h%12||12;return h+(mm?':'+(mm<10?'0':'')+mm:'')+' '+ap;}
+
+/* ---------- open / closed from posted hours ---------- */
+var HOURS={};try{HOURS=JSON.parse($('#hoursdata').textContent);}catch(e){}
+function dayRules(h,dow,m){return (h.rules||[]).filter(function(r){return r[0].indexOf(dow)>-1&&(!r[3]||r[3].indexOf(m)>-1);}).sort(function(a,b){return mins(a[1])-mins(b[1]);});}
+function dayUnknown(h,dow,m){return (h.unknown||[]).indexOf(dow)>-1||!!(h.unknown_months&&h.unknown_months[dow]&&h.unknown_months[dow].indexOf(m)>-1);}
+function hoursStatus(h,now){now=now||rindgeNow();var pre=h.label?h.label+' ':'';
+ if(dayUnknown(h,now.dow,now.m))return {s:'unknown',t:'Today’s hours not posted'};
+ var today=dayRules(h,now.dow,now.m);
+ for(var i=0;i<today.length;i++){var r=today[i];if(now.min>=mins(r[1])&&now.min<mins(r[2]))return {s:'open',t:(pre?pre+'open':'Open')+' · until '+clock(r[2])};}
+ for(i=0;i<today.length;i++)if(mins(today[i][1])>now.min)return {s:'closed',t:'Closed · opens '+clock(today[i][1])};
+ if((h.appointment||[]).indexOf(now.dow)>-1)return {s:'appt',t:'By appointment today'};
+ for(var k=1;k<=7;k++){var n=addDays(now,k);if(dayUnknown(h,n.dow,n.m))return {s:'closed',t:'Closed · '+DLONG[n.dow]+' hours not posted'};
+  var rr=dayRules(h,n.dow,n.m);if(rr.length)return {s:'closed',t:'Closed · opens '+(k===1?'tomorrow':DSHORT[n.dow])+' '+clock(rr[0][1])};}
+ return {s:'unknown',t:'Hours not posted'};}
+function stHTML(st){return '<span class="openst st-'+st.s+'"><span class="dot" aria-hidden="true"></span>'+esc(st.t)+'</span>';}
+var dirById={};$$('#directory .dir').forEach(function(c){var h=$('h4',c);if(h)dirById[h.textContent.trim()]=c;});
+function paintStatus(){var now=rindgeNow();
+ Object.keys(HOURS).forEach(function(name){var c=dirById[name];if(!c)return;var el=$('.openst-wrap',c);
+  if(!el){el=d.createElement('p');el.className='openst-wrap';$('h4',c).insertAdjacentElement('afterend',el);}
+  el.innerHTML=stHTML(hoursStatus(HOURS[name],now));});
+ $$('[data-hours-for]').forEach(function(el){var h=HOURS[el.getAttribute('data-hours-for')];if(h)el.innerHTML=stHTML(hoursStatus(h,now));});}
+
+/* ---------- Home: Right now in Rindge ---------- */
+var RN_PLACES=[['Recycling and Transfer Station','Transfer Station'],["Town Clerk's office",'Town Clerk'],['Tax Collector','Tax Collector'],['Ingalls Memorial Library','Library'],['Police Department','Police']];
+function rel(days){return days===0?'Today':days===1?'Tomorrow':'In '+days+' days';}
+function buildRightNow(){var qc=$('#home .quickcall');if(!qc||!Object.keys(HOURS).length)return;
+ var now=rindgeNow(),today=ymd(now),t0=Date.UTC(now.y,now.m-1,now.d);
+ var places=RN_PLACES.filter(function(p){return HOURS[p[0]]&&dirById[p[0]];}).map(function(p){
+  return '<li><a class="rn-row" href="#'+dirById[p[0]].id+'"><span class="rn-name">'+esc(p[1])+'</span> <span data-hours-for="'+esc(p[0])+'"></span></a></li>';}).join('');
+ var ups=$$('#calendar .urow[data-date]').filter(function(r){return (r.getAttribute('data-end')||r.getAttribute('data-date'))>=today;}).slice(0,3).map(function(r){
+  var ds=r.getAttribute('data-date'),p=ds.split('-'),days=Math.round((Date.UTC(+p[0],+p[1]-1,+p[2])-t0)/864e5),txt=r.children[1].cloneNode(true),who=$('.who',txt);if(who)who.remove();
+  var st=$('strong',txt);if(st&&/Key date/.test(st.textContent))st.remove();
+  var b=r.children[2]?r.children[2].innerHTML:'';
+  return '<li><a class="rn-up" href="#'+(r.id||'calendar')+'"><span class="rn-when"><b>'+esc(r.children[0].textContent.trim().replace(new RegExp(',? '+now.y+'$'),''))+'</b> <span>'+(days>0?rel(days):'Now')+'</span></span> <span class="rn-what">'+esc(txt.textContent.trim())+'</span> <span class="rn-b">'+b+'</span></a></li>';}).join('');
+ var box=d.createElement('section');box.className='rightnow card';box.setAttribute('aria-labelledby','rn-h');
+ box.innerHTML='<div class="rn-head"><h2 id="rn-h">Right now in Rindge</h2><p class="rn-time" id="rnTime"></p></div><div class="rn-cols">'+
+  '<div><h3>Open now?</h3><ul class="rn-list">'+places+'</ul><p class="rn-fine">From posted hours. Holidays and closures are not included, so call ahead.</p></div>'+
+  (ups?'<div><h3>Coming up</h3><ul class="rn-list">'+ups+'</ul><p class="rn-fine"><a href="#calendar">All dates and deadlines</a></p></div>':'')+'</div>';
+ qc.insertAdjacentElement('afterend',box);}
+function paintTime(){var el=$('#rnTime');if(!el)return;var n=rindgeNow();el.textContent=DLONG[n.dow]+' · '+clock((Math.floor(n.min/60)<10?'0':'')+Math.floor(n.min/60)+':'+(n.min%60<10?'0':'')+n.min%60)+' in Rindge';}
+buildRightNow();paintStatus();paintTime();setInterval(function(){paintStatus();paintTime();},60000);
+
+/* ---------- Timeline: 2026 at a glance (boards x months) ---------- */
+(function(){var tl=$('#tl'),ctr=$('#timeline .controls');if(!tl||!ctr||!chips.length)return;
+ var mo=$$('#tl .month').map(function(m){return m.getAttribute('data-month');}),idx={};mo.forEach(function(m,i){idx[m]=i;});
+ var rows=chips.filter(function(c){return c.dataset.b!=='__all';}).map(function(c){return {k:c.dataset.b,name:c.textContent.replace(/\(\d+\)/,'').trim(),c:c.style.getPropertyValue('--c')||'var(--town)',n:mo.map(function(){return 0;})};}),byK={};
+ rows.forEach(function(r){byK[r.k]=r;});
+ var curM=null;$$('#tl > li').forEach(function(li){if(li.classList.contains('month'))curM=li.getAttribute('data-month');else if(li.classList.contains('ev')&&byK[li.dataset.board]&&curM in idx)byK[li.dataset.board].n[idx[curM]]++;});
+ var max=1;rows.forEach(function(r){r.n.forEach(function(v){if(v>max)max=v;});});
+ var short=mo.map(function(m){return m.split(' ')[0].slice(0,3);});
+ var h='<div class="glance card"><h3 id="glance-h">2026 at a glance</h3><p class="note">Meetings per board each month. Select a number to see those meetings.</p><div class="tablewrap glwrap"><table class="gl" aria-labelledby="glance-h"><thead><tr><th scope="col">Board</th>'+
+  short.map(function(s,i){return '<th scope="col"><abbr title="'+esc(mo[i])+'">'+esc(s)+'</abbr></th>';}).join('')+'<th scope="col">Total</th></tr></thead><tbody>'+
+  rows.map(function(r){var tot=r.n.reduce(function(a,b){return a+b;},0);return '<tr><th scope="row"><span class="gl-dot" style="--c:'+r.c+'"></span>'+esc(r.name)+'</th>'+
+   r.n.map(function(v,i){return '<td>'+(v?'<button type="button" class="gl-c" style="--a:'+Math.round(12+48*v/max)+'%" data-k="'+r.k+'" data-m="'+esc(mo[i])+'" aria-label="'+esc(r.name)+', '+esc(mo[i])+': '+v+' meeting'+(v===1?'':'s')+'">'+v+'</button>':'<span class="gl-z" aria-label="none">·</span>')+'</td>';}).join('')+
+   '<td class="gl-t">'+tot+'</td></tr>';}).join('')+'</tbody></table></div></div>';
+ ctr.insertAdjacentHTML('beforebegin',h);
+ $$('.gl-c').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.k;for(var x in boards)boards[x]=(x===k);
+  chips.forEach(function(c){var kk=c.dataset.b;c.setAttribute('aria-pressed',(kk==='__all'?allOn():boards[kk])?'true':'false');});apply();
+  var m=$$('#tl .month').filter(function(x){return x.getAttribute('data-month')===b.dataset.m;})[0];
+  if(m){m.scrollIntoView({block:'start',behavior:'instant'});var f=m.nextElementSibling;while(f&&f.hidden)f=f.nextElementSibling;var t=f&&$('.xc-tog,a,button',f);if(t)t.focus({preventScroll:true});}
+  toast('Showing '+b.getAttribute('aria-label').replace(/:.*/,'')+'. Use "All boards" to reset.');});});})();
+
+/* ---------- Tables: sort by any column, download as CSV ---------- */
+function cellVal(td){var t=(td.getAttribute('data-v')||td.textContent).replace(/\s+/g,' ').trim(),n=t.replace(/[$,%\s]|\(.*?\)/g,'');if(/^[-−+]?\d+(\.\d+)?$/.test(n))return {n:parseFloat(n.replace('−','-')),t:t};return {n:null,t:t.toLowerCase()};}
+function csvCell(s){s=s.replace(/\s+/g,' ').trim();return /[",\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;}
+function cellText(c){var x=c.cloneNode(true);$$('.sr,svg,.bdg,button.th-sort .sort-i',x).forEach(function(e){e.remove();});return x.textContent;}
+$$('main .tablewrap table').forEach(function(tb,ti){if(tb.closest('.mcal')||tb.classList.contains('gl'))return;var head=tb.tHead,body=tb.tBodies[0];if(!head||!body)return;
+ var hr=head.rows[head.rows.length-1],cap=tb.caption?tb.caption.textContent.trim():'table';
+ if(body.rows.length>=4)Array.prototype.forEach.call(hr.cells,function(th,ci){if(!th.textContent.trim())return;var b=d.createElement('button');b.type='button';b.className='th-sort';
+  b.innerHTML='<span>'+th.innerHTML+'</span><svg class="i sort-i" aria-hidden="true" focusable="false"><use href="#i-chev"/></svg>';th.innerHTML='';th.appendChild(b);th.setAttribute('aria-sort','none');
+  b.addEventListener('click',function(){var dir=th.getAttribute('aria-sort')==='ascending'?'descending':'ascending';
+   Array.prototype.forEach.call(hr.cells,function(x){x.setAttribute('aria-sort','none');});th.setAttribute('aria-sort',dir);
+   var rs=Array.prototype.slice.call(body.rows),pin=rs.filter(function(r){return /^(total|all )/i.test((r.cells[0]||{}).textContent.trim());}),mv=rs.filter(function(r){return pin.indexOf(r)<0;});
+   mv.sort(function(a,b2){var x=a.cells[ci]?cellVal(a.cells[ci]):{n:null,t:''},y=b2.cells[ci]?cellVal(b2.cells[ci]):{n:null,t:''},r;
+    if(x.n!==null&&y.n!==null)r=x.n-y.n;else if(x.n!==null)r=-1;else if(y.n!==null)r=1;else r=x.t<y.t?-1:x.t>y.t?1:0;return dir==='ascending'?r:-r;});
+   mv.concat(pin).forEach(function(r){body.appendChild(r);});toast('Sorted by '+b.textContent.trim()+(dir==='ascending'?', low to high':', high to low'));});});
+ var wrap=tb.closest('.tablewrap'),bar=d.createElement('div');bar.className='tbl-tools';
+ bar.innerHTML='<button type="button" class="tbl-csv">'+icon('download')+'<span>Download CSV</span><span class="sr"> of '+esc(cap)+'</span></button>';
+ wrap.insertAdjacentElement('afterend',bar);
+ $('.tbl-csv',bar).addEventListener('click',function(){var lines=[];Array.prototype.forEach.call(tb.rows,function(r){if(r.hidden||r.closest('[hidden]'))return;lines.push(Array.prototype.map.call(r.cells,function(c){return csvCell(cellText(c));}).join(','));});
+  var blob=new Blob(['﻿'+lines.join('\r\n')],{type:'text/csv;charset=utf-8'}),a=d.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='rindge-'+cap.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60)+'.csv';d.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);toast('Downloaded '+a.download);});});
+
+/* ---------- ?q=word opens search (lets search engines and assistants link straight to results) ---------- */
+try{var qp=new URLSearchParams(location.search).get('q');if(qp)setTimeout(function(){openSearch(qp);},80);}catch(e){}
+W.RindgeGuide_hoursStatus=hoursStatus;
+
 W.RindgeGuide={openDoc:openDoc,closeDoc:closeDoc,openSearch:openSearch,closeSearch:closeSearch,openMenu:openMenu,closeMenu:closeMenu};
 })();

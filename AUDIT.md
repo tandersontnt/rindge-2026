@@ -1,3 +1,25 @@
+# Rindge Town Guide v8: structured data (Oct 11, 2026)
+
+**Machine-readable layer.** `src/structured.py` runs at the end of `build.py`.
+
+- **Office hours.** The posted hours of 10 offices are re-typed as rules, one to one with the text in `r3data.DEPTS`. Days the town does not post stay "not posted" and are never guessed: the Town Clerk's Friday, and Public Works on Fridays May–Oct. Planning's Thursday is by appointment.
+- **schema.org JSON-LD** in the page head:
+  - `WebSite`, with a `SearchAction` (`?q=`) and an unofficial-status disclaimer;
+  - 16 `GovernmentOffice` / `Library` entries with phone, address, town page and non-seasonal opening hours, each with `parentOrganization` Town of Rindge;
+  - a `FAQPage` of the 15 how-to guides, with answers taken from each guide's own summary;
+  - a `Dataset` for `meetings.json`. No license is declared; that is the owner's decision.
+- **No `Event` markup.** Most upcoming dates are inferred or derived, not posted by the town, and publishing them as events would present them as fact.
+
+**On the page.** All of these are built in `app.js` from data already in the page:
+
+- **Right now in Rindge** (Home): open/closed status for five places, computed in America/New_York time from the posted hours. A note says holidays are not included. Next to it, the next three dates from the calendar, with countdowns and their source labels.
+- **Directory:** an open/closed status on each office with posted hours. It refreshes every minute.
+- **Timeline:** a "2026 at a glance" grid of boards by months. Each cell filters the timeline to that board and jumps to that month.
+- **Tables:** every data table has sortable columns (`aria-sort`; Total rows stay at the bottom) and a "Download CSV" button.
+- **Search links:** `?q=word` opens search with that word.
+
+**Design test:** a new `data` check validates the JSON-LD. It runs the open/closed logic at six fixed moments (weekday, a Friday with unposted hours, Sunday, a by-appointment day, winter and summer hours) and checks the countdown, the grid totals against the filter counts, numeric sorting and `?q=`. The full suite has 0 failures and 0 warnings.
+
 # Rindge Town Guide v7: design test and deep polish (Oct 11, 2026)
 
 **Design test.** `test/design_test.mjs` runs headless Chromium with axe-core across every chapter. It covers phone and desktop, light and dark: 40 views, plus reflow and search runs.

@@ -1,6 +1,6 @@
 {
  "file": "file:///home/user/rindge-2026/index.html",
- "when": "2026-10-11T20:23:15.333Z",
+ "when": "2026-10-11T20:50:40.611Z",
  "checks": {
   "structure": 40,
   "axe": 40,
@@ -9,7 +9,8 @@
   "targets": 40,
   "focus": 300,
   "reflow": 30,
-  "findability": 16
+  "findability": 16,
+  "data": 36
  },
  "failures": [],
  "warnings": []

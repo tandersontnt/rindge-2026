@@ -10,6 +10,7 @@
 //  7. keyboard: every tab stop shows a visible focus indicator
 //  8. findability: common resident questions answered within 1 tap from Home and by the first search result
 //  9. charts: every bar with a value draws (catches layout collisions that hide data)
+// 10. data: schema.org JSON-LD is valid; open/closed status is right at fixed times; countdowns, grid totals, sorting and ?q= work
 import { createRequire } from 'module';
 import path from 'path';
 import fs from 'fs';
@@ -208,9 +209,83 @@ for (const [label, setup] of [
   }
   await ctx.close();
 }
+// 10. data: machine-readable structure and the smart views built from it
+{
+  const ctx = await b.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
+  const p = await ctx.newPage();
+  await show(p, 'home');
+  // schema.org JSON-LD
+  const ld = await p.evaluate(() => [...document.querySelectorAll('script[type="application/ld+json"]')].map(s => { try { return JSON.parse(s.textContent); } catch (e) { return { error: e.message }; } }));
+  count('data');
+  if (!ld.length) fail('data', 'json-ld', 'no schema.org JSON-LD found');
+  for (const doc of ld) {
+    if (doc.error) { fail('data', 'json-ld', 'JSON-LD does not parse: ' + doc.error); continue; }
+    const g = doc['@graph'] || [doc];
+    const site = g.find(x => x['@type'] === 'WebSite');
+    if (!site || !site.name || !site.url) fail('data', 'json-ld', 'WebSite needs name and url');
+    else if (!site.potentialAction || !/\{search_term_string\}/.test(site.potentialAction.target?.urlTemplate || '')) fail('data', 'json-ld', 'WebSite SearchAction is missing its url template');
+    const offices = g.filter(x => /GovernmentOffice|Library/.test(x['@type']));
+    if (offices.length < 10) fail('data', 'json-ld', `only ${offices.length} offices described`);
+    for (const o of offices) {
+      count('data');
+      if (!o.name || !(o.telephone || o.url)) fail('data', 'json-ld', `office missing name/telephone: ${JSON.stringify(o).slice(0, 80)}`);
+      if (o.telephone && !/^\+1-\d{3}-\d{3}-\d{4}( ext\. \d+)?$/.test(o.telephone)) fail('data', 'json-ld', `bad telephone ${o.telephone} (${o.name})`);
+      for (const h of o.openingHoursSpecification || []) {
+        if (!(h.dayOfWeek || []).length || !/^\d\d:\d\d$/.test(h.opens) || !/^\d\d:\d\d$/.test(h.closes) || h.opens >= h.closes) fail('data', 'json-ld', `bad hours on ${o.name}: ${JSON.stringify(h)}`);
+      }
+    }
+    const faq = g.find(x => x['@type'] === 'FAQPage');
+    if (!faq || (faq.mainEntity || []).length < 10) fail('data', 'json-ld', 'FAQPage missing or too short');
+    else for (const q of faq.mainEntity) if (!q.name || !q.acceptedAnswer?.text || q.acceptedAnswer.text.length < 30) fail('data', 'json-ld', `weak FAQ answer: ${q.name}`);
+  }
+  await ctx.close();
+
+  // open/closed status at fixed moments (Rindge time). Expected text comes straight from the posted hours.
+  const CASES = [
+    ['2026-10-13T15:20:00Z', 'Tue 11:20am', { 'Recycling and Transfer Station': 'Open · until 7 pm', "Town Clerk's office": 'Closed · opens noon', 'Tax Collector': 'Open · until 1 pm', 'Ingalls Memorial Library': 'Closed · opens 1 pm' }],
+    ['2026-10-16T14:00:00Z', 'Fri 10:00am', { "Town Clerk's office": 'Today’s hours not posted', 'Recycling and Transfer Station': 'Closed · opens 1 pm', 'Public Works (Highway)': 'Today’s hours not posted' }],
+    ['2026-10-18T16:00:00Z', 'Sun noon', { 'Recycling and Transfer Station': 'Closed · opens Tue 10 am', 'Ingalls Memorial Library': 'Closed · opens tomorrow 10 am', 'Police Department': 'Closed · opens tomorrow 8 am' }],
+    ['2026-10-15T14:00:00Z', 'Thu 10:00am', { 'Planning Department': 'By appointment today', 'Assessing': 'Closed · opens 12:30 pm' }],
+    ['2026-11-20T15:00:00Z', 'Fri Nov 20 10:00am', { 'Public Works (Highway)': 'Open · until 3:30 pm', "Town Clerk's office": 'Today’s hours not posted' }],
+    ['2026-07-14T10:30:00Z', 'Tue Jul 14 6:30am', { 'Public Works (Highway)': 'Open · until 4:30 pm' }],
+  ];
+  for (const [iso, label, want] of CASES) {
+    const c2 = await b.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
+    const q = await c2.newPage();
+    await q.clock.install({ time: new Date(iso) });
+    await q.goto(FILE + '#directory'); await q.waitForTimeout(300);
+    const got = await q.evaluate(() => { const o = {}; document.querySelectorAll('#directory .dir').forEach(c => { const h = c.querySelector('h4'), s = c.querySelector('.openst'); if (h && s) o[h.textContent.trim()] = s.textContent.replace(/\u00a0/g, ' ').trim(); }); return o; });
+    for (const [k, v] of Object.entries(want)) { count('data'); if (got[k] !== v) fail('data', `hours ${label}`, `${k}: expected "${v}", got "${got[k]}"`); }
+    if (iso.startsWith('2026-10-13')) {
+      await q.goto(FILE); await q.waitForTimeout(300);
+      const first = await q.evaluate(() => { const a = document.querySelector('.rightnow .rn-up'); return a ? a.textContent.replace(/\s+/g, ' ').trim() : null; });
+      count('data'); if (!first || !/^Wed, Oct 21\s+In 8 days/.test(first)) fail('data', 'coming up', `on Tue Oct 13 the first upcoming date should be Wed Oct 21 (in 8 days), got "${first}"`);
+    }
+    await c2.close();
+  }
+
+  // at-a-glance totals match the board filter counts; sorting orders numbers; ?q= opens search
+  const c3 = await b.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
+  const r = await c3.newPage();
+  await r.goto(FILE + '#timeline'); await r.waitForTimeout(300);
+  const mism = await r.evaluate(() => { const out = []; const chips = {}; document.querySelectorAll('.chip[data-b]').forEach(c => { const m = c.textContent.match(/\((\d+)\)/); if (m) chips[c.textContent.replace(/\(\d+\)/, '').trim()] = +m[1]; });
+    document.querySelectorAll('table.gl tbody tr').forEach(tr => { const n = tr.querySelector('th').textContent.trim(), t = +tr.querySelector('.gl-t').textContent; if (chips[n] !== t) out.push(`${n}: grid ${t} vs filter ${chips[n]}`); }); return out; });
+  count('data'); if (mism.length) fail('data', 'at a glance', mism.join(' | '));
+  await r.goto(FILE + '#numbers'); await r.waitForTimeout(300);
+  await r.evaluate(() => { document.querySelectorAll('#numbers details').forEach(d => d.open = true); });
+  const sorted = await r.evaluate(() => { const t = [...document.querySelectorAll('#numbers table')].find(x => x.querySelector('.th-sort')); if (!t) return 'no sortable table';
+    const btn = t.querySelectorAll('thead th .th-sort'); const last = btn[btn.length - 1]; last.click(); last.click();
+    const v = [...t.tBodies[0].rows].map(r => parseFloat(r.cells[r.cells.length - 1].textContent.replace(/[$,]/g, ''))); for (let i = 1; i < v.length; i++) if (v[i] > v[i - 1]) return 'not descending: ' + v.join(','); return null; });
+  count('data'); if (sorted) fail('data', 'sorting', sorted);
+  await r.goto(FILE + '?q=dog'); await r.waitForTimeout(400);
+  const qs = await r.evaluate(() => { const d = document.getElementById('searchDlg'); return d && !d.hidden ? document.querySelectorAll('#sdres [role=option]').length : -1; });
+  count('data'); if (qs < 1) fail('data', '?q=', `opening ?q=dog should show search results (got ${qs})`);
+  await c3.close();
+}
+
 await b.close();
 
-const cats = ['axe', 'structure', 'focus', 'readability', 'targets', 'reflow', 'charts', 'findability', 'errors'];
+const cats = ['axe', 'structure', 'focus', 'readability', 'targets', 'reflow', 'charts', 'findability', 'data', 'errors'];
 console.log('\nDESIGN TEST  ' + results.file);
 for (const k of cats) {
   const f = results.failures.filter(x => x.check === k).length, w = results.warnings.filter(x => x.check === k).length;
