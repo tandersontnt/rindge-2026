@@ -178,7 +178,7 @@ var V=$('#viewer'),vBody=$('#vBody'),vTitle=$('#vTitle'),vKind=$('#vKind'),vSrc=
 var pgPrev=$('#pgPrev'),pgNext=$('#pgNext'),pgNum=$('#pgNum'),pgOf=$('#pgOf'),zOut=$('#zOut'),zIn=$('#zIn'),zFit=$('#zFit'),zVal=$('#zVal');
 var seq=[],pos=0,lastFocus=null,pushed=false,token=0;
 var CREDIT='Public record, copied from rindgenh.org on Oct 9, 2026; the original is authoritative.';
-var KINDS={pdf:'Town document · copy',word:'Town document · converted copy for viewing',embed:'Outside source',ext:'Outside source',large:'Town document · large scan',missing:'Town document · not available',video:'Meeting video · Town Hall Streams'};
+var KINDS={service:'Online service',channel:'Meeting videos',page:'Web page · saved copy',pdf:'Town document · copy',word:'Town document · converted copy for viewing',embed:'Outside source',ext:'Outside source',large:'Town document · large scan',missing:'Town document · not available',video:'Meeting video · Town Hall Streams'};
 function hostLabel(e){return /rindgenh/.test(e.host||'')?'rindgenh.org':(e.host||'').replace(/^www\./,'');}
 function card(h,p,btns,cls){return '<div class="v-card'+(cls?' '+cls:'')+'" role="note"><h3>'+icon('info')+'<span>'+esc(h)+'</span></h3><p>'+p+'</p><div class="v-btns">'+btns+'</div></div>';}
 function btn(href,label,ic,primary,dl){return '<a class="vbtn'+(primary?' primary':'')+'" href="'+esc(href)+'"'+(dl?' download':' target="_blank" rel="noopener"')+'>'+icon(ic)+'<span>'+esc(label)+'</span>'+(dl?'':'<span class="sr"> (opens in new tab)</span>')+'</a>';}
@@ -300,6 +300,8 @@ function render(){var id=seq[pos],e=DOCS[id];if(!e)return;token++;var my=token;s
  V.classList.toggle('vidmode',e.kind==='video');V.classList.remove('carded');vBody.scrollTop=0;
  if(local)renderPdf(e,my);
  else if(e.kind==='video'&&e.hls)renderVideo(e,my);
+ else if(e.kind==='page'){vBody.innerHTML=loader('Loading page…')+'<iframe class="v-page" title="'+esc(e.title)+'" src="'+esc(e.view)+'" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>';
+  var pf=$('iframe',vBody),pl=$('#vLoad');pf.addEventListener('load',function(){if(pl)pl.classList.add('done');});}
  else if(e.kind==='embed'&&navigator.onLine!==false){vBody.innerHTML=loader('Loading page…')+'<iframe title="'+esc(e.title)+'" src="'+esc(e.src)+'" sandbox="allow-scripts allow-same-origin allow-popups allow-forms" referrerpolicy="no-referrer-when-downgrade"></iframe>';
   var fr=$('iframe',vBody),ld=$('#vLoad');fr.addEventListener('load',function(){if(ld)ld.classList.add('done');});
   setTimeout(function(){if(my===token&&ld&&!ld.classList.contains('done')){var m=$('.v-lmore',vBody);m.hidden=false;m.innerHTML='Still loading. <a href="'+esc(e.src)+'" target="_blank" rel="noopener">Open it in a new tab</a>.';}},8000);}
@@ -307,8 +309,11 @@ function render(){var id=seq[pos],e=DOCS[id];if(!e)return;token++;var my=token;s
   if(e.kind==='embed')vBody.innerHTML=card('You appear to be offline','This outside source needs an internet connection.',btn(e.src,'Open in a new tab','external',true));
   else if(e.kind==='large')vBody.innerHTML=card('Large scan: opens on the town website','This annual report is a very large scanned file, so this guide links to the town\'s copy instead of storing one.',btn(e.src,'Open on rindgenh.org','external',true));
   else if(e.kind==='missing')vBody.innerHTML=card('This document is not available right now','The town website returned "not found" for this link when it was checked on Oct 9, 2026. The file may have moved. Try the board\'s agendas and minutes page, or ask the Town Offices at (603) 899-5181.',btn(e.src,'Try the original link','external',true));
+  else if(e.kind==='service')vBody.innerHTML=card('Secure online service','Payments, registrations and sign-up forms only work on the official secure site, so this one opens there in a new tab. Nothing you type is seen by this guide.',btn(e.src,'Open '+hostLabel(e),'external',true));
+  else if(e.kind==='channel')vBody.innerHTML=card('Meeting videos play right here','Every recorded 2026 Select Board meeting in this guide plays inside the site. Open the meeting timeline and pick a meeting, or use the Town Hall Streams channel for older recordings.','<a class="vbtn primary" href="#timeline" data-close="viewer">'+icon('play')+'<span>Watch meetings here</span></a>'+btn(e.src,'Town Hall Streams channel','external',false));
   else vBody.innerHTML=card('Opens in a new tab',esc(e.org||hostLabel(e))+' does not allow its pages to be shown inside other websites, so this one opens in a new browser tab.',btn(e.src,'Open '+hostLabel(e)+' in a new tab','external',true));}
- vFoot.innerHTML=local?(esc(CREDIT)+(e.kind==='word'?' This is a PDF rendering of a Word file; Download gives the original Word file.':'')):(e.kind==='embed'?'Shown from '+esc(hostLabel(e))+'. If it does not load, use "Open original".':(e.kind==='video'?'Recording: Town Hall Streams. Transcript excerpts, where shown, are unofficial.':''));
+ var MONS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];function credit(e){var c=e.copied&&e.copied.split('-');return c?'Public record, copied from '+hostLabel(e)+' on '+MONS[+c[1]-1]+' '+(+c[2])+', '+c[0]+'; the original is authoritative.':CREDIT;}
+ vFoot.innerHTML=e.kind==='page'?('Saved copy of '+esc(hostLabel(e))+(e.captured?', captured '+esc(e.captured):'')+'. The original page is authoritative; use "Original" for the live page.'):local?(esc(credit(e))+(e.kind==='word'?' This is a PDF rendering of a Word file; Download gives the original Word file.':'')):(e.kind==='embed'?'Shown from '+esc(hostLabel(e))+'. If it does not load, use "Open original".':(e.kind==='video'?'Recording: Town Hall Streams. Transcript excerpts, where shown, are unofficial.':''));
 }
 function openDoc(id,list,trigger){if(!DOCS[id])return false;seq=list&&list.length?list:[id];pos=Math.max(0,seq.indexOf(id));if(V.hidden)lastFocus=trigger||d.activeElement;
  var was=V.hidden;V.hidden=false;if(was)lock(true);render();vTitle.focus();

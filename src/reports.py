@@ -52,12 +52,11 @@ def render(ic):
     bl = sorted(r[0] for r in rows if not r[3]); big = ', '.join(map(str, bl[:-1])) + ' and ' + str(bl[-1]) if len(bl) > 1 else ''.join(map(str, bl))
     gap = (f'<p class="note">Missing years in this range: {", ".join(map(str, missing))}.</p>' if missing else
            f'<p class="note">Every year from {first} to {last} is here. Reports are copied from the town’s Town Reports page '
-           f'(checked Oct 9, 2026); the town’s copy is authoritative. The {big} reports are over 25 MB, '
-           f'so they open on the town’s site instead.</p>')
+           f'(checked Oct 9, 2026); the town’s copy is authoritative.' + (f' The {big} reports are over 25 MB, so they open on the town’s site instead.' if bl else ' Every report opens right here.') + '</p>')
     return (f'<ul class="rpts">{"".join(tiles)}</ul>{gap}'
             f'<h3 class="mt3">Older reports, 1849 to 2010</h3>'
             f'<p>The town’s website posts reports from {first} on. Older reports have been scanned by libraries. '
-            f'These collections are outside this guide and open in a new tab.</p>'
+            f'Select a collection to browse it here.</p>'
             f'<ul class="archs">{arch}</ul>'
             f'<p class="note">The UNH collection says its scans may be used for research, teaching and private study; for other uses, ask the Town of Rindge. '
             f'This guide could not open the collections directly to list each year, so it links to them as a whole.</p>'), len(rows), first, last

@@ -2,8 +2,8 @@
  "title": "Rindge Town Guide: copies of public town documents",
  "credit": "Public record, copied from rindgenh.org on Oct 9, 2026; the original is authoritative.",
  "note": "Files are byte-for-byte copies of what the town website served on the retrieval date (sha256 recorded). Nothing was edited. Word files also have a separate PDF rendering in docs/converted/ for viewing; the Word file is the copy of record.",
- "count": 162,
- "total_bytes": 181596420,
+ "count": 165,
+ "total_bytes": 286718209,
  "documents": [
   {
    "file": "01.07.2026_Board_of_Selectmen_Agenda_5e9a0b.pdf",
@@ -460,12 +460,28 @@
    "retrieved": "2026-10-09T22:24:40-04:00"
   },
   {
+   "file": "2012_Annual_Report_of_the_Town_of_Rindge_New_Hampshire_7ae852.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2012_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "sha256": "b722543e3bfe9a614aeaa05bdc83abc1f13d2c07609958da579ecaedf2094020",
+   "bytes": 38443321,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-11T21:42:19+00:00"
+  },
+  {
    "file": "2013_Annual_Report_of_the_Town_of_Rindge_New_Hampshire_18f7f7.pdf",
    "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2013_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
    "sha256": "d8708391c15a3131a15368a2a20d9f4756593ba6dc34ca259d33aa9fe7c8341b",
    "bytes": 3431084,
    "content_type": "application/pdf",
    "retrieved": "2026-10-09T22:24:42-04:00"
+  },
+  {
+   "file": "2014_Annual_Report_of_the_Town_of_Rindge_New_Hampshire_c14192.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2014_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "sha256": "f27c202ec6b2ca67df45031a6ba6fa1bdb7124e1fb11f59cfbcded08113be6cf",
+   "bytes": 28503860,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-11T21:42:19+00:00"
   },
   {
    "file": "2015_Annual_report_of_the_Town_of_Rindge_New_Hampshire_42ad6f.pdf",
@@ -482,6 +498,14 @@
    "bytes": 14940084,
    "content_type": "application/pdf",
    "retrieved": "2026-10-09T22:10:56-04:00"
+  },
+  {
+   "file": "2017_Annual_Report_of_the_Town_of_Rindge_New_Hampshire_36bff2.pdf",
+   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2017_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
+   "sha256": "f40a5104e8c88779f51bd1595ccfd776fa21315cdc85499243ed31c809403cfc",
+   "bytes": 38174608,
+   "content_type": "application/pdf",
+   "retrieved": "2026-10-11T21:42:19+00:00"
   },
   {
    "file": "2018-08-07_master_plan_pdf_to_print_e12f9f.pdf",
@@ -1320,21 +1344,5 @@
    "retrieved": "2026-10-09T22:10:52-04:00"
   }
  ],
- "not_copied": [
-  {
-   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2012_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
-   "bytes": 38443321,
-   "reason": "Larger than 25 MB; not copied to keep the repository small. Opens on rindgenh.org in a new tab."
-  },
-  {
-   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2014_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
-   "bytes": 28503860,
-   "reason": "Larger than 25 MB; not copied to keep the repository small. Opens on rindgenh.org in a new tab."
-  },
-  {
-   "source_url": "https://www.rindgenh.org/Documents/How%20Do%20I/Town%20Reports/2017_Annual%20Report%20of%20the%20Town%20of%20Rindge%20New%20Hampshire.pdf",
-   "bytes": 38174608,
-   "reason": "Larger than 25 MB; not copied to keep the repository small. Opens on rindgenh.org in a new tab."
-  }
- ]
+ "not_copied": []
 }
