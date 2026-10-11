@@ -1,0 +1,1552 @@
+{
+ "captured": "2026-10-11T21:42:19+00:00",
+ "errors": {
+  "https://catalog.hathitrust.org/Record/008607781": "HTTPError: HTTP Error 403: Forbidden",
+  "https://citizenportal.ai/source/10354672/september-22-2026-fy28-budget-advisory-committeespecial-selectboard-meeting": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2020/01/17/rindge-to-bond-for-better-internet-32026308/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2022/02/09/towns-consider-their-elderly-tax-exemptions-44955643/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2025/03/14/jaffrey-rindge-cte-59443211/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2025/03/18/jaffrey-rindge-budget-59443183/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2026/01/31/rindge-voters-approve-budget-increase/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2026/03/11/hamilton-retains-select-board/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2026/03/11/jaffrey-rindge-school-district-voters-fail-budget/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2026/09/14/rindge-ends-jrma-contract/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://ledgertranscript.com/2026/10/06/conant-cte-budget-concerns/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://mytownview.com/new-hampshire/cheshire/rindge/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://rindgenh.gov/news_detail_T2_R16.php": "HTTPError: HTTP Error 404: Not Found",
+  "https://www.census.gov/quickfacts/fact/table/rindgetowncheshirecountynewhampshire/HSG010225": "HTTPError: HTTP Error 403: Forbidden",
+  "https://www.census.gov/quickfacts/fact/table/rindgetowncheshirecountynewhampshire/POP645224": "HTTPError: HTTP Error 403: Forbidden",
+  "https://www.des.nh.gov/land/septic-systems": "HTTPError: HTTP Error 403: Forbidden",
+  "https://www.des.nh.gov/water/wetlands/permit-assistance": "HTTPError: HTTP Error 403: Forbidden",
+  "https://www.keenesentinel.com/news/local/town-meeting-election-results-march-8/article_5802b31b-120a-599e-a198-146db1467fb6.html": "HTTPError: HTTP Error 429: Too Many Requests",
+  "https://www.nhdeeds.org/cheshire-home/": "HTTPError: HTTP Error 403: Forbidden",
+  "https://www.nhdfl.dncr.nh.gov/forest-protection/fire-permits": "HTTPError: HTTP Error 403: Forbidden",
+  "https://www.sos.nh.gov/elections/voters/register-vote": "HTTPError: HTTP Error 403: Forbidden",
+  "https://www2.nhes.nh.gov/GraniteStats/SessionServlet?city=000314&cityName=Rindge&page=Community.jsp": "HTTPError: HTTP Error 403: Forbidden"
+ },
+ "frame": {
+  "http://rindgehistoricalsociety.org/": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://archive.org/search?query=rindge+annual+report": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://co.cheshire.nh.us/departments/commissioners/": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://data.avitarassociates.com/logon.aspx": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://pay.eb2gov.com/RINDGENH": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://pay.eb2gov.com/Service/Index/1422?towncode=328&source=MV&towncodemasterid=321": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://rindge.recdesk.com/Community/Home": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://rindgenh.genasys.com/portal/en/register?dc=2nrz0z20pbl": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://rindgenh.gov/departments/town_clerk/elections-draft/local_elections.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://sau47.org": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://scholars.unh.edu/rindge_nh_reports/": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=71904": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=71905": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=72197": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=72198": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=72742": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=72743": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73291": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73557": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73612": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73613": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73615": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73616": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73617": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73618": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73620": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73621": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73622": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73624": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73625": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73626": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=73627": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=74109": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/stream.php?location_id=166&id=74438": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://townhallstreams.com/towns/rindge_nh": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.cathedralofthepines.org/contact/": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://www.franklinpierce.edu/about/locations/rindge.html": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/II/23/23-1.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/II/24/24-13.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/31/31-39.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/32/32-5-b.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/36/36-56.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/39/39-3.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/40/40-13.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/L/482-A/482-A-3.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/672/672-3.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/673/673-3.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-16.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-21.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-33.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-36.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-39.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-41.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-43.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-59.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-72.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-3.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-4.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-7.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/676/676-17.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/677/677-2.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/72/72-27-a.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/72/72-28.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/72/72-39-a.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/72/72-39-b.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/75/75-8-a.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/76/76-16.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/79-A/79-A-7.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/VI/91-A/91-A-4.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/XX/229/229-5.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/XX/231/231-43.htm": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.ingallslibrary.com/": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://www.keenesentinel.com/news/local/town-and-school-election-results-march-10/article_6dcaaa56-eace-4031-9f74-812d06b64e12.html": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://www.keenesentinel.com/news/local/where-key-zoning-changes-passed-and-failed-in-the-monadnock-region-nh/article_a1157345-1244-4711-bf2e-526605ec08e7.html": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://www.rindgechamber.org/": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": true,
+   "status": 200,
+   "xfo": ""
+  },
+  "https://www.rindgenh.gov/boards_commission/board_of_selectmen/citizen_request_center.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/board_of_selectmen/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/budget_advisory_committee/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/capital_improvement_program_committee/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/cemetery_trustees/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/community_power_committee/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/conservation_commission/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/conservation_commission/rindge_conservation_lands.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/energy_commission/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/hazard_mitigation_committee/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/meetinghouse_oversight_committee/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/planning_board/applications.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/planning_board/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/recreation_committee/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/roadway_committee/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/supervisors_of_the_checklist/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/teltech/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/town_gown_committee/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/trustees_of_trust_funds/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/boards_commission/zoning_board_of_adjustment/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/calendar.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/community/clubs_and_organizations.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/community/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/assessing/2025_reassessment.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/assessing/exemptions___credits.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/assessing/forms_and_applications.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/assessing/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/assessing/the_abatement_process.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/building/files_documents.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/building/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/code_enforcement/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/fire/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/health_officer/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/ingalls_memorial_library/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/police/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/public_works/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/recreation/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/recycling_transfer_station/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/tax_collector/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/town_clerk/elections-draft/voter_registration.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/town_clerk/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/town_clerk/motor_vehicles.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/departments/welfare/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/enotify/index.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.gov/how_do_i/contact_us.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/boards_commission/board_of_selectmen/agendas_minutes.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/boards_commission/budget_advisory_committee/agendas_minutes.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/boards_commission/conservation_commission/agendas_minutes.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/boards_commission/planning_board/agendas_minutes.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/boards_commission/planning_board/regulations.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/boards_commission/planning_board/zoning_ordinances.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/boards_commission/zoning_board_of_adjustment/agendas_minutes.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  },
+  "https://www.rindgenh.org/how_do_i/town_reports.php": {
+   "checked": "2026-10-11T21:42:19+00:00",
+   "frameable": false,
+   "status": 200,
+   "xfo": "SAMEORIGIN"
+  }
+ },
+ "pages": {
+  "https://co.cheshire.nh.us/departments/commissioners/": {
+   "bytes": 6837,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/co-cheshire-nh-us-departments-commissioners-3c680c.html",
+   "final_url": "https://co.cheshire.nh.us/departments/commissioners/",
+   "sha256": "1de864c48f35e4c6df9a3af344bd21468f3b18b12b7401c9d0b5e92d65b076da",
+   "title": "Commissioners -Cheshire County",
+   "words": 314
+  },
+  "https://rindgenh.gov/departments/town_clerk/elections-draft/local_elections.php": {
+   "bytes": 11482,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/rindgenh-gov-departments-town-clerk-elections-draft-local-elections-ph-56b39c.html",
+   "final_url": "https://rindgenh.gov/departments/town_clerk/elections-draft/local_elections.php",
+   "sha256": "26c3107dd78cd993d743eb47293e22699e06a66ecb0e4adf62a58c35b716c2eb",
+   "title": "Local Elections",
+   "words": 210
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/II/23/23-1.htm": {
+   "bytes": 2360,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-ii-23-23-1-htm-df8cc6.html",
+   "final_url": "https://gc.nh.gov/rsa/html/II/23/23-1.htm",
+   "sha256": "0037b6ba1c265f5b4a563f17aae224450c155402b1ff122a44c57166614bb798",
+   "title": "Section 23:1 Powers as Corporate Body.",
+   "words": 77
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/II/24/24-13.htm": {
+   "bytes": 4144,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-ii-24-24-13-htm-ec31bc.html",
+   "final_url": "https://gc.nh.gov/rsa/html/II/24/24-13.htm",
+   "sha256": "d1f9f77f6273d35839f0d8a1676fcd4846b28028210ba05bf1643ebeb5896988",
+   "title": "Section 24:13 Powers.",
+   "words": 368
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/31/31-39.htm": {
+   "bytes": 5266,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-31-31-39-htm-e11c9e.html",
+   "final_url": "https://gc.nh.gov/rsa/html/III/31/31-39.htm",
+   "sha256": "6b7ebfcdda993a1e27d5ec370ea41dc52f68e5762d97233544e9d106948efc68",
+   "title": "Section 31:39 Purpose and Penalties.",
+   "words": 528
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/32/32-5-b.htm": {
+   "bytes": 7691,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-32-32-5-b-htm-5fd3e8.html",
+   "final_url": "https://gc.nh.gov/rsa/html/III/32/32-5-b.htm",
+   "sha256": "a2fbc23958cae64d76aedb569a493954d9f91e939634e2657c2af1ba8c4acb9e",
+   "title": "Section 32:5-b Local Tax Cap.",
+   "words": 967
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/36/36-56.htm": {
+   "bytes": 3680,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-36-36-56-htm-bac207.html",
+   "final_url": "https://gc.nh.gov/rsa/html/III/36/36-56.htm",
+   "sha256": "d1181193aaa21882611549220ca7e96409203821005711165c655eb2310dbfea",
+   "title": "Section 36:56 Review Required.",
+   "words": 269
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/39/39-3.htm": {
+   "bytes": 4451,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-39-39-3-htm-af48b5.html",
+   "final_url": "https://gc.nh.gov/rsa/html/III/39/39-3.htm",
+   "sha256": "231ab28247c077b8059378edf084010df06dc9ca13df28d93d08144dc95f4398",
+   "title": "Section 39:3 Articles.",
+   "words": 440
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/III/40/40-13.htm": {
+   "bytes": 22422,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-iii-40-40-13-htm-5ff3e6.html",
+   "final_url": "https://gc.nh.gov/rsa/html/III/40/40-13.htm",
+   "sha256": "f10307dda5ae4e366811255bc5d4f7d6a4b89a0b644d8c70210c6817d2aef571",
+   "title": "Section 40:13 Use of Official Ballot.",
+   "words": 3347
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/L/482-A/482-A-3.htm": {
+   "bytes": 48860,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-l-482-a-482-a-3-htm-0f7b63.html",
+   "final_url": "https://gc.nh.gov/rsa/html/L/482-A/482-A-3.htm",
+   "sha256": "8c14e5bb6086263fee7d48077b329dac3d78439981438121e56e0a9b848f3ff0",
+   "title": "Section 482-A:3 Excavating and Dredging Permit; Certain Exemptions.",
+   "words": 7322
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/672/672-3.htm": {
+   "bytes": 3741,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-672-672-3-htm-1c2f7d.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/672/672-3.htm",
+   "sha256": "9f4507d35948ca5de6dcb33ca4e18c757f210af9c59dc3a9417e863089d9e638",
+   "title": "Section 672:3 Abutter.",
+   "words": 303
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/673/673-3.htm": {
+   "bytes": 4689,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-673-673-3-htm-923abf.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/673/673-3.htm",
+   "sha256": "6cb551a75a87ea482e907527551346559f7a0f37d7fabcf3da5b273684a7ee03",
+   "title": "Section 673:3 Zoning Board of Adjustment.",
+   "words": 462
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-16.htm": {
+   "bytes": 7489,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-16-htm-fdb56e.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-16.htm",
+   "sha256": "e1e01851e9537311add3bfc9046181e32500a8a98661ead397998f74f7000c29",
+   "title": "Section 674:16 Grant of Power.",
+   "words": 886
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-21.htm": {
+   "bytes": 19144,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-21-htm-62345d.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-21.htm",
+   "sha256": "598bc0df18d35ab62f9cb67655e16ac8d2455e639abcb7cd260c0b0e581017a5",
+   "title": "Section 674:21 Innovative Land Use Controls.",
+   "words": 2629
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-33.htm": {
+   "bytes": 9722,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-33-htm-8275ea.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-33.htm",
+   "sha256": "e808bff0765aa198a1b90fc5281fc421dd8e2ebad2fc7ec583c95a26426f33ae",
+   "title": "Section 674:33 Powers of Zoning Board of Adjustment.",
+   "words": 1264
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-36.htm": {
+   "bytes": 10402,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-36-htm-3c2e76.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-36.htm",
+   "sha256": "c463fb5336ba59395e04ae9c69820bc9864b19dd18dcdccf59dbc37a3f672f1f",
+   "title": "Section 674:36 Subdivision Regulations.",
+   "words": 1318
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-39.htm": {
+   "bytes": 5626,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-39-htm-2287cb.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-39.htm",
+   "sha256": "cb956ae8c39a292e4874b5fc45432264332f947f5a6af03e906512dd58169553",
+   "title": "Section 674:39 Seven-Year Exemption.",
+   "words": 586
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-41.htm": {
+   "bytes": 9031,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-41-htm-f2710f.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-41.htm",
+   "sha256": "a7b503ae320d562b96a82c5091064bb17f175189cdc9914de8517eb521fc67af",
+   "title": "Section 674:41 Erection of Buildings on Streets; Appeals.",
+   "words": 1161
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-43.htm": {
+   "bytes": 6777,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-43-htm-d72bff.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-43.htm",
+   "sha256": "fe7278b41033f062ad6104b72bb429c0e905fff80ec80299bc227bcf101f0b35",
+   "title": "Section 674:43 Power to Review Site Plans.",
+   "words": 754
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-59.htm": {
+   "bytes": 4080,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-59-htm-6d0e2c.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-59.htm",
+   "sha256": "393f8862dccd5de29afb1516298b6b68b05f53d3de6d50e2f27389f408e41a62",
+   "title": "Section 674:59 Workforce Housing Opportunities.",
+   "words": 310
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/674/674-72.htm": {
+   "bytes": 9187,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-674-674-72-htm-e8a8bf.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/674/674-72.htm",
+   "sha256": "98156a1b96d0edb9551c5039c767176244c29def29da4c2aea1e74c7ae9ef13f",
+   "title": "Section 674:72 Accessory Dwelling Units.",
+   "words": 1080
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-3.htm": {
+   "bytes": 7233,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-675-675-3-htm-5c8330.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/675/675-3.htm",
+   "sha256": "922f574e76225ef1c7d7738277cd184d9bbfc1d83cfb8a3eacaa4d699212cd73",
+   "title": "Section 675:3 Method of Enactment in Certain Towns and Village Districts.",
+   "words": 865
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-4.htm": {
+   "bytes": 4589,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-675-675-4-htm-f796a3.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/675/675-4.htm",
+   "sha256": "b2c0f007827635f87d80b295f69b537fec91c37fa1f1f80407398413eb658676",
+   "title": "Section 675:4 Method of Enactment by Petition.",
+   "words": 420
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/675/675-7.htm": {
+   "bytes": 5925,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-675-675-7-htm-849395.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/675/675-7.htm",
+   "sha256": "798f16aa5b3df013fadf466da909a508bd7087e13e9197225d7e2631fccacc94",
+   "title": "Section 675:7 Notice Requirements for Public Hearing.",
+   "words": 658
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/676/676-17.htm": {
+   "bytes": 5742,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-676-676-17-htm-9a78c4.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/676/676-17.htm",
+   "sha256": "4f5d56fae20d597316476abdf303e832d23e6871e15341a094768bf7202a355e",
+   "title": "Section 676:17 Fines and Penalties; Second Offense.",
+   "words": 628
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/LXIV/677/677-2.htm": {
+   "bytes": 4190,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-lxiv-677-677-2-htm-91a36f.html",
+   "final_url": "https://gc.nh.gov/rsa/html/LXIV/677/677-2.htm",
+   "sha256": "b1214f5370032ddd7fed8ef6717ccbe05926b27bd9392097f4506ac44c7e7fbb",
+   "title": "Section 677:2 Motion for Rehearing of Board of Adjustment, Board of Appeals, and Local Legislative Body Decisions.",
+   "words": 353
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/72/72-27-a.htm": {
+   "bytes": 4226,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-v-72-72-27-a-htm-dfffba.html",
+   "final_url": "https://gc.nh.gov/rsa/html/V/72/72-27-a.htm",
+   "sha256": "db0fc875d0c62d48c502c8f20c719c26e2265b3f8e75cff40ef28740c7b36f81",
+   "title": "Section 72:27-a Procedure for Adoption, Modification, or Rescission.",
+   "words": 375
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/72/72-28.htm": {
+   "bytes": 6032,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-v-72-72-28-htm-bf43f3.html",
+   "final_url": "https://gc.nh.gov/rsa/html/V/72/72-28.htm",
+   "sha256": "63f3531727fcbf935aae8875c4a698e5ab806bbd288672aecb51fdf6d583a717",
+   "title": "Section 72:28 Standard and Optional Veterans' Tax Credit.",
+   "words": 661
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/72/72-39-a.htm": {
+   "bytes": 5455,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-v-72-72-39-a-htm-7ba6b6.html",
+   "final_url": "https://gc.nh.gov/rsa/html/V/72/72-39-a.htm",
+   "sha256": "7eda49c91a66532afb30a8751a537b58e56a4e84312ea7d3b0e9f4fef9b04ec3",
+   "title": "Section 72:39-a Conditions for Elderly Exemption.",
+   "words": 588
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/72/72-39-b.htm": {
+   "bytes": 3845,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-v-72-72-39-b-htm-29c9dc.html",
+   "final_url": "https://gc.nh.gov/rsa/html/V/72/72-39-b.htm",
+   "sha256": "7e071792aa91155c976e8f54d64ed0bd27c85d0ff85dbb2ea369d69db40049b9",
+   "title": "Section 72:39-b Procedure for Adoption and Modification of Elderly Exemption.",
+   "words": 330
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/75/75-8-a.htm": {
+   "bytes": 2772,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-v-75-75-8-a-htm-27b92f.html",
+   "final_url": "https://gc.nh.gov/rsa/html/V/75/75-8-a.htm",
+   "sha256": "e240af8df1af902608bef15ca67e02c9dd20ff16dc2f114a8cf217cbedfbc1d9",
+   "title": "Section 75:8-a Five-Year Valuation.",
+   "words": 134
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/76/76-16.htm": {
+   "bytes": 5779,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-v-76-76-16-htm-39c8c9.html",
+   "final_url": "https://gc.nh.gov/rsa/html/V/76/76-16.htm",
+   "sha256": "12dd9d0ff1060d7e5da4e4cb8f12f96f0f3f07da1392305b92b8da1bba5b478e",
+   "title": "Section 76:16 By Selectmen or Assessors.",
+   "words": 621
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/V/79-A/79-A-7.htm": {
+   "bytes": 15418,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-v-79-a-79-a-7-htm-f75f70.html",
+   "final_url": "https://gc.nh.gov/rsa/html/V/79-A/79-A-7.htm",
+   "sha256": "a11f3fde005293ac7bd42be901b3a482d8a8a77ac788804f7242e34d8640bfa8",
+   "title": "Section 79-A:7 Land Use Change Tax.",
+   "words": 2320
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/VI/91-A/91-A-4.htm": {
+   "bytes": 12687,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-vi-91-a-91-a-4-htm-bdde7f.html",
+   "final_url": "https://gc.nh.gov/rsa/html/VI/91-A/91-A-4.htm",
+   "sha256": "ca62c90bd4100383e958007bfcf6a5af6e4be921861a902284e174fa0ae6ec6d",
+   "title": "Section 91-A:4 Minutes and Records Available for Public Inspection.",
+   "words": 1734
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/XX/229/229-5.htm": {
+   "bytes": 7644,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-xx-229-229-5-htm-5c5935.html",
+   "final_url": "https://gc.nh.gov/rsa/html/XX/229/229-5.htm",
+   "sha256": "c321eeb908ba24df6efd6da49a176d88efa45c4400f699ed1c943f97c680385d",
+   "title": "Section 229:5 Classification.",
+   "words": 902
+  },
+  "https://www.gencourt.state.nh.us/rsa/html/XX/231/231-43.htm": {
+   "bytes": 3473,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-gencourt-state-nh-us-rsa-html-xx-231-231-43-htm-aaa01e.html",
+   "final_url": "https://gc.nh.gov/rsa/html/XX/231/231-43.htm",
+   "sha256": "432a8443108ef66e9cd72a07013fc137b3860f24c001b781427c0c1820815108",
+   "title": "Section 231:43 Power to Discontinue.",
+   "words": 264
+  },
+  "https://www.rindgenh.gov/boards_commission/board_of_selectmen/index.php": {
+   "bytes": 5820,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-board-of-selectmen-index-php-9eef9a.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/board_of_selectmen/index.php",
+   "sha256": "318f31f2706d809eee28dc1a359080bbe5fd94e06571405b0c1d464b3571d265",
+   "title": "Board Of Selectmen",
+   "words": 373
+  },
+  "https://www.rindgenh.gov/boards_commission/budget_advisory_committee/index.php": {
+   "bytes": 3434,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-budget-advisory-committee-index-php-e2e50c.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/budget_advisory_committee/index.php",
+   "sha256": "e1eef46b503f8f6fbef9fc5f9f58e972c93564065d5f950aefd7c01aed8dda3c",
+   "title": "Budget Advisory Committee",
+   "words": 121
+  },
+  "https://www.rindgenh.gov/boards_commission/capital_improvement_program_committee/index.php": {
+   "bytes": 3968,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-capital-improvement-program-committ-074a34.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/capital_improvement_program_committee/index.php",
+   "sha256": "3ba03a5229fb2b8e016d0d21455a8bbde2a15c7c8a8bee5ff76c39c2d65fdd34",
+   "title": "Capital Improvement Program Committee",
+   "words": 206
+  },
+  "https://www.rindgenh.gov/boards_commission/cemetery_trustees/index.php": {
+   "bytes": 3459,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-cemetery-trustees-index-php-08b644.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/cemetery_trustees/index.php",
+   "sha256": "698b5c00ad65e9b8c81fc63fce763e9edbcace83d14037cea8e8850e945b859a",
+   "title": "Cemetery Trustees",
+   "words": 72
+  },
+  "https://www.rindgenh.gov/boards_commission/community_power_committee/index.php": {
+   "bytes": 5091,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-community-power-committee-index-php-3ec890.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/community_power_committee/index.php",
+   "sha256": "761b37bc58f22ff89b6e9ddd1b54ec5e41cd6d1960c04bfcc7badc0e03436347",
+   "title": "Community Power Committee",
+   "words": 275
+  },
+  "https://www.rindgenh.gov/boards_commission/conservation_commission/index.php": {
+   "bytes": 2862,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-conservation-commission-index-php-a2ecf4.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/conservation_commission/index.php",
+   "sha256": "a6a98403855977c7e25b77dcb398eca8982b9eff83a51160bee00ccca2d8734a",
+   "title": "Conservation Commission",
+   "words": 60
+  },
+  "https://www.rindgenh.gov/boards_commission/energy_commission/index.php": {
+   "bytes": 4682,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-energy-commission-index-php-d6fabf.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/energy_commission/index.php",
+   "sha256": "843df8a4013f7ecf033b1bc85569068e46e60156fc65d1e6c6d00e46091fd19c",
+   "title": "Energy Commission",
+   "words": 105
+  },
+  "https://www.rindgenh.gov/boards_commission/meetinghouse_oversight_committee/index.php": {
+   "bytes": 3074,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-meetinghouse-oversight-committee-in-b3ef5d.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/meetinghouse_oversight_committee/index.php",
+   "sha256": "7e08c59107ba97ea994c3ea8a2a8af35bbc9b0e51772c97d2c6de413845ab65e",
+   "title": "Meetinghouse Oversight Committee",
+   "words": 51
+  },
+  "https://www.rindgenh.gov/boards_commission/planning_board/applications.php": {
+   "bytes": 7534,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-planning-board-applications-php-421afe.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/planning_board/applications.php",
+   "sha256": "031a73677013565ed74c43cdd51f4006742002901e5e0e9909b042e423038f88",
+   "title": "Rindge, NH",
+   "words": 134
+  },
+  "https://www.rindgenh.gov/boards_commission/planning_board/index.php": {
+   "bytes": 5694,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-planning-board-index-php-4f39e4.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/planning_board/index.php",
+   "sha256": "dd49969818cf0bb1b6042e218a32a05971b6566f3940b7d5cb70bf6cadea18c6",
+   "title": "Planning Board",
+   "words": 395
+  },
+  "https://www.rindgenh.gov/boards_commission/recreation_committee/index.php": {
+   "bytes": 4035,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-recreation-committee-index-php-71b81f.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/recreation_committee/index.php",
+   "sha256": "39bb8362a2082f60a8c91e292ab3c541be24a0f3f3576d1d1cc574939514678a",
+   "title": "Recreation Committee",
+   "words": 104
+  },
+  "https://www.rindgenh.gov/boards_commission/roadway_committee/index.php": {
+   "bytes": 6060,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-roadway-committee-index-php-bb583a.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/roadway_committee/index.php",
+   "sha256": "28b410f6eee1a6ef558d7587d10c58da1e193f66fd75a7f5c0a19d09ad8822db",
+   "title": "Roadway Committee",
+   "words": 64
+  },
+  "https://www.rindgenh.gov/boards_commission/teltech/index.php": {
+   "bytes": 2881,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-teltech-index-php-e733f3.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/teltech/index.php",
+   "sha256": "1d44d7b5e115ff4707aeffc486f7cde418f1f7ba995be6e75b7610d995b7c152",
+   "title": "Rindge, NH",
+   "words": 18
+  },
+  "https://www.rindgenh.gov/boards_commission/town_gown_committee/index.php": {
+   "bytes": 3910,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-town-gown-committee-index-php-97be96.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/town_gown_committee/index.php",
+   "sha256": "a9f96e3d6fe3d5c70352b05b776e5a4e6318960fe8b0eb781062fbaa6af37ca4",
+   "title": "Town & Gown Committee",
+   "words": 165
+  },
+  "https://www.rindgenh.gov/boards_commission/trustees_of_trust_funds/index.php": {
+   "bytes": 4637,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-trustees-of-trust-funds-index-php-a7fd03.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/trustees_of_trust_funds/index.php",
+   "sha256": "5ca4c15fe425594315bf2bc5aaa4a6962fc0ed3f0d4e932d3828a0e3caeedb7e",
+   "title": "Trustees of the Trust Funds",
+   "words": 39
+  },
+  "https://www.rindgenh.gov/boards_commission/zoning_board_of_adjustment/index.php": {
+   "bytes": 3826,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-boards-commission-zoning-board-of-adjustment-index-ph-23fe1e.html",
+   "final_url": "https://www.rindgenh.gov/boards_commission/zoning_board_of_adjustment/index.php",
+   "sha256": "2fd99fc73b9c1c36a614be7238ec316a545d3463c518877f866d49a7cbe436bd",
+   "title": "Rindge, NH",
+   "words": 80
+  },
+  "https://www.rindgenh.gov/community/clubs_and_organizations.php": {
+   "bytes": 5534,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-community-clubs-and-organizations-php-e28918.html",
+   "final_url": "https://www.rindgenh.gov/community/clubs_and_organizations.php",
+   "sha256": "6950451463fb9aeb55d306bd26d8ab0e12f4def464f49e25e474011823b2829e",
+   "title": "Rindge, NH",
+   "words": 223
+  },
+  "https://www.rindgenh.gov/community/index.php": {
+   "bytes": 8284,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-community-index-php-9c1cf5.html",
+   "final_url": "https://www.rindgenh.gov/community/index.php",
+   "sha256": "58ff36de269e24fb626afb038505bc85180f5ce0c68f97cea8587fc6206fe847",
+   "title": "Rindge, NH",
+   "words": 765
+  },
+  "https://www.rindgenh.gov/departments/assessing/2025_reassessment.php": {
+   "bytes": 4099,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-assessing-2025-reassessment-php-1b2dc4.html",
+   "final_url": "https://www.rindgenh.gov/departments/assessing/2025_reassessment.php",
+   "sha256": "ecec1910bf639de8ac713712b1fcb0a19335506d73875f43572430ffe44145dd",
+   "title": "2025 Reassessment",
+   "words": 316
+  },
+  "https://www.rindgenh.gov/departments/assessing/exemptions___credits.php": {
+   "bytes": 3711,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-assessing-exemptions-credits-php-bdfde5.html",
+   "final_url": "https://www.rindgenh.gov/departments/assessing/exemptions___credits.php",
+   "sha256": "5e46d40bffca1561986c1b3ba0bbcb9fe4d5b8c90d5e2a5773893c6a6c31f3b9",
+   "title": "Exemptions and Credits",
+   "words": 265
+  },
+  "https://www.rindgenh.gov/departments/assessing/forms_and_applications.php": {
+   "bytes": 6776,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-assessing-forms-and-applications-php-97ae3f.html",
+   "final_url": "https://www.rindgenh.gov/departments/assessing/forms_and_applications.php",
+   "sha256": "f80a060bba141c23aae3e63197d93f76ef518edafe9f1885efe6e7adfca9518f",
+   "title": "Assessing Forms and Applications",
+   "words": 166
+  },
+  "https://www.rindgenh.gov/departments/assessing/index.php": {
+   "bytes": 5077,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-assessing-index-php-4bf306.html",
+   "final_url": "https://www.rindgenh.gov/departments/assessing/index.php",
+   "sha256": "bcb54d0805ba1b091062062cad9d441a243d05306ad46bde784a53b49c92b635",
+   "title": "Assessing",
+   "words": 411
+  },
+  "https://www.rindgenh.gov/departments/assessing/the_abatement_process.php": {
+   "bytes": 4305,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-assessing-the-abatement-process-php-479241.html",
+   "final_url": "https://www.rindgenh.gov/departments/assessing/the_abatement_process.php",
+   "sha256": "aa78485f36f6cfc5e49966dcd0f214ca6b46816d6f0929655549d47ed4e2dff9",
+   "title": "The Abatement Process",
+   "words": 305
+  },
+  "https://www.rindgenh.gov/departments/building/files_documents.php": {
+   "bytes": 16259,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-building-files-documents-php-b46ad0.html",
+   "final_url": "https://www.rindgenh.gov/departments/building/files_documents.php",
+   "sha256": "4a60123cd0849a0eb4c0c0423a39d8dd26162d1e7023980f5bcc6a26ad8fe981",
+   "title": "Permit Applications",
+   "words": 184
+  },
+  "https://www.rindgenh.gov/departments/building/index.php": {
+   "bytes": 3945,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-building-index-php-c307e3.html",
+   "final_url": "https://www.rindgenh.gov/departments/building/index.php",
+   "sha256": "099f6d3cc27c1e8f2c93b921cba994662f13c4e6d3ca84a9ec50b7e535c7edc1",
+   "title": "Building Department",
+   "words": 159
+  },
+  "https://www.rindgenh.gov/departments/code_enforcement/index.php": {
+   "bytes": 3481,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-code-enforcement-index-php-99f7f1.html",
+   "final_url": "https://www.rindgenh.gov/departments/code_enforcement/index.php",
+   "sha256": "309392f253f545901a4bd10ebe252c1fa9096e97de01fa66bfdf3aede7386852",
+   "title": "Zoning Enforcement",
+   "words": 137
+  },
+  "https://www.rindgenh.gov/departments/fire/index.php": {
+   "bytes": 3674,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-fire-index-php-75ebbd.html",
+   "final_url": "https://www.rindgenh.gov/departments/fire/index.php",
+   "sha256": "ddbe3c6466a7be532aea905c98fe8f9569abc422fe1fa7dbd68c2b7d5b376641",
+   "title": "Fire Department",
+   "words": 80
+  },
+  "https://www.rindgenh.gov/departments/ingalls_memorial_library/index.php": {
+   "bytes": 11453,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-ingalls-memorial-library-index-php-6b69f1.html",
+   "final_url": "https://www.rindgenh.gov/departments/ingalls_memorial_library/index.php",
+   "sha256": "039bc5641a5ec5fd23a4652e693f2b282bee9ea749ef41ae721c3fb6762d5b63",
+   "title": "Ingalls Memorial Library",
+   "words": 741
+  },
+  "https://www.rindgenh.gov/departments/police/index.php": {
+   "bytes": 4677,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-police-index-php-e72f5b.html",
+   "final_url": "https://www.rindgenh.gov/departments/police/index.php",
+   "sha256": "459c81681d6f38dcc1e37804b195d527467132d31aa727f5054c72da78a5d088",
+   "title": "Police",
+   "words": 191
+  },
+  "https://www.rindgenh.gov/departments/public_works/index.php": {
+   "bytes": 5525,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-public-works-index-php-d99c67.html",
+   "final_url": "https://www.rindgenh.gov/departments/public_works/index.php",
+   "sha256": "d31c8779da7930e92760f6056742f22b3a4d231b4ede8c9007ad928b9f344e9c",
+   "title": "Department of Public Works",
+   "words": 390
+  },
+  "https://www.rindgenh.gov/departments/recreation/index.php": {
+   "bytes": 2173,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-recreation-index-php-f5e4e3.html",
+   "final_url": "https://www.rindgenh.gov/departments/recreation/index.php",
+   "sha256": "7dcc3b0110da2f2a84dec501f38bfdada0cc2ab3130945684842f101d390f25e",
+   "title": "Recreation Department",
+   "words": 74
+  },
+  "https://www.rindgenh.gov/departments/recycling_transfer_station/index.php": {
+   "bytes": 4070,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-recycling-transfer-station-index-php-910b49.html",
+   "final_url": "https://www.rindgenh.gov/departments/recycling_transfer_station/index.php",
+   "sha256": "5f43eb8eb728f74219d195b6ee0ab2e12bd0d6b51503707c4aaef8e7383afeed",
+   "title": "Recycling and Transfer Station",
+   "words": 190
+  },
+  "https://www.rindgenh.gov/departments/tax_collector/index.php": {
+   "bytes": 7526,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-tax-collector-index-php-118334.html",
+   "final_url": "https://www.rindgenh.gov/departments/tax_collector/index.php",
+   "sha256": "5773283563eb11311a7621e2b5f9f9967196f3fe7fba73aebcc6097cb1697d56",
+   "title": "Tax Collector",
+   "words": 654
+  },
+  "https://www.rindgenh.gov/departments/town_clerk/elections-draft/voter_registration.php": {
+   "bytes": 6746,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-town-clerk-elections-draft-voter-registra-5fdcd0.html",
+   "final_url": "https://www.rindgenh.gov/departments/town_clerk/elections-draft/voter_registration.php",
+   "sha256": "aaa4ec7fbf33858ff16276ea4da58cebf1114d495b79d978ee5157a9bce66b7b",
+   "title": "Voter Registration",
+   "words": 564
+  },
+  "https://www.rindgenh.gov/departments/town_clerk/index.php": {
+   "bytes": 36370,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-town-clerk-index-php-241ebf.html",
+   "final_url": "https://www.rindgenh.gov/departments/town_clerk/index.php",
+   "sha256": "68ed684e3353d38d771f4287c9e9c8af163a7c49a6831d1a78e12ba6416089aa",
+   "title": "Town Clerk",
+   "words": 3699
+  },
+  "https://www.rindgenh.gov/departments/town_clerk/motor_vehicles.php": {
+   "bytes": 8067,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-town-clerk-motor-vehicles-php-d7e1ac.html",
+   "final_url": "https://www.rindgenh.gov/departments/town_clerk/motor_vehicles.php",
+   "sha256": "c846f2f1f9ad1c847533fcdf0aa80e4a826f6e09df31fd07e1ad8837c2b2d9c5",
+   "title": "Motor Vehicles",
+   "words": 198
+  },
+  "https://www.rindgenh.gov/departments/welfare/index.php": {
+   "bytes": 3934,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-departments-welfare-index-php-598c5d.html",
+   "final_url": "https://www.rindgenh.gov/departments/welfare/index.php",
+   "sha256": "2d60b57a6c71d609299ebf1fc087a2835b468ea2bcb0608b78f168a1b43995a3",
+   "title": "Welfare",
+   "words": 196
+  },
+  "https://www.rindgenh.gov/how_do_i/contact_us.php": {
+   "bytes": 12451,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-gov-how-do-i-contact-us-php-49880b.html",
+   "final_url": "https://www.rindgenh.gov/how_do_i/contact_us.php",
+   "sha256": "4c4ccd5ff7e8f9891826edd0853c5b3bc524ac33fedb9d2ec91b8e25a4e8a883",
+   "title": "Directory",
+   "words": 383
+  },
+  "https://www.rindgenh.org/": {
+   "bytes": 11204,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-534de8.html",
+   "final_url": "https://www.rindgenh.org/",
+   "sha256": "b4fc50e00dad7ad1fcb0c4c7b4ebac98b073792a6a456c0dcd91331c7a2dd565",
+   "title": "Rindge, NH",
+   "words": 192
+  },
+  "https://www.rindgenh.org/boards_commission/board_of_selectmen/agendas_minutes.php": {
+   "bytes": 77434,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-boards-commission-board-of-selectmen-agendas-minutes--a88fed.html",
+   "final_url": "https://www.rindgenh.org/boards_commission/board_of_selectmen/agendas_minutes.php",
+   "sha256": "a8bc88c93af484a49fb9cb67bb39b9e26a5309fb9cc325c50446fe6d8a0dfad3",
+   "title": "Board of Selectmen Agenda List",
+   "words": 770
+  },
+  "https://www.rindgenh.org/boards_commission/budget_advisory_committee/agendas_minutes.php": {
+   "bytes": 14587,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-boards-commission-budget-advisory-committee-agendas-m-856017.html",
+   "final_url": "https://www.rindgenh.org/boards_commission/budget_advisory_committee/agendas_minutes.php",
+   "sha256": "38dd8cf73ef390541eeb70975ffaabfbadae4ab2c58f58fa7dee67fde48726a8",
+   "title": "Rindge, NH",
+   "words": 99
+  },
+  "https://www.rindgenh.org/boards_commission/conservation_commission/agendas_minutes.php": {
+   "bytes": 34324,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-boards-commission-conservation-commission-agendas-min-dcd164.html",
+   "final_url": "https://www.rindgenh.org/boards_commission/conservation_commission/agendas_minutes.php",
+   "sha256": "6605b0b34e65210ef27f7d3896ff1ba79f6cd2dabd08a5d9fe128158af36ebaf",
+   "title": "Conservation Commission",
+   "words": 200
+  },
+  "https://www.rindgenh.org/boards_commission/planning_board/agendas_minutes.php": {
+   "bytes": 37541,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-boards-commission-planning-board-agendas-minutes-php-b55575.html",
+   "final_url": "https://www.rindgenh.org/boards_commission/planning_board/agendas_minutes.php",
+   "sha256": "b77d4ed4c13367ebd2ae56d49b2c63252f93dd09c1d1dddd9162314c9b5e232a",
+   "title": "Planning Agendas & Minutes",
+   "words": 262
+  },
+  "https://www.rindgenh.org/boards_commission/planning_board/regulations.php": {
+   "bytes": 5296,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-boards-commission-planning-board-regulations-php-445cf0.html",
+   "final_url": "https://www.rindgenh.org/boards_commission/planning_board/regulations.php",
+   "sha256": "5cb7c149f8266614328940f81559e970b2ac0bfa29519f64bc5525b54636b43f",
+   "title": "Rindge, NH",
+   "words": 89
+  },
+  "https://www.rindgenh.org/boards_commission/planning_board/zoning_ordinances.php": {
+   "bytes": 8053,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-boards-commission-planning-board-zoning-ordinances-ph-87033f.html",
+   "final_url": "https://www.rindgenh.org/boards_commission/planning_board/zoning_ordinances.php",
+   "sha256": "021ffd367acd67af40a2483694bba081f12f8793dc884a6f7dc19e0bfbe9bf73",
+   "title": "Rindge, NH",
+   "words": 146
+  },
+  "https://www.rindgenh.org/boards_commission/zoning_board_of_adjustment/agendas_minutes.php": {
+   "bytes": 32071,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-boards-commission-zoning-board-of-adjustment-agendas--6a3e4b.html",
+   "final_url": "https://www.rindgenh.org/boards_commission/zoning_board_of_adjustment/agendas_minutes.php",
+   "sha256": "9b5d6110cb6a68d09ff163766bb15790d3d9461da0be0d4101b6b9b114d56648",
+   "title": "Agendas and Minutes",
+   "words": 298
+  },
+  "https://www.rindgenh.org/how_do_i/town_reports.php": {
+   "bytes": 8975,
+   "captured": "2026-10-11T21:42:19+00:00",
+   "file": "pages/www-rindgenh-org-how-do-i-town-reports-php-2dd1d5.html",
+   "final_url": "https://www.rindgenh.org/how_do_i/town_reports.php",
+   "sha256": "0e0797ed7c2b754ba4dfee9db96eaac86a5780b2273ff7706668c82ce992f4d7",
+   "title": "View Town Reports",
+   "words": 146
+  }
+ }
+}
