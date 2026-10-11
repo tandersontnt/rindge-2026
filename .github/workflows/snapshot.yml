@@ -3,6 +3,9 @@
 name: Save in-site copies
 on:
   workflow_dispatch:
+  push:
+    branches: [in-site-docs]
+    paths: ['.github/workflows/snapshot.yml', 'src/snapshot_pages.py']
 permissions:
   contents: write
 jobs:
