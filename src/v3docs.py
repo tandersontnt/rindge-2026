@@ -154,6 +154,7 @@ def registry(urls, link_text):
             e.update(town_meta(u, d['file']))
             e['file'] = 'docs/' + d['file']
             e['bytes'] = d['bytes']
+            if d.get('retrieved'): e['copied'] = d['retrieved'][:10]
             if d.get('converted'):
                 e['kind'] = 'word'; e['view'] = 'docs/' + d['converted']
             else:

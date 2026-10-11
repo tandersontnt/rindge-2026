@@ -1,3 +1,40 @@
+# Rindge Town Guide v10: everything opens inside the site (Oct 11, 2026)
+
+**Result.** 302 of the 320 cited items now open inside the guide. Before this change, 181 did.
+
+| Kind | Count | Shown as |
+|---|---|---|
+| PDF | 159 | site's PDF viewer; now includes the 2012, 2014 and 2017 annual reports (27–37 MB) |
+| saved page | 89 | readable saved copy in `docs/pages/` |
+| live site | 25 | shown live in the viewer; the site allows framing (header-checked) |
+| video | 23 | site's own player |
+| Word | 6 | PDF rendering |
+
+**How.** `.github/workflows/snapshot.yml` runs `src/snapshot_pages.py` on GitHub's servers, because this authoring environment cannot reach the town's hosts. It runs on pushes to `in-site-docs` and by hand. It:
+
+- downloads the large town PDFs byte for byte and moves them from `not_copied` to `documents` in `docs/MANIFEST.json`;
+- saves public government pages as readable copies:
+  - town sites (rindgenh.gov/.org), NH General Court statutes, Cheshire County and SAU 47;
+  - main text only, with scripts, styles and event handlers removed and links made absolute;
+  - a banner naming the source, capture date and original link;
+  - `noindex` and a canonical link to the original;
+  - a real browser renders pages whose content is drawn by JavaScript;
+- header-checks every other outside link and records which sites allow framing.
+
+The results are recorded in `docs/pages/MANIFEST.json` with a sha256 for each copy. Saved copies are labeled "Web page · saved copy", and the original is authoritative. Each viewer footer gives that file's own copy date.
+
+**Never copied.**
+- News sites and private businesses: a copy would republish their work.
+- Payment and sign-up services: eb2gov bill pay and E-Reg, the Citizen Request form and eNotify. These are kind `service` and open on the official secure site, with an explanation.
+- The Town Hall Streams channel page is kind `channel`. It points to the 23 meeting videos that already play here.
+
+**Still opening in a new tab (11).**
+- These government sites block GitHub's servers, even through a real browser (HTTP 403): US Census QuickFacts (2), NH DES (2), NH Secretary of State, NH Employment Security, NH Forest Protection and the NH DRA tax-rate PDF.
+- HathiTrust, Citizen Portal and MyTownView also block automated access.
+- 2 links are missing at the source (404).
+
+**Design test:** 0 failures and 0 warnings. The 2012 and 2017 reports were also confirmed to render over HTTP (232 and 210 pages).
+
 # Rindge Town Guide v9: Town reports page (Oct 11, 2026)
 
 - **New chapter.** "Town reports" (`#reports`, section `#townreports`) sits after Documents. `src/reports.py` builds it from `docs/MANIFEST.json`.

@@ -246,7 +246,7 @@ def post(page):
         add('Document', e['title'], ' · '.join(str(x) for x in (e.get('board') or e.get('org'), e.get('type'), e.get('year')) if x), 'doc:' + e['id'])
     # library
     lib = library(reg)
-    docdata = {e['id']: {k: e.get(k) for k in ('title', 'src', 'kind', 'view', 'file', 'board', 'type', 'year', 'org', 'host', 'hls', 'dur', 'date', 'chapters') if e.get(k) not in (None, [])} for e in reg.values()}
+    docdata = {e['id']: {k: e.get(k) for k in ('title', 'src', 'kind', 'view', 'file', 'board', 'type', 'year', 'org', 'host', 'hls', 'dur', 'date', 'chapters', 'copied', 'captured') if e.get(k) not in (None, [])} for e in reg.values()}
     import v4post; v4post.enhance(soup, reg)
     page = str(soup)
     page = page.replace('{{LIBRARY}}', lib)
