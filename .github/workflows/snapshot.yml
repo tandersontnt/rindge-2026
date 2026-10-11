@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install beautifulsoup4==4.12.3 lxml==5.3.0
+      - run: pip install beautifulsoup4==4.12.3 lxml==5.3.0 playwright==1.48.0 && python -m playwright install --with-deps chromium
       - name: Save copies
         run: python3 src/snapshot_pages.py index.html
       - name: Commit

@@ -6,7 +6,7 @@
 #   3. Every other outside link is header-checked; hosts that allow framing are recorded so the viewer can show them live.
 # Private and commercial sites (news, businesses, payment and registration services) are never copied.
 # Usage: python3 src/snapshot_pages.py [index.html]
-import json, os, re, sys, hashlib, datetime, urllib.parse, urllib.request, html as H, ssl
+import json, os, re, sys, hashlib, datetime, urllib.parse, urllib.request, urllib.error, html as H, ssl
 from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -15,8 +15,8 @@ PM = os.path.join(P, 'MANIFEST.json')
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36'
 NOW = datetime.datetime.now().astimezone()
 GOV = ('rindgenh.org', 'rindgenh.gov', 'gencourt.state.nh.us', 'gc.nh.gov', 'des.nh.gov', 'revenue.nh.gov', 'sos.nh.gov',
-       'nhes.nh.gov', 'dncr.nh.gov', 'census.gov', 'co.cheshire.nh.us')
-NEVER = ('pay.', 'recdesk.com', 'genasys.com', 'avitarassociates.com', 'mytownview.com', 'nhdeeds.org', 'citizenportal.ai', 'townhallstreams.com')
+       'nhes.nh.gov', 'dncr.nh.gov', 'census.gov', 'co.cheshire.nh.us', 'sau47.org')
+NEVER = ('citizen_request_center', 'enotify', 'pay.', 'recdesk.com', 'genasys.com', 'avitarassociates.com', 'mytownview.com', 'nhdeeds.org', 'citizenportal.ai', 'townhallstreams.com')
 ARCHIVE_PAGES = ('scholars.unh.edu', 'catalog.hathitrust.org', 'archive.org')  # library catalogs: frame-check only
 
 
@@ -27,6 +27,22 @@ def fetch(url, timeout=60, head=False):
     req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/xhtml+xml,application/pdf;q=0.9,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.9'}, method='HEAD' if head else 'GET')
     with urllib.request.urlopen(req, timeout=timeout, context=ssl.create_default_context()) as r:
         return r.status, dict((k.lower(), v) for k, v in r.headers.items()), (b'' if head else r.read()), r.geturl()
+
+
+_PW = None
+def browser_fetch(url):
+    """Real Chromium for sites that refuse plain HTTP clients (403/429). Returns (status, headers, html, final)."""
+    global _PW
+    from playwright.sync_api import sync_playwright
+    if _PW is None:
+        pw = sync_playwright().start(); _PW = (pw, pw.chromium.launch())
+    ctx = _PW[1].new_context(user_agent=UA, locale='en-US')
+    try:
+        pg = ctx.new_page(); r = pg.goto(url, wait_until='domcontentloaded', timeout=60000); pg.wait_for_timeout(2500)
+        hd = dict((k.lower(), v) for k, v in (r.all_headers() if r else {}).items())
+        return (r.status if r else 0), hd, pg.content().encode('utf-8'), pg.url
+    finally:
+        ctx.close()
 
 
 def frameable(headers):
@@ -98,7 +114,7 @@ def save_page(url, raw, final):
         for k in list(t.attrs):
             if k.startswith('on') or k in ('style', 'class', 'id'): del t[k]
     text = body.get_text(' ', strip=True)
-    if len(text) < 60: return None
+    if len(text) < 20: return None
     host = urllib.parse.urlparse(url).netloc
     when = NOW.strftime('%b %-d, %Y')
     doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -144,9 +160,25 @@ def main():
     urls = sorted(set(u.replace('&amp;', '&') for u in re.findall(r'href="(https?://[^"#]+)"', page)) - have)
     for u in urls:
         host = urllib.parse.urlparse(u).netloc
-        if re.search(r'\.(pdf|docx?|xlsx?|zip|mp4|m3u8)(\?|$)', u, re.I): continue
+        if re.search(r'\.(docx?|xlsx?|zip|mp4|m3u8)(\?|$)', u, re.I): continue
+        if re.search(r'\.pdf(\?|$)', u, re.I):
+            if is_gov(host) and 'rindgenh' not in host and u not in pm.setdefault('files', {}):
+                try:
+                    st, hd, data, final = fetch(u, timeout=300)
+                    if st == 200 and data.startswith(b'%PDF') and len(data) < 95_000_000:
+                        fn = 'pages/' + slug(u)[:-5] + '.pdf'; open(os.path.join(D, fn), 'wb').write(data)
+                        pm['files'][u] = dict(file=fn, bytes=len(data), sha256=hashlib.sha256(data).hexdigest(), captured=NOW.isoformat(timespec='seconds'))
+                        log.append(f'gov PDF saved {fn}')
+                except Exception as ex:
+                    pm['errors'][u] = f'{type(ex).__name__}: {ex}'[:200]
+            continue
         try:
-            st, hd, raw, final = fetch(u)
+            try:
+                st, hd, raw, final = fetch(u)
+            except urllib.error.HTTPError as he:
+                if he.code not in (403, 429, 503) or not (is_gov(host) or any(a in host for a in ARCHIVE_PAGES)): raise
+                st, hd, raw, final = browser_fetch(u); log.append(f'browser retry {st} {u}')
+                if st != 200: raise
             ct = hd.get('content-type', '')
             pm['frame'][u] = dict(status=st, frameable=frameable(hd), xfo=hd.get('x-frame-options', ''), checked=NOW.isoformat(timespec='seconds'))
             if is_gov(host) and not any(n in host for n in NEVER) and st == 200 and 'html' in ct:
@@ -156,6 +188,7 @@ def main():
             pm['errors'].pop(u, None)
         except Exception as ex:
             pm['errors'][u] = f'{type(ex).__name__}: {ex}'[:200]; log.append(f'error {u}: {ex}')
+    if _PW: _PW[1].close(); _PW[0].stop()
     pm['captured'] = NOW.isoformat(timespec='seconds')
     json.dump(pm, open(PM, 'w'), indent=1, sort_keys=True)
     print('\n'.join(log))
