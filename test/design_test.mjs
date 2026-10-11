@@ -19,7 +19,7 @@ const { chromium } = require(process.env.PLAYWRIGHT || 'playwright');
 const AXE = fs.readFileSync(require.resolve(process.env.AXE || 'axe-core/axe.min.js'), 'utf8');
 const FILE = 'file://' + path.resolve(process.argv[2] || 'index.html');
 
-const VIEWS = ['home', 'start-group', 'happening', 'meetdocs', 'documents', 'money', 'rules', 'howdoi', 'contacts', 'about'];
+const VIEWS = ['home', 'start-group', 'happening', 'meetdocs', 'documents', 'reports', 'money', 'rules', 'howdoi', 'contacts', 'about'];
 const CONFIGS = [
   { name: 'phone-light', w: 390, h: 844, dark: false },
   { name: 'phone-dark', w: 390, h: 844, dark: true },
@@ -42,6 +42,7 @@ const TASKS = [
   ['Find meeting minutes', 'minutes', ['library', 'timeline'], 'documents'],
   ['What are the frontage rules for my lot?', 'frontage', ['laws', 'recurring', 'topics'], 'rules'],
   ['What is happening with the ambulance?', 'ambulance', ['topics', 'emergency'], 'happening'],
+  ['Where are the annual town reports?', 'town report', ['townreports'], 'reports'],
   ['Elderly exemption limits', 'elderly exemption', ['topics', 'numbers', 'howto'], 'money'],
   ['Which schools serve Rindge?', 'school', ['schools', 'topics'], 'howdoi'],
 ];

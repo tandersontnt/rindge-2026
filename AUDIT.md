@@ -1,3 +1,16 @@
+# Rindge Town Guide v9: Town reports page (Oct 11, 2026)
+
+- **New chapter.** "Town reports" (`#reports`, section `#townreports`) sits after Documents. `src/reports.py` builds it from `docs/MANIFEST.json`.
+- **2011 to 2025, complete.** There is one tile per year, newest first, for 15 reports, all from the town's Town Reports folder (checked Oct 9, 2026).
+  - 12 reports open in the site's viewer from local copies.
+  - 2012, 2014 and 2017 are over 25 MB and open on rindgenh.org.
+  - The build fails if a year is duplicated, and the page lists any missing year automatically.
+- **1849 to 2010.** Older reports are linked as collections, not year by year: UNH Scholars' Repository (`scholars.unh.edu/rindge_nh_reports/`, about 187 scans from 1849 to 2024), HathiTrust and the Internet Archive.
+  - These sites were confirmed by web search. This cloud environment's network policy blocks scholars.unh.edu and rindgenh.org, so each year's item could not be opened and verified.
+  - No per-year URL was guessed. With those hosts allowed, the UNH items can be listed by year.
+- **Links into the chapter:** a Home "More questions" link, the menu and footer (automatic), and a search "Top hit" for "town report" and "annual report".
+- **Design test:** covers the new chapter and adds a "Where are the annual town reports?" findability task. It passes with 0 failures and 0 warnings.
+
 # Rindge Town Guide v8: structured data (Oct 11, 2026)
 
 **Machine-readable layer.** `src/structured.py` runs at the end of `build.py`.
